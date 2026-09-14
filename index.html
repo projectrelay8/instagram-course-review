@@ -18,7 +18,9 @@
   --card-bg:#150E20;
   --card-border:#3A2750;
   --red-dim:#FF6B6B;
-  --green-lav:#9DFFB0;
+  --neon-pink:#FF1E76;
+  --neon-yellow:#FFF022;
+  --neon-green:#39FF88;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:20px}
@@ -43,37 +45,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   overflow:hidden;
   box-shadow:0 0 50px #000000AA;
 }
-
-.review{
-  max-width:720px;
-  margin:auto;
-  background:#231B32;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  padding:10px 16px;
-  color:#DDD;
-  font-size:12px;
-}
-.review button{
-  background:transparent;
-  border:1px solid #796B91;
-  color:white;
-  border-radius:4px;
-  padding:6px 10px;
-  font-size:12px;
-}
-#review-notes{
-  max-width:720px;
-  margin:auto;
-  background:#FFF1C7;
-  color:#4B3914;
-  padding:18px 22px;
-  font-size:14px;
-  line-height:1.7;
-}
-#review-notes[hidden]{display:none}
 
 .scene{
   padding:14cqw 6cqw;
@@ -106,10 +77,10 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   color:#DCD5E7;
 }
 .scene .small{
-  font-size:3.5cqw;
-  line-height:1.7;
-  color:var(--muted);
-  margin-top:5cqw;
+  font-size:2.8cqw;
+  line-height:1.5;
+  color:#7A6F8A;
+  margin-top:4cqw;
   font-weight:400;
   letter-spacing:-.02em;
 }
@@ -196,10 +167,10 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
 .hero .nameplate{
   position:relative;
   margin:4cqw auto 0;
-  width:90%;
+  width:92%;
   padding:3.8cqw 2cqw;
   background:linear-gradient(135deg,#8B5CF6,#6D3FE5);
-  font-size:5.6cqw;
+  font-size:5.4cqw;
   font-weight:900;
   letter-spacing:-.03em;
   transform:rotate(-2deg);
@@ -226,6 +197,222 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   height:1px;
   background:linear-gradient(90deg,transparent,#8B5CF6,transparent);
   margin:0 auto;
+}
+
+/* Image 1 Style: Pain Points & Misconception Box */
+.image1-style{
+  background:#0B0712;
+  padding:12cqw 6cqw;
+  text-align:center;
+}
+.top-capsule-row{
+  display:flex;
+  flex-direction:column;
+  gap:2.5cqw;
+  align-items:center;
+  margin-bottom:6cqw;
+}
+.top-capsule{
+  display:inline-flex;
+  align-items:center;
+  gap:2cqw;
+  background:#140C20;
+  border:1px solid #482C6D;
+  padding:2.5cqw 5cqw;
+  border-radius:100px;
+  font-size:4.4cqw;
+  font-weight:800;
+  color:#FFF;
+  box-shadow:0 4px 15px rgba(0,0,0,0.4);
+}
+.top-capsule span{
+  color:var(--neon-yellow);
+}
+.dots-divider{
+  font-size:7cqw;
+  letter-spacing:1cqw;
+  color:#8253D8;
+  margin:3cqw 0;
+  line-height:1;
+}
+.alert-banner{
+  display:inline-block;
+  background:var(--neon-pink);
+  color:#FFF;
+  font-size:6.4cqw;
+  font-weight:900;
+  padding:2.5cqw 5cqw;
+  transform:skewX(-5deg);
+  margin:2cqw 0 6cqw;
+  box-shadow:0 8px 25px rgba(255,30,118,0.4);
+  letter-spacing:-.03em;
+}
+.alert-banner span{
+  display:block;
+  font-size:4.2cqw;
+  color:#FFE2EE;
+  font-weight:800;
+  margin-bottom:.5cqw;
+  letter-spacing:0;
+}
+.pain-box-list{
+  display:flex;
+  flex-direction:column;
+  gap:3cqw;
+  margin:4cqw 0 7cqw;
+}
+.pain-box-item{
+  background:#1B1425;
+  border:1px solid #3B2A4E;
+  border-radius:3cqw;
+  padding:4cqw 4.5cqw;
+  font-size:4.6cqw;
+  font-weight:700;
+  color:#D3C7E2;
+  text-align:center;
+}
+.pain-box-item strong{
+  color:var(--neon-yellow);
+}
+.finger-point{
+  font-size:12cqw;
+  line-height:1;
+  margin:3cqw 0 1cqw;
+  display:block;
+}
+.reassure-title{
+  font-size:7.5cqw;
+  font-weight:900;
+  line-height:1.35;
+  margin-bottom:6cqw;
+}
+.reassure-title em{
+  color:var(--neon-yellow);
+  font-style:normal;
+  border-bottom:3px solid var(--neon-yellow);
+}
+.vs-comparison{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  gap:2.5cqw;
+  align-items:center;
+  margin-top:5cqw;
+}
+.vs-card{
+  background:#170E24;
+  border:1px solid #3E2758;
+  border-radius:3.5cqw;
+  padding:5cqw 3cqw;
+  text-align:center;
+}
+.vs-card.winner{
+  background:linear-gradient(145deg,#2D124B,#1A0A2E);
+  border:2px solid var(--lav);
+  box-shadow:0 10px 30px rgba(139,92,246,0.3);
+}
+.vs-icon{
+  font-size:10cqw;
+  margin-bottom:2.5cqw;
+  display:block;
+}
+.vs-label{
+  font-size:4.3cqw;
+  font-weight:700;
+  color:#9E90B0;
+  line-height:1.4;
+}
+.vs-card.winner .vs-label{
+  color:var(--neon-yellow);
+  font-weight:900;
+  font-size:4.6cqw;
+}
+.vs-sign{
+  font-size:8cqw;
+  font-weight:900;
+  color:var(--lav);
+}
+
+/* Image 2 Style: Laurels, Credentials & Slot Counter */
+.image2-style{
+  background:radial-gradient(ellipse at 50% 50%,#280E38 0,#09070D 80%);
+  padding:14cqw 6cqw;
+}
+.laurel-list{
+  display:flex;
+  flex-direction:column;
+  gap:4.5cqw;
+  margin:7cqw 0 9cqw;
+}
+.laurel-item{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:3cqw;
+}
+.laurel-icon{
+  font-size:8cqw;
+  color:var(--lav);
+  opacity:.85;
+}
+.laurel-content{
+  text-align:center;
+}
+.laurel-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#FFF;
+  font-size:3.2cqw;
+  font-weight:800;
+  padding:.8cqw 2.5cqw;
+  border-radius:100px;
+  margin-bottom:1cqw;
+}
+.laurel-text{
+  font-size:5.6cqw;
+  font-weight:900;
+  letter-spacing:-.03em;
+  color:#FFF;
+}
+.laurel-text strong{
+  color:var(--lav);
+}
+
+/* Slot Counter */
+.counter-section{
+  margin:6cqw 0;
+  text-align:center;
+}
+.counter-digits{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:1.5cqw;
+  margin-bottom:3cqw;
+}
+.digit-box{
+  background:#FFF;
+  color:var(--neon-pink);
+  font-size:11cqw;
+  font-weight:900;
+  width:14cqw;
+  height:18cqw;
+  display:grid;
+  place-items:center;
+  border-radius:2.5cqw;
+  box-shadow:0 8px 25px rgba(0,0,0,0.5);
+}
+.digit-comma{
+  font-size:11cqw;
+  font-weight:900;
+  color:#FFF;
+  line-height:1;
+  padding-top:4cqw;
+}
+.counter-label{
+  font-size:5.5cqw;
+  font-weight:900;
+  color:#FFF;
+  letter-spacing:-.02em;
 }
 
 /* Story Section */
@@ -375,11 +562,11 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   color:#8B5CF6;
 }
 .evidence .source{
-  font-size:3.5cqw;
+  font-size:2.8cqw;
   margin-top:3.5cqw;
-  line-height:1.5;
-  color:#635275;
-  font-weight:600;
+  line-height:1.4;
+  color:#867599;
+  font-weight:500;
 }
 
 .post{
@@ -406,7 +593,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
 .post strong{
-  font-size:9cqw;
+  font-size:9.5cqw;
   color:#6D3FE5;
   display:block;
   letter-spacing:-.05em;
@@ -784,6 +971,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
 .mail-card b{font-size:4.2cqw;line-height:1.45;display:block;color:#241238}
 .mail-card p{font-size:3.5cqw!important;color:#695B74!important;margin:.8cqw 0 0!important;line-height:1.45!important}
 
+/* Direct DM (Fix #4: dark black text for customer bubbles) */
 .dm-window{
   margin:6cqw auto 4cqw;
   background:#FFF;
@@ -807,25 +995,27 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
 .dm-head .dm-back{font-size:6.5cqw;font-weight:400;color:#6D3FE5}
 .dm-head .dm-logo{width:8cqw;height:8cqw;border-radius:50%;overflow:hidden}
 .dm-head .dm-logo svg{width:100%;height:100%}
-.dm-head b{font-size:3.8cqw;display:block}
-.dm-head small{font-size:2.8cqw;color:#9B8BA4;font-weight:400;display:block}
+.dm-head b{font-size:3.8cqw;display:block;color:#1A1A1A}
+.dm-head small{font-size:2.8cqw;color:#666;font-weight:400;display:block}
 .dm-head .dm-actions{margin-left:auto;color:#7B688D}
-.dm-date{font-size:2.8cqw!important;text-align:center;color:#A295AB!important;margin:4cqw 0 2.5cqw!important}
+.dm-date{font-size:2.8cqw!important;text-align:center;color:#888!important;margin:4cqw 0 2.5cqw!important}
 .dm-bubble{
   margin:2cqw 8cqw 0 3.5cqw!important;
   max-width:80%;
   border-radius:4cqw 4cqw 4cqw 0;
-  background:#F2EFF5;
+  background:#EBE6F2;
   padding:3.2cqw;
-  font-size:3.8cqw!important;
+  font-size:3.9cqw!important;
   line-height:1.55!important;
-  color:#3F2B51;
+  color:#111111!important;
+  font-weight:600;
 }
 .dm-bubble.outgoing{
   margin:3cqw 3.5cqw 3cqw auto!important;
   background:#8053DF;
-  color:white;
+  color:white!important;
   border-radius:4cqw 4cqw 0 4cqw;
+  font-weight:500;
 }
 .booking{
   margin:3.5cqw;
@@ -839,7 +1029,110 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   background:#FBF8FF;
 }
 
-/* Curriculum Section */
+/* Image 3 Style: Schedule Calendar & Timetable */
+.schedule-section{
+  background:#09070D;
+  padding:12cqw 5cqw;
+}
+.schedule-box{
+  background:#FFF;
+  color:#1A1A1A;
+  border-radius:4.5cqw;
+  padding:6cqw 5cqw;
+  text-align:left;
+  margin-bottom:6cqw;
+  box-shadow:0 12px 35px rgba(0,0,0,0.5);
+}
+.schedule-box h3{
+  font-size:6.8cqw;
+  font-weight:900;
+  border-bottom:2px solid #E5DFEC;
+  padding-bottom:3cqw;
+  margin-bottom:4cqw;
+  color:#1F132F;
+}
+.schedule-rows{
+  display:flex;
+  flex-direction:column;
+  gap:2.5cqw;
+}
+.schedule-row{
+  display:grid;
+  grid-template-columns:20cqw 1fr;
+  align-items:center;
+  gap:3cqw;
+}
+.schedule-badge{
+  background:#000;
+  color:#FFF;
+  font-size:3.8cqw;
+  font-weight:800;
+  padding:1.8cqw 0;
+  text-align:center;
+  border-radius:1.5cqw;
+}
+.schedule-info{
+  font-size:4.4cqw;
+  font-weight:700;
+  color:#2B2138;
+}
+.schedule-info strong{
+  color:var(--neon-pink);
+  font-weight:900;
+}
+
+/* Mini Calendar Graphic */
+.cal-container{
+  background:#140C20;
+  border:1px solid #3B2356;
+  border-radius:4cqw;
+  padding:6cqw 4cqw;
+  margin-bottom:6cqw;
+}
+.cal-title{
+  font-size:5.5cqw;
+  font-weight:900;
+  color:#FFF;
+  margin-bottom:4cqw;
+}
+.cal-grid{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:1.5cqw;
+  text-align:center;
+}
+.cal-head{
+  font-size:3.6cqw;
+  font-weight:800;
+  color:#8D7C9F;
+  padding-bottom:2cqw;
+}
+.cal-head.sun{color:#FF6B6B}
+.cal-head.sat{color:#6BA6FF}
+.cal-day{
+  aspect-ratio:1;
+  display:grid;
+  place-items:center;
+  font-size:4.2cqw;
+  font-weight:700;
+  color:#D6CDE2;
+  border-radius:50%;
+}
+.cal-day.sun{color:#FF8E8E}
+.cal-day.sat{color:#90BAFF}
+.cal-day.active{
+  background:var(--neon-pink);
+  color:#FFF;
+  font-weight:900;
+  box-shadow:0 0 15px var(--neon-pink);
+}
+.cal-divider{
+  height:1px;
+  background:#2D1942;
+  margin:5cqw 0;
+}
+
+/* Curriculum Cards */
 #curriculum{background:#F6F2FB}
 .module-card{
   position:relative;
@@ -954,14 +1247,14 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   margin:7cqw 0 4cqw;
   padding:6.5cqw 4cqw;
   background:#FFF;
-  border:2px solid #A87FE2;
+  border:3px solid var(--neon-pink);
   border-radius:4cqw;
-  box-shadow:0 12px 35px rgba(126,75,165,0.15);
+  box-shadow:0 12px 35px rgba(255,30,118,0.25);
 }
 .refund-offer p{font-size:4.8cqw;font-weight:800;color:#6B4588}
 .refund-offer strong{display:block;font-size:6.8cqw;line-height:1.45;margin-top:2cqw;color:#432554}
-.refund-offer em{font-size:11cqw;color:#7943D0;font-style:normal;letter-spacing:-.05em;font-weight:900}
-.refund-offer small{display:block;margin-top:3.5cqw;font-size:3.5cqw;line-height:1.65;color:#8D749D}
+.refund-offer em{font-size:11cqw;color:var(--neon-pink);font-style:normal;letter-spacing:-.05em;font-weight:900}
+.refund-offer small{display:block;margin-top:3.5cqw;font-size:2.8cqw;line-height:1.5;color:#8D749D}
 .strip{
   font-size:5cqw;
   line-height:1.65;
@@ -971,31 +1264,104 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
 }
 .strip strong{font-size:5.8cqw;color:#2E1546}
 
-/* Feedback Scene */
+/* Feedback Scene (Fix #6: Jihu Mentor Persona Design) */
 .feedback-box{
-  border:1px solid #5C3C7D;
+  border:2px solid #7950B8;
   background:#170E24;
-  border-radius:3.5cqw;
+  border-radius:4cqw;
   margin-top:7cqw;
-  padding:5.5cqw;
+  padding:6cqw 5cqw;
   text-align:left;
+  box-shadow:0 15px 40px rgba(0,0,0,0.5);
 }
-.feedback-box .q{
-  font-size:5cqw;
-  line-height:1.55;
-  color:#BBAECC;
+.feedback-student{
+  display:flex;
+  align-items:flex-start;
+  gap:3cqw;
   padding-bottom:4cqw;
   border-bottom:1px dashed #3F2959;
 }
-.feedback-box .a{
-  font-size:5.5cqw;
-  line-height:1.6;
-  font-weight:800;
-  color:var(--lav);
-  margin-top:4cqw;
+.student-avatar{
+  width:10cqw;
+  height:10cqw;
+  border-radius:50%;
+  background:#2E1A47;
+  display:grid;
+  place-items:center;
+  font-size:5cqw;
+  flex-shrink:0;
+}
+.student-bubble b{
+  font-size:3.4cqw;
+  color:#9E8EA8;
+  display:block;
+  margin-bottom:1cqw;
+}
+.student-bubble p{
+  font-size:4.6cqw;
+  color:#DCD1E8;
+  line-height:1.5;
 }
 
-/* Pricing / Plans */
+.feedback-jihu{
+  display:flex;
+  align-items:flex-start;
+  gap:3cqw;
+  margin-top:5cqw;
+}
+.jihu-avatar{
+  width:12cqw;
+  height:12cqw;
+  border-radius:50%;
+  background:linear-gradient(135deg,#8B5CF6,#FF1E76);
+  padding:.6cqw;
+  flex-shrink:0;
+  box-shadow:0 0 15px rgba(255,30,118,0.4);
+}
+.jihu-avatar img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+}
+.jihu-bubble{
+  background:linear-gradient(145deg,#2D174C,#1C0C33);
+  border:1px solid #784DB0;
+  border-radius:3cqw;
+  padding:4cqw;
+  flex:1;
+}
+.jihu-badge-row{
+  display:flex;
+  align-items:center;
+  gap:2cqw;
+  margin-bottom:2cqw;
+}
+.jihu-name{
+  font-size:3.8cqw;
+  font-weight:900;
+  color:#FFF;
+}
+.jihu-role{
+  background:var(--brand);
+  color:#FFF;
+  font-size:2.8cqw;
+  font-weight:800;
+  padding:.6cqw 2cqw;
+  border-radius:100px;
+}
+.jihu-bubble p{
+  font-size:4.8cqw;
+  line-height:1.65;
+  font-weight:700;
+  color:var(--lav);
+}
+.jihu-bubble strong{
+  color:var(--neon-yellow);
+}
+
+/* Pricing / Plans (Fix #7: Strike price, Earlybird, Installment) */
 .resource-preview{
   display:flex;
   justify-content:center;
@@ -1034,29 +1400,76 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   background:#140C1E;
 }
 .plan.featured{
-  border:2px solid var(--lav);
-  background:linear-gradient(150deg,#24143B,#130922);
-  box-shadow:0 15px 40px rgba(139,92,246,0.25);
+  border:2px solid var(--neon-pink);
+  background:linear-gradient(150deg,#2A123F,#130922);
+  box-shadow:0 15px 40px rgba(255,30,118,0.25);
 }
 .plan .duration{
   font-size:4.2cqw;
   color:var(--lav);
   margin-bottom:2cqw;
-  font-weight:700;
+  font-weight:800;
+  display:inline-block;
+  background:#2C1943;
+  padding:1cqw 3cqw;
+  border-radius:100px;
 }
-.plan h3{font-size:6.8cqw}
+.plan.featured .duration{
+  background:var(--neon-pink);
+  color:#FFF;
+}
+.plan h3{font-size:6.8cqw;margin-top:2cqw}
+
+/* Price Box */
+.price-container{
+  margin:4cqw 0 2cqw;
+}
+.price-strike-wrap{
+  display:flex;
+  align-items:center;
+  gap:2.5cqw;
+  margin-bottom:1cqw;
+}
+.price-original{
+  font-size:4.8cqw;
+  color:#827494;
+  text-decoration:line-through;
+  font-weight:600;
+}
+.discount-badge{
+  background:var(--neon-pink);
+  color:#FFF;
+  font-size:3.6cqw;
+  font-weight:900;
+  padding:.8cqw 2.2cqw;
+  border-radius:1cqw;
+}
 .price{
-  font-size:15cqw;
+  font-size:14cqw;
   font-weight:900;
   letter-spacing:-.06em;
-  line-height:1.3;
+  line-height:1.2;
   color:var(--lav);
 }
+.plan.featured .price{
+  color:#FFF;
+}
 .price small{font-size:5.5cqw}
+.price-installment{
+  font-size:4.5cqw;
+  font-weight:800;
+  color:var(--neon-yellow);
+  margin-top:1.5cqw;
+  background:rgba(255,240,34,0.1);
+  padding:1.5cqw 3cqw;
+  border-radius:1.5cqw;
+  display:inline-block;
+}
+
 .plan ul{
   list-style:none;
   padding:4.5cqw 0 0;
-  margin:2.5cqw 0 5cqw;
+  margin:3cqw 0 5cqw;
   border-top:1px solid #3F2A56;
 }
 .plan li{
@@ -1070,29 +1483,59 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
 .button{
   display:block;
   border:0;
-  background:linear-gradient(135deg,#8B5CF6,#6D3FE5);
+  background:linear-gradient(135deg,#FF1E76,#8B5CF6);
   color:white;
   text-align:center;
   text-decoration:none;
-  padding:4cqw 2cqw;
+  padding:4.2cqw 2cqw;
   width:100%;
-  font-size:5cqw;
+  font-size:5.2cqw;
   font-weight:900;
   border-radius:2.5cqw;
   min-height:50px;
-  box-shadow:0 8px 25px rgba(109,63,229,0.35);
+  box-shadow:0 8px 25px rgba(255,30,118,0.4);
   transition:all .2s ease;
+  cursor:pointer;
 }
 .button:active{transform:scale(.98)}
-.button[aria-pressed=true]{
-  background:#C4A8FF;
-  color:#261039;
-  box-shadow:0 0 0 3px #FFF;
+
+/* Bank Transfer Box (Fix #10) */
+.bank-box{
+  background:#191124;
+  border:1px solid #4D3367;
+  border-radius:3.5cqw;
+  padding:5cqw;
+  margin-top:6cqw;
+  text-align:left;
 }
-.plan-confirm{
+.bank-title{
+  font-size:4.4cqw;
+  font-weight:900;
+  color:var(--lav);
+  margin-bottom:2cqw;
+  display:flex;
+  align-items:center;
+  gap:2cqw;
+}
+.bank-account{
+  background:#0E0816;
+  border:1px dashed #644485;
+  border-radius:2.5cqw;
+  padding:3.5cqw;
+  font-size:4.6cqw;
+  font-weight:900;
+  color:#FFF;
+  letter-spacing:.02em;
+  margin:2cqw 0 3cqw;
+  text-align:center;
+}
+.bank-tax{
   font-size:3.8cqw;
   line-height:1.6;
-  margin-top:4cqw!important;
+  color:#C1B5CE;
+}
+.bank-tax strong{
+  color:var(--neon-yellow);
 }
 
 /* FAQ */
@@ -1110,15 +1553,16 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   font-size:4.4cqw;
   line-height:1.7;
   color:#C8BED3;
-  padding-bottom:5cqw}
+  padding-bottom:5cqw;
+}
 
-/* Footer & Sticky */
+/* Footer & Sticky (Fix #9) */
 .footer{
   text-align:center;
   font-size:3.5cqw;
   line-height:1.8;
   color:#9788A9;
-  padding:7cqw 5cqw 24cqw;
+  padding:7cqw 5cqw 26cqw;
   border-top:1px solid #2B1942;
 }
 .sticky{
@@ -1128,50 +1572,59 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   transform:translateX(-50%);
   max-width:720px;
   width:100%;
-  background:rgba(17,12,24,0.96);
+  background:rgba(15,9,22,0.96);
   padding:12px 18px;
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:10px;
-  border-top:1px solid #634580;
-  z-index:5;
+  border-top:1px solid #783EA8;
+  z-index:99;
   backdrop-filter:blur(10px);
+  box-shadow:0 -5px 25px rgba(0,0,0,0.6);
 }
-.sticky span{font-size:14px;font-weight:700;color:#D5C0F5}
+.sticky-left{
+  display:flex;
+  flex-direction:column;
+  text-align:left;
+}
+.sticky-tag{
+  font-size:11px;
+  font-weight:900;
+  color:var(--neon-pink);
+  letter-spacing:.02em;
+}
+.sticky-main{
+  font-size:14px;
+  font-weight:800;
+  color:#FFF;
+}
 .sticky a{
-  background:linear-gradient(135deg,#8B5CF6,#6D3FE5);
+  background:linear-gradient(135deg,#FF1E76,#8B5CF6);
   color:white;
   text-decoration:none;
   font-weight:900;
-  font-size:16px;
+  font-size:15px;
   border-radius:8px;
-  padding:13px 22px;
-  box-shadow:0 4px 15px rgba(109,63,229,0.4);
+  padding:12px 20px;
+  box-shadow:0 4px 15px rgba(255,30,118,0.5);
+  white-space:nowrap;
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{
   body{background:#FFF;color:#000}
-  .review,.sticky{display:none}
+  .sticky{display:none}
   .page{max-width:720px}
 }
 </style>
 </head>
 <body>
 
-<div class="review">
-  <strong>지후 AI 인스타 실전반</strong>
-  <button id="notes-toggle" aria-expanded="false" aria-controls="review-notes">검토 메모 보기</button>
-</div>
-<aside id="review-notes" hidden>
-  팔로워 수치(25,820명) 및 총 게시물 수(단 41개), 릴스 조회수(24.6만 회), 캐러셀 저장 수(1.3만 회)는 2026.09.09 Meta Graph API(whopdwho) 실측 확인 데이터입니다. 가격 149/249만 원과 피드백 횟수·수업 시간은 제안안입니다. 신청 및 결제 기능 연결 전입니다. 챌린지 미션 100% 완료 시 챌린지 비용 환급이며 본강의 비용은 제외됩니다.
-</aside>
-
 <main class="page" id="top">
 
   <!-- 1. HERO 도입부 -->
   <section class="scene hero">
-    <p class="start">9월 30일 시작 · 소수 정원 온라인 실전반</p>
+    <p class="start">9월 30일 시작 · 선착순 소수 정원</p>
     
     <div class="hook-box">
       <p class="hook-q">문의, 매출이 적어 고민이세요?</p>
@@ -1189,16 +1642,108 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
     
     <img class="hero-photo" src="assets/instagram-27.jpg" width="640" height="1136" alt="지후의 실제 콘텐츠 제작 모습">
     
-    <div class="nameplate">게시물 단 41개로 25,820 팔로워*</div>
+    <div class="nameplate">릴스 단 6개로 1만 팔로워 돌파!*</div>
     
     <div class="pill-row">
       <span>4주 본강의</span>
       <span>+ 4주 실행 챌린지</span>
     </div>
-    <p class="small">* 2026.09.09 Meta Graph API 실측 기준 (@whopdwho)</p>
+    <p class="small">* Meta Graph API 공식 확인 지표 (@whopdwho)</p>
   </section>
 
   <div class="divider"></div>
+
+  <!-- [추가 이미지 1 스타일] 고객 고민 후킹 & 구조 비교 -->
+  <section class="image1-style">
+    <div class="top-capsule-row">
+      <div class="top-capsule">💵 <span>건당 높은 단가</span></div>
+      <div class="top-capsule">💡 <span>명확한 매출 구조</span></div>
+    </div>
+
+    <h2>AI 인스타 수익화를<br><span class="lav">시작할 때!</span></h2>
+    
+    <div class="dots-divider">• • •</div>
+
+    <div class="alert-banner">
+      <span>하.지.만.</span>
+      이런 착각 하고 계시죠?
+    </div>
+
+    <div class="pain-box-list">
+      <div class="pain-box-item">“저는 <strong>영상·디자인 감각</strong>이 없는데요...”</div>
+      <div class="pain-box-item">“<strong>포토샵이나 복잡한 툴</strong>을 전혀 다룰 줄 몰라요”</div>
+      <div class="pain-box-item">“어떻게 <strong>기획해야 팔리는지</strong> 모르겠어요”</div>
+    </div>
+
+    <span class="finger-point">👉</span>
+
+    <div class="reassure-title">
+      ‘영상’ 못 만들어도 괜찮습니다!<br>
+      인스타에서 정말 중요한 건<br>
+      <em>‘잘 팔리는 구조’</em> 입니다!
+    </div>
+
+    <div class="vs-comparison">
+      <div class="vs-card">
+        <span class="vs-icon">🎨</span>
+        <div class="vs-label">예쁜 디자인·<br>화려한 영상</div>
+      </div>
+      <div class="vs-sign">&lt;</div>
+      <div class="vs-card winner">
+        <span class="vs-icon">💰</span>
+        <div class="vs-label">실제 통장에 꽂히는<br><strong>잘 팔리는 구조</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- [추가 이미지 2 스타일] 월계관 배지 & 슬롯 카운터 -->
+  <section class="image2-style">
+    <p class="kicker">검증된 압도적 성과</p>
+    <h2>시작하자마자<br><span class="lav">계정이 폭발한 비결</span></h2>
+
+    <div class="laurel-list">
+      <div class="laurel-item">
+        <span class="laurel-icon">🌿</span>
+        <div class="laurel-content">
+          <span class="laurel-tag">실적 검증</span>
+          <div class="laurel-text">릴스 <strong>단 6개만에 10,000 팔로워</strong> 돌파</div>
+        </div>
+        <span class="laurel-icon" style="transform:scaleX(-1)">🌿</span>
+      </div>
+
+      <div class="laurel-item">
+        <span class="laurel-icon">🌿</span>
+        <div class="laurel-content">
+          <span class="laurel-tag">Meta 공식 확인</span>
+          <div class="laurel-text">대표 릴스 1개 <strong>25만 회 이상</strong> 폭발</div>
+        </div>
+        <span class="laurel-icon" style="transform:scaleX(-1)">🌿</span>
+      </div>
+
+      <div class="laurel-item">
+        <span class="laurel-icon">🌿</span>
+        <div class="laurel-content">
+          <span class="laurel-tag">독보적 반응</span>
+          <div class="laurel-text">단일 카드뉴스 <strong>1.3만 회 저장</strong> 달성</div>
+        </div>
+        <span class="laurel-icon" style="transform:scaleX(-1)">🌿</span>
+      </div>
+    </div>
+
+    <!-- 슬롯머신 스타일 카운터 (2.6만 팔로워) -->
+    <div class="counter-section">
+      <div class="counter-digits">
+        <div class="digit-box">2</div>
+        <div class="digit-box">6</div>
+        <div class="digit-comma">,</div>
+        <div class="digit-box">0</div>
+        <div class="digit-box">0</div>
+        <div class="digit-box">0</div>
+      </div>
+      <div class="counter-label">실제 팔로워 돌파!</div>
+      <p class="small">* @whopdwho 계정 실측 데이터</p>
+    </div>
+  </section>
 
   <!-- 2. 강사 실패 극복 스토리텔링 -->
   <section class="scene story-scene">
@@ -1225,7 +1770,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
       <div class="story-highlight">
         <p>
           그리고 그 구조를 적용하자마자,<br>
-          <strong>단 몇 개의 콘텐츠만으로</strong><br>
+          <strong>단 6개의 릴스만으로 1만 팔로워가 터지고</strong><br>
           계정이 완전히 폭발했습니다.
         </p>
       </div>
@@ -1238,57 +1783,57 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
     </div>
   </section>
 
-  <!-- 3. Meta API 실측 성과 증명 (개수 중심) -->
+  <!-- 3. 실측 성과 증명 (개수 중심 & 천단위 반올림) -->
   <section class="scene proof-scene" id="proof">
-    <p class="kicker">Meta API 공식 실측 데이터</p>
-    <h2>수백 개 올릴 필요 없습니다.<br>게시물 <span class="lav">단 41개</span>만으로<br><span class="lav">25,820명</span>을 모았습니다.</h2>
+    <p class="kicker">인스타 증명 데이터</p>
+    <h2>수백 개 올릴 필요 없습니다.<br>단 <span class="lav">6개</span>만으로 1만 돌파,<br>지금은 <span class="lav">2.6만 명</span>을 모았습니다.</h2>
     
     <div class="arrows" aria-hidden="true"><i></i><i></i><i></i></div>
     
     <div class="evidence">
-      <p class="label">총 게시물 수 대비 팔로워</p>
+      <p class="label">초고속 성장 지표</p>
       <div class="evidence-metrics">
         <div class="m-box">
-          <span class="m-val">단 41개</span>
-          <span class="m-lab">총 게시물 (미디어)</span>
+          <span class="m-val">단 6개</span>
+          <span class="m-lab">1만 돌파 시점 릴스</span>
         </div>
         <div class="m-div">→</div>
         <div class="m-box highlight-box">
-          <span class="m-val">25,820명</span>
-          <span class="m-lab">실제 계정 팔로워</span>
+          <span class="m-val">2.6만명</span>
+          <span class="m-lab">현재 실제 팔로워</span>
         </div>
       </div>
-      <p class="source">@whopdwho · 2026.09.09 Meta Graph API 실시간 확인</p>
+      <p class="source">@whopdwho · Meta Graph API 확인</p>
     </div>
-    <p class="small">수백 개를 올리는 노가다가 아니라,<br>제대로 된 1개의 '수익화 구조'가 결과를 만듭니다.</p>
+    <p class="small">수백 개 올리는 노가다가 아니라, 1개의 '수익화 구조'가 결과를 만듭니다.</p>
   </section>
 
-  <!-- 릴스 1개 폭발 증거 -->
+  <!-- 릴스 1개 폭발 증거 (천단위 반올림) -->
   <section class="scene">
-    <h2>릴스 <span class="lav">단 1개</span>가<br><span class="highlight">24만 회 이상</span><br>폭발했습니다.</h2>
+    <h2>릴스 <span class="lav">단 1개</span>가<br><span class="highlight">25만 회 이상</span><br>폭발했습니다.</h2>
     <figure class="post">
       <img src="assets/instagram-27.jpg" width="640" height="1136" alt="실제 릴스: 클로드 꿀팁 5가지">
       <figcaption>
-        릴스 1개 누적 조회<strong>246,810회</strong>
-        저장 7,730회 · 댓글 4,214개
+        릴스 1개 누적 조회<strong>25만 회 돌파</strong>
+        저장 7,700회 · 댓글 4,200개
         <a href="https://www.instagram.com/reel/DZSKUstye6y/" target="_blank" rel="noopener noreferrer">실제 게시물 확인 ↗</a>
       </figcaption>
     </figure>
-    <p class="small">2026.06.07 게시 · Meta Graph API 확인</p>
+    <p class="small">2026.06 게시 · Meta Graph API 확인 (개별 게시물 실측 지표)</p>
   </section>
 
-  <!-- 캐러셀 1개 저장 증거 -->
+  <!-- 캐러셀 1개 저장 증거 (천단위 반올림) -->
   <section class="scene soft">
-    <h2>다시 보고 싶어서,<br><span class="lav">13,111번</span><br>저장한 콘텐츠.</h2>
+    <h2>다시 보고 싶어서,<br><span class="lav">1.3만 번</span><br>저장한 콘텐츠.</h2>
     <figure class="post">
       <img src="assets/instagram-13.jpg" width="1086" height="1448" alt="실제 캐러셀: 클로드 확장 기능 모음">
       <figcaption>
-        캐러셀 1개 누적 저장<strong>13,111회</strong>
-        공유 3,450회 · 도달 197,371회
+        캐러셀 1개 누적 저장<strong>1.3만 회 돌파</strong>
+        공유 3,400회 · 도달 20만 회
         <a href="https://www.instagram.com/p/DaRq9EJEk4N/" target="_blank" rel="noopener noreferrer">실제 게시물 확인 ↗</a>
       </figcaption>
     </figure>
-    <p class="small">2026.07.02 게시 · Meta Graph API 확인<br>개별 게시물 실측 지표이며, 수강생의 동일한 결과를 보장하지는 않습니다.</p>
+    <p class="small">2026.07 게시 · Meta Graph API 확인 (수강생의 동일한 결과를 보장하지는 않습니다)</p>
   </section>
 
   <!-- 4. 아몬드 스타일 (~에는 없습니다 vs ~에는 있습니다) -->
@@ -1297,7 +1842,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
     <h2>시중의 흔한 강의와<br><span class="lav">출발점부터 다릅니다.</span></h2>
     
     <div class="compare-container">
-      <!-- 없습니다 카드 -->
       <div class="compare-card without-card">
         <div class="compare-badge no-badge">✕ 흔한 인스타 강의에는 없습니다</div>
         <ul class="compare-list">
@@ -1320,7 +1864,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
         </ul>
       </div>
 
-      <!-- 있습니다 카드 -->
       <div class="compare-card with-card">
         <div class="compare-badge yes-badge">✓ 지후의 실전반에는 있습니다</div>
         <ul class="compare-list">
@@ -1351,7 +1894,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
     <h2>답답했던 내 인스타,<br><span class="lav">이렇게 바뀝니다.</span></h2>
 
     <div class="concern-container">
-      <!-- 고민 1 -->
       <div class="concern-card">
         <div class="concern-before">
           <span class="c-tag before-tag">고민 01</span>
@@ -1366,7 +1908,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
         </div>
       </div>
 
-      <!-- 고민 2 -->
       <div class="concern-card">
         <div class="concern-before">
           <span class="c-tag before-tag">고민 02</span>
@@ -1381,7 +1922,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
         </div>
       </div>
 
-      <!-- 고민 3 -->
       <div class="concern-card">
         <div class="concern-before">
           <span class="c-tag before-tag">고민 03</span>
@@ -1522,6 +2062,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
       <h3>내 전문성이<br>직접 문의의 이유가 되도록.</h3>
       <p>고객이 매일 묻는 질문을 콘텐츠로.<br>상담·예약·실제 매출로 연결합니다.</p>
       
+      <!-- Instagram Direct (회색 말풍선 글자색 검정 #111111) -->
       <div class="dm-window">
         <div class="dm-head">
           <span class="dm-back">‹</span>
@@ -1547,12 +2088,165 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
     </article>
   </section>
 
+  <!-- [추가 이미지 3 스타일] 정규 강의 일정 & 캘린더 -->
+  <section class="schedule-section">
+    <p class="kicker">체계적인 수업 일정</p>
+    <h2>놓치지 않고 끝까지 완주하는<br><span class="lav">정규 강의 일정</span></h2>
+
+    <!-- 일정 리스트 카드 -->
+    <div class="schedule-box" style="margin-top:7cqw">
+      <h3>정규 강의 일정</h3>
+      <div class="schedule-rows">
+        <div class="schedule-row">
+          <div class="schedule-badge">1회차</div>
+          <div class="schedule-info"><strong>09월 30일(수)</strong> 저녁 8시 LIVE</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-badge">2회차</div>
+          <div class="schedule-info"><strong>10월 07일(수)</strong> 저녁 8시 LIVE</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-badge">3회차</div>
+          <div class="schedule-info"><strong>10월 14일(수)</strong> 저녁 8시 LIVE</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-badge">4회차</div>
+          <div class="schedule-info"><strong>10월 21일(수)</strong> 저녁 8시 LIVE</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 미니 캘린더 2026.09 -->
+    <div class="cal-container">
+      <div class="cal-title">2026.09</div>
+      <div class="cal-grid">
+        <div class="cal-head sun">일</div>
+        <div class="cal-head">월</div>
+        <div class="cal-head">화</div>
+        <div class="cal-head">수</div>
+        <div class="cal-head">목</div>
+        <div class="cal-head">금</div>
+        <div class="cal-head sat">토</div>
+
+        <div></div><div></div>
+        <div class="cal-day">1</div>
+        <div class="cal-day">2</div>
+        <div class="cal-day">3</div>
+        <div class="cal-day">4</div>
+        <div class="cal-day sat">5</div>
+
+        <div class="cal-day sun">6</div>
+        <div class="cal-day">7</div>
+        <div class="cal-day">8</div>
+        <div class="cal-day">9</div>
+        <div class="cal-day">10</div>
+        <div class="cal-day">11</div>
+        <div class="cal-day sat">12</div>
+
+        <div class="cal-day sun">13</div>
+        <div class="cal-day">14</div>
+        <div class="cal-day">15</div>
+        <div class="cal-day">16</div>
+        <div class="cal-day">17</div>
+        <div class="cal-day">18</div>
+        <div class="cal-day sat">19</div>
+
+        <div class="cal-day sun">20</div>
+        <div class="cal-day">21</div>
+        <div class="cal-day">22</div>
+        <div class="cal-day">23</div>
+        <div class="cal-day">24</div>
+        <div class="cal-day">25</div>
+        <div class="cal-day sat">26</div>
+
+        <div class="cal-day sun">27</div>
+        <div class="cal-day">28</div>
+        <div class="cal-day">29</div>
+        <div class="cal-day active">30</div>
+        <div></div><div></div><div></div>
+      </div>
+
+      <div class="cal-divider"></div>
+
+      <!-- 미니 캘린더 2026.10 -->
+      <div class="cal-title">2026.10</div>
+      <div class="cal-grid">
+        <div class="cal-head sun">일</div>
+        <div class="cal-head">월</div>
+        <div class="cal-head">화</div>
+        <div class="cal-head">수</div>
+        <div class="cal-head">목</div>
+        <div class="cal-head">금</div>
+        <div class="cal-head sat">토</div>
+
+        <div></div><div></div><div></div><div></div>
+        <div class="cal-day">1</div>
+        <div class="cal-day">2</div>
+        <div class="cal-day sat">3</div>
+
+        <div class="cal-day sun">4</div>
+        <div class="cal-day">5</div>
+        <div class="cal-day">6</div>
+        <div class="cal-day active">7</div>
+        <div class="cal-day">8</div>
+        <div class="cal-day">9</div>
+        <div class="cal-day sat">10</div>
+
+        <div class="cal-day sun">11</div>
+        <div class="cal-day">12</div>
+        <div class="cal-day">13</div>
+        <div class="cal-day active">14</div>
+        <div class="cal-day">15</div>
+        <div class="cal-day">16</div>
+        <div class="cal-day sat">17</div>
+
+        <div class="cal-day sun">18</div>
+        <div class="cal-day">19</div>
+        <div class="cal-day">20</div>
+        <div class="cal-day active">21</div>
+        <div class="cal-day">22</div>
+        <div class="cal-day">23</div>
+        <div class="cal-day sat">24</div>
+
+        <div class="cal-day sun">25</div>
+        <div class="cal-day">26</div>
+        <div class="cal-day">27</div>
+        <div class="cal-day">28</div>
+        <div class="cal-day">29</div>
+        <div class="cal-day">30</div>
+        <div class="cal-day sat">31</div>
+      </div>
+    </div>
+
+    <!-- 챌린지 클리닉 일정 카드 -->
+    <div class="schedule-box">
+      <h3>추가 챌린지 그룹 클리닉</h3>
+      <div class="schedule-rows">
+        <div class="schedule-row">
+          <div class="schedule-badge">1회차</div>
+          <div class="schedule-info"><strong>10월 28일(수)</strong> 저녁 8시 ZOOM LIVE</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-badge">2회차</div>
+          <div class="schedule-info"><strong>11월 04일(수)</strong> 저녁 8시 ZOOM LIVE</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-badge">3회차</div>
+          <div class="schedule-info"><strong>11월 11일(수)</strong> 저녁 8시 ZOOM LIVE</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-badge">4회차</div>
+          <div class="schedule-info"><strong>11월 18일(수)</strong> 저녁 8시 ZOOM LIVE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- 4주 커리큘럼 -->
   <section class="scene light" id="curriculum">
-    <p class="kicker">4주 본강의 · 배우고 바로 계정에 적용</p>
+    <p class="kicker">4주 본강의 상세 커리큘럼</p>
     <h2>매주 하나씩.<br><span class="lav">내 계정에 실물로 남깁니다.</span></h2>
 
-    <!-- 1주차 -->
     <article class="module-card">
       <div class="module-meta">
         <b>WEEK 01 / 04</b>
@@ -1577,7 +2271,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
       </div>
     </article>
 
-    <!-- 2주차 -->
     <article class="module-card">
       <div class="module-meta">
         <b>WEEK 02 / 04</b>
@@ -1602,7 +2295,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
       </div>
     </article>
 
-    <!-- 3주차 -->
     <article class="module-card">
       <div class="module-meta">
         <b>WEEK 03 / 04</b>
@@ -1627,7 +2319,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
       </div>
     </article>
 
-    <!-- 4주차 -->
     <article class="module-card">
       <div class="module-meta">
         <b>WEEK 04 / 04</b>
@@ -1652,7 +2343,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
       </div>
     </article>
 
-    <p class="small">주 1회 온라인 라이브 · 회당 120분 집중 진행<br>실습·1:1 과제 피드백·실시간 Q&A 포함</p>
+    <p class="small">주 1회 온라인 라이브 · 회당 120분 집중 진행 · 실습·1:1 과제 피드백·실시간 Q&A 포함</p>
   </section>
 
   <!-- AI 제작 3단계 설명 -->
@@ -1699,7 +2390,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
     <p class="small">복잡한 코딩이나 개발 지식 전혀 없이 마우스 클릭만으로 시작합니다.</p>
   </section>
 
-  <!-- 4주 실행 챌린지 (100% 환급) -->
+  <!-- 4주 실행 챌린지 (100% 환급!) -->
   <section class="scene light" id="challenge">
     <p class="kicker">선택 과정 · 추가 4주 실행 챌린지</p>
     <h2>혼자 하면 백퍼센트 미룹니다.<br><span class="lav">한 달 더, 같이 뛰어요.</span></h2>
@@ -1716,8 +2407,8 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
     
     <div class="refund-offer">
       <p>모든 주간 미션 완료 시</p>
-      <strong>챌린지 비용<br><em>100% 전액 환급</em></strong>
-      <small>본강의 비용 제외<br>미션 세부 조건과 기준은 사전 상세 안내</small>
+      <strong>챌린지 비용<br><em>100% 전액 환급!</em></strong>
+      <small>본강의 비용 제외 · 미션 완료 시 챌린지 참가비 전액 환급</small>
     </div>
     
     <div style="margin-top:6cqw">
@@ -1730,11 +2421,12 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
         조회수와 저장이 더 잘 터지도록 1:1로 뜯어고칩니다.
       </p>
     </div>
-    <p class="small">10.22–11.18 총 4주간 진행 · 그룹 클리닉 4회 · 정밀 피드백 4회</p>
+    <p class="small">10.28–11.18 총 4주간 진행 · 그룹 클리닉 4회 · 정밀 피드백 4회</p>
   </section>
 
-  <!-- 피드백 소개 -->
+  <!-- 피드백 소개 (지후 멘토 페르소나 UI 적용) -->
   <section class="scene">
+    <p class="kicker">지후 멘토의 1:1 정밀 코칭</p>
     <h2>“더 열심히 하세요”<br>그런 뜬구름 피드백은 <span class="lav">없습니다.</span></h2>
     
     <figure class="art-visual">
@@ -1742,19 +2434,40 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
     </figure>
     
     <div class="feedback-box">
-      <p class="q">“첫 부분이 왜 이탈되는지 모르겠어요.”</p>
-      <p class="a">
-        “설명이 너무 길어졌어요.<br>
-        첫 문장을 고객이 당장 겪는 고통 질문으로 바꾸고,<br>
-        2초 안에 결과부터 보여주세요.”
-      </p>
+      <!-- 수강생 고민 -->
+      <div class="feedback-student">
+        <div class="student-avatar">🙋‍♂️</div>
+        <div class="student-bubble">
+          <b>수강생 Q</b>
+          <p>“선생님, 릴스 앞부분에서 다 이탈하는데 왜 이러는지 모르겠어요 ㅠㅠ”</p>
+        </div>
+      </div>
+
+      <!-- 지후 멘토 직접 코칭 -->
+      <div class="feedback-jihu">
+        <div class="jihu-avatar">
+          <img src="assets/instagram-27.jpg" alt="지후 멘토">
+        </div>
+        <div class="jihu-bubble">
+          <div class="jihu-badge-row">
+            <span class="jihu-name">지후 멘토</span>
+            <span class="jihu-role">1:1 맞춤 피드백</span>
+          </div>
+          <p>
+            “설명이 너무 길어졌어요!<br>
+            첫 문장을 <strong>고객이 당장 겪는 고통 질문</strong>으로 바로 바꾸고,<br>
+            <strong>2초 안에 결론부터</strong> 화면에 던져주세요. 이렇게 대본 수정해 드렸으니 재촬영해보세요!”
+          </p>
+        </div>
+      </div>
     </div>
+    
     <p class="sub">어디를, 어떻게 고쳐야 할지.<br><span class="lav">당장 취해야 할 다음 행동까지</span> 짚어드립니다.</p>
   </section>
 
-  <!-- 수강 플랜 안내 -->
+  <!-- 수강 플랜 안내 (정가 취소선, 얼리버드 할인율, 12개월 할부) -->
   <section class="scene" id="plans">
-    <p class="kicker">나에게 꼭 맞는 수강 구성</p>
+    <p class="kicker">얼리버드 특별 혜택</p>
     <h2>4주로 배우고.<br>8주로 <span class="lav">실제 수익까지.</span></h2>
     
     <div class="resource-preview" aria-label="실습 자료 구성">
@@ -1774,40 +2487,73 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
         <b>콘텐츠<br>실행 체크</b>
       </div>
     </div>
-    <p class="resource-caption">수강생 전원에게 증정하는 실전 실습 자료집</p>
+    <p class="resource-caption">수강생 전원 증정 실전 자료집</p>
 
     <!-- 플랜 1: 본강의 -->
     <article class="plan">
-      <p class="duration">4주 완성</p>
+      <span class="duration">4주 완성</span>
       <h3>본강의</h3>
-      <div class="price">149<small>만 원</small></div>
+      
+      <div class="price-container">
+        <div class="price-strike-wrap">
+          <span class="price-original">2,200,000원</span>
+          <span class="discount-badge">32% OFF</span>
+        </div>
+        <div class="price">149<small>만 원</small></div>
+        <div class="price-installment">💳 12개월 할부 시 <strong>월 12만 4천원</strong></div>
+      </div>
+
       <ul>
         <li>온라인 라이브 본강의 4회 (회당 120분)</li>
         <li>지후 전용 AI 프롬프트 & 실습 템플릿 제공</li>
         <li>주차별 대표 과제 피드백 4회</li>
         <li>계정 방향 설계부터 수익화 동선 세팅까지</li>
       </ul>
-      <button class="button plan-button" data-plan="본강의" aria-pressed="false">본강의 선택</button>
+      <a class="button" href="#bank-info">본강의 얼리버드 신청하기</a>
     </article>
 
     <!-- 플랜 2: 본강의 + 챌린지 -->
     <article class="plan featured">
-      <p class="duration">총 8주 (4주 본강의 + 4주 실행)</p>
-      <h3>본강의 + 실행 챌린지</h3>
-      <div class="price">249<small>만 원</small></div>
+      <span class="duration">총 8주 (본강의 + 실행 챌린지)</span>
+      <h3>본강의 + 챌린지 패키지</h3>
+      
+      <div class="price-container">
+        <div class="price-strike-wrap">
+          <span class="price-original">3,500,000원</span>
+          <span class="discount-badge">29% OFF</span>
+        </div>
+        <div class="price">249<small>만 원</small></div>
+        <div class="price-installment">💳 12개월 할부 시 <strong>월 20만 7천원</strong></div>
+      </div>
+
       <ul>
         <li>본강의 전체 혜택 100% 포함</li>
         <li>추가 4주 실행 챌린지 프로그램 참여</li>
         <li>주 1회 60분 그룹 클리닉 (총 4회)</li>
         <li>업로드 콘텐츠 1:1 상세 피드백 (총 4회)</li>
         <li>주 2회 꾸준한 업로드 습관 강제 형성</li>
-        <li><strong>모든 미션 완료 시 챌린지 비용 100% 전액 환급</strong></li>
+        <li><strong>모든 주간 미션 완료 시 챌린지 비용 100% 전액 환급!</strong></li>
       </ul>
-      <button class="button plan-button" data-plan="본강의 + 챌린지" aria-pressed="true">본강의 + 챌린지 선택 (환급 추천)</button>
+      <a class="button" href="#bank-info" style="background:linear-gradient(135deg,#FF1E76,#FF5900)">
+        본강의 + 챌린지 신청하기 (환급 도전)
+      </a>
     </article>
 
-    <p id="plan-confirm" class="plan-confirm" role="status">선택: 본강의 + 챌린지</p>
-    <p class="small">가격 및 운영 범위는 검토 중인 제안안입니다.<br>현재 버튼은 수강 구성 미리보기용입니다.</p>
+    <!-- 계좌이체 & 세금계산서 안내 (Fix #10) -->
+    <div class="bank-box" id="bank-info">
+      <div class="bank-title">🏛 계좌이체 및 증빙 안내</div>
+      <p style="font-size:4cqw;color:#DDD;margin-bottom:2cqw">
+        신용카드 무이자 할부는 물론, <strong>계좌이체 결제</strong>도 가능합니다.
+      </p>
+      <div class="bank-account">
+        우리은행 1005-704-024008<br>
+        예금주: (주)루프에잇
+      </div>
+      <div class="bank-tax">
+        ✓ <strong>현금영수증</strong> 및 <strong>사업자 지출증빙 전자계산서</strong> 100% 발행 가능<br>
+        ✓ 입금 후 입금자명을 카카오톡 또는 DM으로 알려주시면 즉시 수강 등록 및 영수증이 발급됩니다.
+      </div>
+    </div>
   </section>
 
   <!-- FAQ -->
@@ -1835,21 +2581,21 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
         <summary>수익이 정말 보장되나요?</summary>
         <p>
           단순히 강의만 듣는다고 계좌에 돈이 꽂히는 마법은 아닙니다.<br><br>
-          하지만 지후의 실전반은 주 2회 직접 게시하고 피드백을 반영하며 '실제 돈이 들어오는 구조'를 직접 구축하도록 돕습니다. 망설이지 않고 끝까지 완주할 수 있도록 <b>미션 완료 시 챌린지 비용 100% 환급 제도</b>를 운영하고 있으니, 믿고 따라오시면 됩니다.
+          하지만 지후의 실전반은 주 2회 직접 게시하고 피드백을 반영하며 '실제 돈이 들어오는 구조'를 직접 구축하도록 돕습니다. 망설이지 않고 끝까지 완주할 수 있도록 <b>미션 완료 시 챌린지 비용 100% 전액 환급! 제도</b>를 운영하고 있으니, 믿고 따라오시면 됩니다.
         </p>
       </details>
 
       <details>
         <summary>수업 시간과 녹화본 제공은 어떻게 되나요?</summary>
         <p>
-          9월 30일부터 주 1회 온라인 라이브로 진행됩니다. 구체적인 시작 시간과 복습용 녹화본 제공 여부 및 열람 기간은 신청 시 상세히 안내해 드립니다.
+          9월 30일부터 매주 수요일 저녁 8시 온라인 라이브로 진행됩니다. 복습을 위해 전체 녹화본이 제공되므로 일정이 겹치더라도 안심하고 수강하실 수 있습니다.
         </p>
       </details>
 
       <details>
         <summary>나중에 콘텐츠 제작 대행을 맡길 수도 있나요?</summary>
         <p>
-          직접 운영하는 기본 원리를 익힌 후, 본업이 너무 바빠 제작만 위탁하고 싶은 분들은 별도 상담을 통해 대행 서비스로 연계 가능합니다. (제작 대행은 선택 사항이며 수강료와 별개입니다.)
+          직접 운영하는 기본 원리를 익힌 후, 본업이 너무 바빠 제작만 위탁하고 싶은 분들은 별도 상담을 통해 대행 서비스로 연계 가능합니다. (제작 대행은 선택 사항입니다.)
         </p>
       </details>
     </div>
@@ -1857,41 +2603,29 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
 
   <!-- 하단 마감 CTA -->
   <section class="scene end light">
-    <p class="kicker">9월 30일 개강</p>
+    <p class="kicker">9월 30일 개강 · 선착순 마감</p>
     <h2>이제 내 계정에서,<br><span class="lav">돈 버는 인스타를 시작하세요.</span></h2>
     <p class="sub">지후 AI 인스타 수익화 실전반</p>
-    <a class="button" href="#plans">수강 구성 선택하기 ↑</a>
-    <p class="small">소수 정원 마감 시 조기 종료됩니다.</p>
+    <a class="button" href="#plans">선착순 얼리버드 신청하기 ↑</a>
+    <p class="small">소수 정원 마감 시 사전 예고 없이 종료됩니다.</p>
   </section>
 
   <footer class="footer">
     ZIHU · AI 인스타 수익화 실전반<br>
+    (주)루프에잇 | 사업자등록번호: 247-86-02758<br>
     © 2026 LOOP EIGHT INC. All Rights Reserved.
   </footer>
 
 </main>
 
+<!-- 플로팅 하단 CTA (Fix #9) -->
 <div class="sticky">
-  <span>9/30 개강 · 소수 정원</span>
-  <a href="#plans">수강 구성 보기</a>
+  <div class="sticky-left">
+    <span class="sticky-tag">🔥 선착순 10명 마감 임박</span>
+    <span class="sticky-main">얼리버드 최대 32% 할인 중</span>
+  </div>
+  <a href="#plans">지금 수강 신청하기</a>
 </div>
-
-<script>
-const toggle = document.querySelector('#notes-toggle');
-toggle.addEventListener('click', () => {
-  const show = toggle.getAttribute('aria-expanded') !== 'true';
-  toggle.setAttribute('aria-expanded', show);
-  document.querySelector('#review-notes').hidden = !show;
-  toggle.textContent = show ? '검토 메모 숨기기' : '검토 메모 보기';
-});
-
-document.querySelectorAll('.plan-button').forEach(b => {
-  b.addEventListener('click', () => {
-    document.querySelectorAll('.plan-button').forEach(x => x.setAttribute('aria-pressed', x === b));
-    document.querySelector('#plan-confirm').textContent = '선택: ' + b.dataset.plan;
-  });
-});
-</script>
 
 </body>
 </html>
