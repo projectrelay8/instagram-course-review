@@ -1,41 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
-<title>지후 AI 인스타 수익화 실전반</title>
+<title>지후의 AI 인스타 수익화 실전반 | 9월 30일 시작</title>
+<meta name="description" content="보는 인스타에서 실제로 버는 인스타로. 단 41개 콘텐츠로 2.5만 팔로워를 모은 지후의 AI 인스타 수익화 실전반.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
   --lav:#B797FF;
-  --lav-light:#E6D9FF;
+  --lav-light:#EFE5FF;
   --brand:#8B5CF6;
-  --brand-glow:#8B5CF655;
+  --brand-glow:rgba(139, 92, 246, 0.35);
   --brand-dark:#6D3FE5;
   --white:#FAF7FF;
   --muted:#BEB8C7;
   --black:#09070D;
-  --card-bg:#150E20;
-  --card-border:#3A2750;
-  --red-dim:#FF6B6B;
-  --neon-pink:#FF1E76;
-  --neon-yellow:#FFF022;
-  --neon-green:#39FF88;
+  --soft-dark:#181120;
+  --card-dark:#1F152B;
+  --card-border:rgba(183, 151, 255, 0.22);
+  --light-bg:#FAF7FF;
+  --light-card:#FFFFFF;
+  --light-text:#09070D;
+  --light-muted:#7A6A8B;
 }
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:20px}
 body{
   margin:0;
-  background:#09070D;
+  background:#DED9E5;
   font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans KR',sans-serif;
   word-break:keep-all;
   color:var(--white);
   line-height:1.5;
 }
+
 button,a,summary{touch-action:manipulation}
 button{font:inherit;cursor:pointer}
-a{color:inherit}
-button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid #FFF;outline-offset:5px}
+a{color:inherit;text-decoration:none}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #FFF;outline-offset:5px}
 
 .page{
   max-width:720px;
@@ -43,54 +48,71 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   background:var(--black);
   container-type:inline-size;
   overflow:hidden;
-  box-shadow:0 0 50px #000000AA;
+  box-shadow:0 0 50px rgba(0,0,0,0.6);
 }
 
+/* 11일 오리지널 cqw 씬 시스템 */
 .scene{
-  padding:14cqw 6cqw;
+  padding:15cqw 6cqw;
   text-align:center;
   position:relative;
 }
+.scene.soft{
+  background:var(--soft-dark);
+}
+.scene.light{
+  background:var(--light-bg);
+  color:var(--light-text);
+}
 .scene h1,.scene h2,.scene h3,.scene p{margin:0}
 .scene h1{
-  font-size:11.5cqw;
+  font-size:11.8cqw;
   font-weight:900;
-  letter-spacing:-.06em;
-  line-height:1.25;
+  letter-spacing:-.065em;
+  line-height:1.2;
 }
 .scene h2{
   font-weight:900;
-  letter-spacing:-.055em;
-  line-height:1.32;
-  font-size:8.8cqw;
+  letter-spacing:-.06em;
+  line-height:1.3;
+  font-size:9.2cqw;
 }
 .scene h3{
-  font-size:6.6cqw;
-  letter-spacing:-.04em;
-  line-height:1.4;
+  font-size:6.8cqw;
+  letter-spacing:-.045em;
+  line-height:1.38;
 }
 .scene .sub{
-  font-size:5.2cqw;
+  font-size:5.4cqw;
   line-height:1.65;
   margin-top:6cqw;
-  letter-spacing:-.03em;
-  color:#DCD5E7;
+  letter-spacing:-.035em;
+  color:#DDD5E8;
+}
+.scene.light .sub{
+  color:#554366;
 }
 .scene .small{
-  font-size:2.8cqw;
-  line-height:1.5;
-  color:#7A6F8A;
-  margin-top:4cqw;
+  font-size:3.5cqw;
+  line-height:1.7;
+  color:var(--muted);
+  margin-top:5cqw;
   font-weight:400;
   letter-spacing:-.02em;
 }
+.scene.light .small{
+  color:var(--light-muted);
+}
 .scene .kicker{
   color:var(--lav);
-  font-size:4.2cqw;
-  letter-spacing:.05em;
-  font-weight:800;
+  font-size:4.4cqw;
+  letter-spacing:.04em;
+  font-weight:700;
+  margin-bottom:5.5cqw;
   text-transform:uppercase;
-  margin-bottom:4.5cqw;
+}
+.scene.light .kicker{
+  color:#79539D;
 }
 .lav{color:var(--lav)}
 .dim{color:var(--muted)}
@@ -99,1050 +121,451 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   display:inline-block;
   background:var(--brand);
   color:#fff;
-  padding:0 .2em;
+  padding:0 .18em;
   border-radius:.15em;
+  margin-top:.15em;
 }
 
 /* Hero Section */
 .hero{
   padding-top:14cqw;
   padding-bottom:14cqw;
-  background:radial-gradient(ellipse at 50% 60%,#4A1E7B 0,#140B22 55%,#09070D 100%);
+  background:radial-gradient(ellipse at 50% 65%,#421C6E 0,#140B22 55%,#09070D 100%);
 }
 .hero .start{
   display:inline-block;
   border:1px solid var(--lav);
-  padding:2cqw 4.2cqw;
+  padding:2.2cqw 4.5cqw;
   border-radius:100px;
   color:var(--lav);
-  font-size:3.9cqw;
+  font-size:4.2cqw;
   font-weight:700;
   margin-bottom:7cqw;
   background:rgba(183,151,255,0.08);
 }
-.hook-box{
-  background:rgba(21,14,32,0.85);
-  border:1px solid #4D3369;
+.hero-hook{
+  background:rgba(27,18,38,0.78);
+  border:1px solid var(--card-border);
   border-radius:4cqw;
-  padding:6.5cqw 4cqw;
+  padding:6cqw 5cqw;
   margin:0 auto 8cqw;
-  backdrop-filter:blur(10px);
-  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  backdrop-filter:blur(8px);
+  box-shadow:0 8px 32px rgba(0,0,0,0.5);
 }
 .hook-q{
-  font-size:5cqw;
+  font-size:4.8cqw;
   font-weight:700;
-  color:#ECE4F7;
+  color:#EDE5F8;
   line-height:1.55;
-  padding:1.5cqw 0;
-  border-bottom:1px dashed #3D2954;
+  padding:1.6cqw 0;
+  border-bottom:1px dashed rgba(183,151,255,0.22);
 }
 .hook-q:last-of-type{border-bottom:none}
 .hook-welcome{
-  margin-top:4cqw!important;
-  font-size:5.8cqw;
+  margin-top:3.5cqw!important;
+  font-size:5.6cqw;
   font-weight:900;
   color:var(--lav);
   letter-spacing:-.03em;
 }
 .main-title{
-  margin:6cqw 0 4cqw;
+  margin:5cqw 0 4cqw;
 }
 .hero .course{
   font-size:5.8cqw;
   font-weight:800;
   line-height:1.45;
-  color:#D3C4E8;
-  margin-top:4cqw;
+  margin-top:5cqw;
+  color:#D9CEE8;
+  letter-spacing:-.03em;
 }
 .hero-photo{
-  width:80%;
+  width:75%;
   height:auto;
   display:block;
+  object-fit:contain;
   margin:8cqw auto 0;
-  border-radius:4cqw;
-  border:1px solid #5A3A82;
-  box-shadow:0 15px 40px rgba(0,0,0,0.6);
+  border-radius:2cqw;
+  box-shadow:0 12px 35px rgba(0,0,0,0.6);
 }
 .hero .nameplate{
   position:relative;
   margin:4cqw auto 0;
-  width:92%;
+  width:87%;
   padding:3.8cqw 2cqw;
-  background:linear-gradient(135deg,#8B5CF6,#6D3FE5);
-  font-size:5.4cqw;
+  background:var(--brand);
+  font-size:6cqw;
   font-weight:900;
+  transform:rotate(-3deg);
+  box-shadow:0 10px 30px rgba(139,92,246,0.35);
   letter-spacing:-.03em;
-  transform:rotate(-2deg);
-  border-radius:2cqw;
-  box-shadow:0 12px 30px rgba(109,63,229,0.4);
 }
 .pill-row{
   display:flex;
   justify-content:center;
   gap:2.5cqw;
-  flex-wrap:wrap;
-  margin-top:8cqw;
+  margin-top:7cqw;
 }
 .pill-row span{
-  border:1px solid #775D9C;
-  background:rgba(255,255,255,0.04);
-  padding:2.4cqw 4cqw;
+  background:#241935;
+  border:1px solid #4F366E;
+  padding:2cqw 4cqw;
   border-radius:100px;
-  font-size:4.2cqw;
+  font-size:3.8cqw;
   font-weight:700;
-}
-.divider{
-  width:100%;
-  height:1px;
-  background:linear-gradient(90deg,transparent,#8B5CF6,transparent);
-  margin:0 auto;
+  color:var(--lav);
 }
 
-/* Image 1 Style: Pain Points & Misconception Box */
-.image1-style{
-  background:#0B0712;
-  padding:12cqw 6cqw;
-  text-align:center;
-}
-.top-capsule-row{
-  display:flex;
-  flex-direction:column;
-  gap:2.5cqw;
-  align-items:center;
-  margin-bottom:6cqw;
-}
-.top-capsule{
-  display:inline-flex;
-  align-items:center;
-  gap:2cqw;
-  background:#140C20;
-  border:1px solid #482C6D;
-  padding:2.5cqw 5cqw;
-  border-radius:100px;
-  font-size:4.4cqw;
-  font-weight:800;
-  color:#FFF;
-  box-shadow:0 4px 15px rgba(0,0,0,0.4);
-}
-.top-capsule span{
-  color:var(--neon-yellow);
-}
-.dots-divider{
-  font-size:7cqw;
-  letter-spacing:1cqw;
-  color:#8253D8;
-  margin:3cqw 0;
-  line-height:1;
-}
-.alert-banner{
-  display:inline-block;
-  background:var(--neon-pink);
-  color:#FFF;
-  font-size:6.4cqw;
-  font-weight:900;
-  padding:2.5cqw 5cqw;
-  transform:skewX(-5deg);
-  margin:2cqw 0 6cqw;
-  box-shadow:0 8px 25px rgba(255,30,118,0.4);
-  letter-spacing:-.03em;
-}
-.alert-banner span{
-  display:block;
-  font-size:4.2cqw;
-  color:#FFE2EE;
-  font-weight:800;
-  margin-bottom:.5cqw;
-  letter-spacing:0;
-}
-.pain-box-list{
-  display:flex;
-  flex-direction:column;
-  gap:3cqw;
-  margin:4cqw 0 7cqw;
-}
-.pain-box-item{
-  background:#1B1425;
-  border:1px solid #3B2A4E;
-  border-radius:3cqw;
-  padding:4cqw 4.5cqw;
-  font-size:4.6cqw;
-  font-weight:700;
-  color:#D3C7E2;
-  text-align:center;
-}
-.pain-box-item strong{
-  color:var(--neon-yellow);
-}
-.finger-point{
-  font-size:12cqw;
-  line-height:1;
-  margin:3cqw 0 1cqw;
-  display:block;
-}
-.reassure-title{
-  font-size:7.5cqw;
-  font-weight:900;
-  line-height:1.35;
-  margin-bottom:6cqw;
-}
-.reassure-title em{
-  color:var(--neon-yellow);
-  font-style:normal;
-  border-bottom:3px solid var(--neon-yellow);
-}
-.vs-comparison{
+/* 2열 패러다임 전환 카드 (착각 vs 본질) */
+.paradigm-grid{
   display:grid;
-  grid-template-columns:1fr auto 1fr;
-  gap:2.5cqw;
-  align-items:center;
-  margin-top:5cqw;
+  grid-template-columns:1fr;
+  gap:4cqw;
+  margin-top:7cqw;
+  text-align:left;
 }
-.vs-card{
-  background:#170E24;
-  border:1px solid #3E2758;
+.paradigm-card{
   border-radius:3.5cqw;
-  padding:5cqw 3cqw;
-  text-align:center;
+  padding:5.5cqw 5cqw;
 }
-.vs-card.winner{
-  background:linear-gradient(145deg,#2D124B,#1A0A2E);
-  border:2px solid var(--lav);
-  box-shadow:0 10px 30px rgba(139,92,246,0.3);
+.paradigm-card.illusion{
+  background:#1E1428;
+  border:1px solid #4A305A;
+  color:#BEB3C9;
 }
-.vs-icon{
-  font-size:10cqw;
-  margin-bottom:2.5cqw;
-  display:block;
+.paradigm-card.reality{
+  background:#26173B;
+  border:1.5px solid var(--lav);
+  box-shadow:0 8px 25px rgba(139,92,246,0.25);
+  color:#FAF7FF;
 }
-.vs-label{
-  font-size:4.3cqw;
-  font-weight:700;
-  color:#9E90B0;
-  line-height:1.4;
-}
-.vs-card.winner .vs-label{
-  color:var(--neon-yellow);
-  font-weight:900;
-  font-size:4.6cqw;
-}
-.vs-sign{
-  font-size:8cqw;
-  font-weight:900;
-  color:var(--lav);
-}
-
-/* Image 2 Style: Laurels, Credentials & Slot Counter */
-.image2-style{
-  background:radial-gradient(ellipse at 50% 50%,#280E38 0,#09070D 80%);
-  padding:14cqw 6cqw;
-}
-.laurel-list{
-  display:flex;
-  flex-direction:column;
-  gap:4.5cqw;
-  margin:7cqw 0 9cqw;
-}
-.laurel-item{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:3cqw;
-}
-.laurel-icon{
-  font-size:8cqw;
-  color:var(--lav);
-  opacity:.85;
-}
-.laurel-content{
-  text-align:center;
-}
-.laurel-tag{
+.p-tag{
   display:inline-block;
-  background:var(--brand);
-  color:#FFF;
-  font-size:3.2cqw;
+  font-size:3.5cqw;
   font-weight:800;
-  padding:.8cqw 2.5cqw;
+  padding:1cqw 2.8cqw;
   border-radius:100px;
-  margin-bottom:1cqw;
-}
-.laurel-text{
-  font-size:5.6cqw;
-  font-weight:900;
-  letter-spacing:-.03em;
-  color:#FFF;
-}
-.laurel-text strong{
-  color:var(--lav);
-}
-
-/* Slot Counter */
-.counter-section{
-  margin:6cqw 0;
-  text-align:center;
-}
-.counter-digits{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:1.5cqw;
   margin-bottom:3cqw;
 }
-.digit-box{
-  background:#FFF;
-  color:var(--neon-pink);
-  font-size:11cqw;
-  font-weight:900;
-  width:14cqw;
-  height:18cqw;
-  display:grid;
-  place-items:center;
-  border-radius:2.5cqw;
-  box-shadow:0 8px 25px rgba(0,0,0,0.5);
-}
-.digit-comma{
-  font-size:11cqw;
-  font-weight:900;
-  color:#FFF;
-  line-height:1;
-  padding-top:4cqw;
-}
-.counter-label{
+.illusion .p-tag{background:#38223D;color:#E598A8;}
+.reality .p-tag{background:var(--brand);color:#FFF;}
+.paradigm-card h3{
   font-size:5.5cqw;
-  font-weight:900;
-  color:#FFF;
-  letter-spacing:-.02em;
+  line-height:1.4;
+  margin-bottom:2cqw;
+  letter-spacing:-.03em;
 }
+.illusion h3{color:#E5D6E8;}
+.reality h3{color:#FFF;}
+.paradigm-card p{
+  font-size:4cqw;
+  line-height:1.65;
+  color:#BEB0CD;
+}
+.reality p{color:#DDD2EB;}
 
-/* Story Section */
-.story-scene{
-  background:#120B1C;
-  border-top:1px solid #2D1A45;
-  border-bottom:1px solid #2D1A45;
-}
-.story-card{
-  background:linear-gradient(160deg,#1D122B,#12091D);
-  border:1px solid #4D2E73;
-  border-radius:4.5cqw;
-  padding:7cqw 5.5cqw;
-  margin:7cqw auto 0;
-  text-align:left;
-  box-shadow:0 15px 35px rgba(0,0,0,0.4);
-}
-.story-lead{
-  font-size:5.6cqw;
-  line-height:1.55;
-  color:#FAF4FF;
-}
-.story-lead strong{
-  color:var(--red-dim);
-  font-size:1.15em;
-  font-weight:900;
-}
-.story-divider{
-  height:1px;
-  background:#382154;
-  margin:5cqw 0;
-}
-.story-body{
-  font-size:4.5cqw;
-  line-height:1.75;
-  color:#C9BFD6;
-}
-.story-body strong{
-  color:var(--white);
-  font-weight:800;
-}
-.story-highlight{
-  margin:6cqw 0;
-  padding:5cqw 4cqw;
-  background:linear-gradient(135deg,#36165D,#230C40);
+/* 강사 스토리 섹션 */
+.story-box{
+  background:#1B1225;
   border-left:4px solid var(--lav);
-  border-radius:0 3cqw 3cqw 0;
+  border-radius:0 3.5cqw 3.5cqw 0;
+  padding:6cqw 5cqw;
+  margin-top:7cqw;
+  text-align:left;
 }
-.story-highlight p{
-  font-size:5.2cqw;
-  line-height:1.5;
-  font-weight:800;
+.story-box p{
+  font-size:4.3cqw;
+  line-height:1.8;
+  color:#DDD5E8;
+  margin-bottom:4cqw;
+  letter-spacing:-.025em;
+}
+.story-box p strong{
   color:#FFF;
+  background:rgba(183,151,255,0.18);
+  padding:0 .2em;
+  border-radius:2px;
 }
-.story-highlight strong{
-  color:var(--lav);
-}
-.story-footer{
-  font-size:4.4cqw;
-  line-height:1.7;
-  color:#DDD3E9;
-}
-.story-footer strong{
-  color:var(--lav);
-  font-weight:800;
-}
+.story-box p:last-child{margin-bottom:0}
 
-/* Proof Section */
-.proof-scene{
-  padding-top:12cqw;
-  padding-bottom:12cqw;
-}
-.proof-scene h2{
-  font-size:8.6cqw;
-  line-height:1.3;
-}
-.arrows{
-  position:relative;
-  height:20cqw;
-  width:20cqw;
-  margin:8cqw auto 5cqw;
-}
-.arrows i{
-  position:absolute;
-  left:15%;
-  width:70%;
-  height:70%;
-  border-right:5cqw solid var(--brand);
-  border-bottom:5cqw solid var(--brand);
-  transform:rotate(45deg);
-  top:-4cqw;
-  opacity:.3;
-}
-.arrows i:nth-child(2){top:2cqw;opacity:.65}
-.arrows i:nth-child(3){top:8cqw;opacity:1}
-
+/* 증명 데이터 섹션 (Meta API) */
 .evidence{
-  background:#FFF;
-  color:#1F132F;
-  padding:6.5cqw 4cqw;
-  margin:auto;
-  width:94%;
-  text-align:center;
+  background:#1B1225;
+  border:1px solid var(--card-border);
   border-radius:4cqw;
-  border:4px solid var(--lav);
-  box-shadow:0 15px 40px rgba(139,92,246,0.3);
+  padding:6cqw 4cqw;
+  margin-top:7cqw;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
 .evidence .label{
-  font-size:4.6cqw;
-  font-weight:800;
-  color:#6B4B96;
+  font-size:4cqw;
+  color:var(--lav);
+  font-weight:700;
+  letter-spacing:.05em;
+  margin-bottom:3cqw;
 }
 .evidence-metrics{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:2.5cqw;
-  margin:4cqw 0 2cqw;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:3cqw;
+  margin:4cqw 0;
 }
-.m-box{
-  display:flex;
-  flex-direction:column;
-  padding:3cqw 3.5cqw;
-  background:#F5EEFF;
+.e-metric{
+  background:#140C1D;
+  border:1px solid #3B2652;
   border-radius:2.5cqw;
-  flex:1;
+  padding:4cqw 2cqw;
 }
-.m-box.highlight-box{
-  background:linear-gradient(135deg,#6D3FE5,#5026B8);
-  color:white;
+.e-metric-full{
+  grid-column:1 / -1;
+  background:linear-gradient(135deg,#23143B,#170C26);
+  border:1px solid var(--lav);
 }
-.m-val{
-  font-size:7.2cqw;
+.e-val{
+  font-size:8.8cqw;
   font-weight:900;
-  letter-spacing:-.05em;
+  color:#FFF;
   line-height:1.2;
+  letter-spacing:-.04em;
 }
-.m-lab{
-  font-size:3.3cqw;
-  font-weight:700;
-  margin-top:1cqw;
-  opacity:.85;
+.e-val small{font-size:4.2cqw;color:var(--lav);font-weight:700;margin-left:1cqw}
+.e-lab{
+  font-size:3.4cqw;
+  color:#BEB0CD;
+  margin-top:1.5cqw;
+  display:block;
 }
-.m-div{
-  font-size:7cqw;
-  font-weight:900;
-  color:#8B5CF6;
+.evidence-sub{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2.5cqw;
+  margin-top:3cqw;
+  font-size:3.5cqw;
+  color:#DDD5E8;
+  text-align:left;
+  background:#140C1D;
+  padding:3.5cqw;
+  border-radius:2.5cqw;
 }
+.evidence-sub strong{color:var(--lav);display:block;font-size:3.8cqw;margin-bottom:.8cqw}
 .evidence .source{
-  font-size:2.8cqw;
-  margin-top:3.5cqw;
-  line-height:1.4;
-  color:#867599;
-  font-weight:500;
-}
-
-.post{
-  width:92%;
-  margin:8cqw auto 0;
-  background:transparent;
-}
-.post img{
-  width:100%;
-  height:auto;
-  display:block;
-  border-radius:4cqw;
-  border:1px solid #442B5E;
-}
-.post figcaption{
   margin-top:4cqw;
-  background:#FFF;
-  color:#211432;
-  border-radius:3.5cqw;
-  padding:5.5cqw 4cqw;
-  font-size:4.8cqw;
-  line-height:1.5;
-  text-align:center;
-  box-shadow:0 10px 30px rgba(0,0,0,0.3);
-}
-.post strong{
-  font-size:9.5cqw;
-  color:#6D3FE5;
-  display:block;
-  letter-spacing:-.05em;
-  margin:1.5cqw 0;
-  font-weight:900;
-}
-.post a{
-  font-size:3.8cqw;
-  color:#6D3FE5;
-  font-weight:700;
-  text-underline-offset:4px;
-  display:inline-block;
-  margin-top:2cqw;
+  font-size:3.2cqw;
+  color:#8F7E9F;
 }
 
-/* Almond Style Comparison (~에는 없습니다 / ~에는 있습니다) */
-.amond-style{
-  background:radial-gradient(ellipse at 50% 30%,#30164E 0,#09070D 70%);
-  padding-top:14cqw;
-  padding-bottom:14cqw;
-}
-.compare-container{
-  display:flex;
-  flex-direction:column;
-  gap:6cqw;
-  margin-top:8cqw;
+/* 아몬드 스타일 대비 섹션 (~에는 없습니다 vs ~에는 있습니다) */
+.compare-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:4.5cqw;
+  margin-top:7cqw;
+  text-align:left;
 }
 .compare-card{
-  border-radius:4cqw;
-  padding:6.5cqw 5cqw;
-  text-align:left;
-  box-shadow:0 12px 35px rgba(0,0,0,0.5);
+  border-radius:3.5cqw;
+  padding:6cqw 5cqw;
+  position:relative;
+  overflow:hidden;
 }
-.without-card{
-  background:#140D1E;
-  border:1px solid #4D263B;
+.compare-card.without{
+  background:#181120;
+  border:1px solid #3E2954;
 }
-.with-card{
-  background:linear-gradient(145deg,#23143A,#160B28);
-  border:2px solid var(--lav);
-  box-shadow:0 15px 40px rgba(139,92,246,0.25);
+.compare-card.with{
+  background:#231438;
+  border:1.5px solid var(--lav);
+  box-shadow:0 10px 30px rgba(139,92,246,0.22);
 }
-.compare-badge{
-  display:inline-block;
-  font-size:4.2cqw;
+.compare-title{
+  font-size:4.8cqw;
   font-weight:900;
-  padding:1.8cqw 3.5cqw;
-  border-radius:1.5cqw;
   margin-bottom:5cqw;
+  letter-spacing:-.03em;
 }
-.no-badge{
-  background:#3A1420;
-  color:var(--red-dim);
-  border:1px solid #732338;
-}
-.yes-badge{
-  background:linear-gradient(135deg,#8B5CF6,#6D3FE5);
-  color:#FFF;
-}
+.without .compare-title{color:#E598A8}
+.with .compare-title{color:var(--lav)}
 .compare-list{
   list-style:none;
   padding:0;
   margin:0;
 }
 .compare-list li{
-  padding:3.5cqw 0;
-  border-bottom:1px solid #2B1C3D;
+  position:relative;
+  padding-left:6cqw;
+  margin-bottom:4.5cqw;
 }
-.compare-list li:last-child{
-  border-bottom:none;
-  padding-bottom:0;
+.compare-list li:last-child{margin-bottom:0}
+.compare-list li::before{
+  position:absolute;
+  left:0;
+  top:0;
+  font-size:4.2cqw;
+  font-weight:900;
 }
-.compare-list li strong{
-  display:block;
-  font-size:5.2cqw;
-  letter-spacing:-.03em;
-  margin-bottom:1cqw;
+.without .compare-list li::before{
+  content:'✕';
+  color:#E598A8;
 }
-.without-card strong{
-  color:#F2B2B2;
-}
-.with-card strong{
+.with .compare-list li::before{
+  content:'✓';
   color:var(--lav);
 }
-.compare-list li p{
-  font-size:4cqw;
+.compare-list strong{
+  display:block;
+  font-size:4.3cqw;
+  font-weight:800;
+  color:#FAF7FF;
+  margin-bottom:1cqw;
+  letter-spacing:-.02em;
+}
+.without .compare-list strong{color:#E1D7E8}
+.compare-list p{
+  font-size:3.7cqw;
   line-height:1.6;
-  color:#B6A7C8;
+  color:#A99AB8;
+  margin:0;
 }
-.with-card p{
-  color:#DDD3E9;
-}
+.with .compare-list p{color:#DDD2EC}
 
-/* Studio Unicorn Style (고객의 현실 고민 Before & After) */
-.unicorn-style{
-  background:#10091B;
-  border-top:1px solid #28173E;
-  border-bottom:1px solid #28173E;
-}
-.concern-container{
-  margin-top:8cqw;
-  display:flex;
-  flex-direction:column;
-  gap:6cqw;
+/* 스튜디오유니콘 스타일 Before & After */
+.concern-list{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:4.5cqw;
+  margin-top:7cqw;
+  text-align:left;
 }
 .concern-card{
-  background:linear-gradient(145deg,#1B112B,#12091D);
-  border:1px solid #432A60;
+  background:#FFF;
+  border:1px solid #E4DAED;
   border-radius:4cqw;
   padding:6cqw 5cqw;
-  text-align:left;
-  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+  box-shadow:0 6px 25px rgba(56,33,79,0.06);
 }
-.concern-before{
-  background:#1F132D;
-  border:1px solid #3B2452;
-  border-radius:3cqw;
-  padding:4.5cqw;
-}
-.concern-before h3{
-  font-size:5.2cqw;
-  color:#F2B8B8;
-  margin:2cqw 0;
-  font-weight:800;
-}
-.concern-before p{
-  font-size:4cqw;
-  line-height:1.6;
-  color:#AA9BBF;
-}
-.concern-arrow{
-  text-align:center;
-  font-size:6cqw;
-  color:var(--lav);
-  padding:2.5cqw 0;
-  font-weight:900;
-}
-.concern-after{
-  background:linear-gradient(135deg,#321854,#200C39);
-  border:1px solid #7E51BA;
-  border-radius:3cqw;
-  padding:5cqw 4.5cqw;
-}
-.concern-after h4{
-  font-size:5.2cqw;
-  margin:2cqw 0;
-  font-weight:800;
-  color:#FFF;
-}
-.concern-after h4 strong{
-  color:var(--lav);
-}
-.concern-after p{
-  font-size:4.1cqw;
-  line-height:1.65;
-  color:#E7DDF4;
-}
-.c-tag{
+.c-badge{
   display:inline-block;
-  font-size:3.2cqw;
+  font-size:3.4cqw;
   font-weight:800;
-  padding:1cqw 2.5cqw;
+  padding:1cqw 3cqw;
   border-radius:100px;
-}
-.before-tag{
-  background:#431622;
-  color:var(--red-dim);
-}
-.after-tag{
-  background:#6D3FE5;
-  color:#FFF;
-}
-
-/* Account Mockup & Targets */
-.account-art{
-  position:relative;
-  padding:6cqw 0 10cqw;
-  margin:0 auto 6cqw;
-  min-height:90cqw;
-  background:radial-gradient(ellipse at center,#502E7A55,transparent 65%);
-}
-.phone-shell{
-  width:78%;
-  margin:auto;
-  background:#100B19;
-  border:1cqw solid #6E5A82;
-  border-radius:7cqw;
-  padding:2cqw;
-  box-shadow:3cqw 5cqw 10cqw rgba(0,0,0,0.6);
-  transform:rotate(-4deg);
-  text-align:left;
-}
-.phone-screen{
-  background:#FFF;
-  border-radius:5.2cqw;
-  padding:4cqw 3.5cqw;
-  color:#20152C;
-  overflow:hidden;
-}
-.phone-island{
-  width:32%;
-  height:2.8cqw;
-  background:#16101F;
-  border-radius:10px;
-  margin:-1cqw auto 4cqw;
-}
-.phone-head{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  font-size:4cqw;
-  font-weight:800;
-}
-.profile-intro{
-  display:flex;
-  align-items:center;
-  gap:3cqw;
-  margin:4cqw 0 2.5cqw;
-}
-.profile-avatar.instagram-avatar{
-  padding:.6cqw;
-  width:15cqw;
-  height:15cqw;
-  flex-shrink:0;
-  background:linear-gradient(35deg,#E8A1B9,#A978E0,#704AB3);
-  border-radius:50%;
-}
-.instagram-avatar svg{
-  width:100%;
-  height:100%;
-  border:2px solid white;
-  border-radius:50%;
-}
-.profile-identity b{font-size:3.8cqw}
-.profile-identity small{display:block;font-size:2.6cqw;color:#73677C;margin-top:.8cqw}
-.profile-bio{font-size:3.1cqw;line-height:1.6}
-.profile-bio b{font-size:3.2cqw}
-.profile-bio p{font-size:3cqw!important;line-height:1.55!important;margin:1cqw 0!important}
-.profile-bio>span{color:#6D3FE5;font-size:3.1cqw;font-weight:700}
-.ig-buttons{display:flex;gap:1.5cqw;margin-top:3cqw}
-.ig-buttons span{flex:1;background:#F0EDF3;padding:1.4cqw 0;border-radius:1.5cqw;font-size:2.9cqw;text-align:center;font-weight:700}
-.ig-highlights{display:flex;gap:3.5cqw;margin-top:3.5cqw;padding-left:1cqw}
-.ig-highlights>span{display:flex;align-items:center;flex-direction:column;gap:1cqw;font-size:2.6cqw}
-.ig-highlights i{width:9.5cqw;height:9.5cqw;display:grid;place-items:center;border:1px solid #D5CDD9;box-shadow:inset 0 0 0 2px #FFF;background:#EADFF5;border-radius:50%;font-size:4.2cqw;font-style:normal}
-.ig-tabs{display:flex;justify-content:space-around;margin-top:3.5cqw;border-bottom:1px solid #E2DEE7;font-size:4.5cqw;padding-bottom:1cqw}
-.ig-tabs b{border-bottom:2px solid #21162D;padding:0 5cqw}
-.profile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6cqw;margin-top:2cqw}
-.profile-grid div{aspect-ratio:1/1.15;background:#E9DDF9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1cqw;font-size:3cqw;font-weight:700}
-.profile-grid div:nth-child(2n){background:#C0A0EC}
-.profile-grid div:nth-child(3n){background:#33213F;color:white}
-.profile-grid i{font-size:5.5cqw;font-style:normal}
-.ig-nav{font-size:4.5cqw;display:flex;justify-content:center;letter-spacing:3cqw;white-space:nowrap;padding-top:2.5cqw;padding-left:2cqw}
-
-.account-note{
-  position:absolute;
-  right:0;
-  bottom:6cqw;
-  width:68%;
-  padding:3.8cqw;
-  background:#FAF6FF;
-  color:#33233F;
-  border:2px solid #C5A5ED;
-  border-radius:3cqw;
-  text-align:left;
-  box-shadow:0 12px 35px rgba(0,0,0,0.5);
-  transform:rotate(3deg);
-}
-.account-note small{font-size:3.2cqw;color:#7A589F;display:block;margin-bottom:.8cqw;font-weight:700}
-.account-note b{font-size:4.6cqw;line-height:1.45;color:#261239}
-
-.question-list{margin-top:8cqw}
-.question{
-  font-size:6.2cqw;
-  font-weight:800;
-  line-height:1.45;
-  padding:5.5cqw 0;
-  border-bottom:1px solid #362547;
-}
-.question:last-child{border-bottom:none}
-.question .check{display:block;font-size:7cqw;margin-bottom:2cqw}
-.answer{
-  font-size:8cqw;
-  line-height:1.4;
-  font-weight:900;
-  letter-spacing:-.05em;
-  margin-top:9cqw!important;
-}
-
-/* Light / Soft Scene Variations */
-.soft{background:#150D21}
-.light{background:#EFE5FF;color:#211332}
-.light .kicker,.light .lav{color:#6D3FE5}
-.light .small{color:#6A587A}
-.light .sub{color:#483355}
-.white{background:white;color:#211332}
-
-.mini-flow{
-  display:flex;
-  gap:2cqw;
-  margin:7cqw 0;
-  align-items:center;
-}
-.flow-tile{
-  flex:1;
-  min-width:0;
-  padding:4.5cqw 1cqw;
-  background:rgba(255,255,255,0.85);
-  border:1px solid #D1BCEB;
-  border-radius:3cqw;
-  box-shadow:0 6px 15px rgba(100,65,147,0.08);
-}
-.flow-tile span{display:block;font-size:8.5cqw;color:#6D3FE5;margin-bottom:1.5cqw}
-.flow-tile b{font-size:4.5cqw;color:#27143D}
-.flow-arrow{color:#9060BB;font-size:5cqw;font-weight:900}
-
-/* Target Routes */
-.route-box{
-  padding:6.5cqw 4.5cqw 5.5cqw;
-  margin-top:7cqw;
-  border:1px solid #4D3469;
-  border-radius:4cqw;
-  background:linear-gradient(145deg,#1D112B,#10091B);
-  text-align:left;
-}
-.route-box .tag{
-  display:inline-block;
-  font-size:4cqw;
-  color:var(--lav);
-  font-weight:800;
-  background:#321A4B;
-  padding:1.2cqw 3cqw;
-  border-radius:100px;
+  background:#F2EAF9;
+  color:#79539D;
   margin-bottom:3cqw;
 }
-.route-box h3{font-size:6.2cqw;line-height:1.35;margin-bottom:2.5cqw}
-.route-box p{font-size:4.6cqw;line-height:1.65;color:#D3C8E2}
-.route-box .route{
-  font-size:4.8cqw;
-  color:var(--lav);
-  font-weight:800;
-  margin-top:5cqw;
-  text-align:center;
-  display:block;
-  padding:2.5cqw;
-  background:#26143C;
-  border-radius:2cqw;
-}
-
-.mail-stack{margin:6cqw 0 4cqw}
-.mail-card{
-  background:#FFF;
-  color:#21142F;
-  border:1px solid #DECEE9;
-  border-radius:3cqw;
-  padding:3.8cqw;
-  margin:2.5cqw 0;
-  display:grid;
-  grid-template-columns:8cqw 1fr;
-  gap:2.5cqw;
-  box-shadow:0 8px 18px rgba(0,0,0,0.25);
-}
-.mail-card:nth-child(2){transform:translateX(-1.5cqw) rotate(-1.5deg)}
-.mail-card:nth-child(3){transform:translateX(1.5cqw) rotate(1deg)}
-.mail-icon{
-  background:#EBDDFF;
-  color:#6D3FE5;
-  border-radius:2cqw;
-  display:grid;
-  place-items:center;
-  height:8cqw;
-  overflow:hidden;
-}
-.mail-icon svg{width:100%;height:100%}
-.mail-card small{font-size:3.1cqw;color:#776685;display:block;margin-bottom:.8cqw;font-weight:600}
-.mail-card b{font-size:4.2cqw;line-height:1.45;display:block;color:#241238}
-.mail-card p{font-size:3.5cqw!important;color:#695B74!important;margin:.8cqw 0 0!important;line-height:1.45!important}
-
-/* Direct DM (Fix #4: dark black text for customer bubbles) */
-.dm-window{
-  margin:6cqw auto 4cqw;
-  background:#FFF;
-  color:#2D1D3A;
-  border:1px solid #D4BEEB;
-  border-radius:4cqw;
-  padding:0;
-  box-shadow:0 10px 30px rgba(0,0,0,0.3);
-  text-align:left;
-  overflow:hidden;
-}
-.dm-head{
-  padding:3cqw 3.5cqw;
-  border-bottom:1px solid #EBDFF4;
-  font-size:4cqw;
-  font-weight:800;
-  display:flex;
-  align-items:center;
-  gap:2cqw;
-}
-.dm-head .dm-back{font-size:6.5cqw;font-weight:400;color:#6D3FE5}
-.dm-head .dm-logo{width:8cqw;height:8cqw;border-radius:50%;overflow:hidden}
-.dm-head .dm-logo svg{width:100%;height:100%}
-.dm-head b{font-size:3.8cqw;display:block;color:#1A1A1A}
-.dm-head small{font-size:2.8cqw;color:#666;font-weight:400;display:block}
-.dm-head .dm-actions{margin-left:auto;color:#7B688D}
-.dm-date{font-size:2.8cqw!important;text-align:center;color:#888!important;margin:4cqw 0 2.5cqw!important}
-.dm-bubble{
-  margin:2cqw 8cqw 0 3.5cqw!important;
-  max-width:80%;
-  border-radius:4cqw 4cqw 4cqw 0;
-  background:#EBE6F2;
-  padding:3.2cqw;
-  font-size:3.9cqw!important;
-  line-height:1.55!important;
-  color:#111111!important;
-  font-weight:600;
-}
-.dm-bubble.outgoing{
-  margin:3cqw 3.5cqw 3cqw auto!important;
-  background:#8053DF;
-  color:white!important;
-  border-radius:4cqw 4cqw 0 4cqw;
-  font-weight:500;
-}
-.booking{
-  margin:3.5cqw;
-  padding:2.8cqw;
-  border:1px solid #CEB6E9;
-  border-radius:2cqw;
-  text-align:center;
-  font-size:3.8cqw;
-  font-weight:700;
-  color:#6D3FE5;
-  background:#FBF8FF;
-}
-
-/* Image 3 Style: Schedule Calendar & Timetable */
-.schedule-section{
-  background:#09070D;
-  padding:12cqw 5cqw;
-}
-.schedule-box{
-  background:#FFF;
-  color:#1A1A1A;
-  border-radius:4.5cqw;
-  padding:6cqw 5cqw;
-  text-align:left;
-  margin-bottom:6cqw;
-  box-shadow:0 12px 35px rgba(0,0,0,0.5);
-}
-.schedule-box h3{
-  font-size:6.8cqw;
+.concern-q{
+  font-size:5.6cqw;
   font-weight:900;
-  border-bottom:2px solid #E5DFEC;
-  padding-bottom:3cqw;
+  color:#2A193B;
+  letter-spacing:-.04em;
   margin-bottom:4cqw;
-  color:#1F132F;
+  line-height:1.35;
 }
-.schedule-rows{
-  display:flex;
-  flex-direction:column;
+.c-box{
+  border-radius:2.5cqw;
+  padding:3.8cqw 4cqw;
+  margin-bottom:2.5cqw;
+  font-size:3.9cqw;
+  line-height:1.6;
+}
+.c-box:last-child{margin-bottom:0}
+.c-before{
+  background:#F6F4F8;
+  color:#6B5E78;
+  border:1px solid #EAE5EF;
+}
+.c-before span{
+  display:inline-block;
+  font-size:3cqw;
+  font-weight:800;
+  color:#9485A3;
+  margin-right:1.5cqw;
+}
+.c-after{
+  background:#F5EEFD;
+  border:1px solid #D5BFF2;
+  color:#3F235E;
+}
+.c-after strong{
+  display:block;
+  color:#743ECD;
+  font-size:4.1cqw;
+  margin-bottom:.6cqw;
+}
+
+/* 3D 일러스트 비주얼 (11일 정본) */
+.art-visual{
+  margin:7cqw auto;
+  width:90%;
+  aspect-ratio:3/2;
+  border-radius:4cqw;
+  overflow:hidden;
+  box-shadow:0 12px 35px rgba(0,0,0,0.5);
+  background:#140C1D;
+}
+.art-visual img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.art-visual.square{
+  width:72%;
+  aspect-ratio:1/1;
+  box-shadow:0 10px 30px rgba(56,33,79,0.12);
+  background:none;
+}
+
+/* 3단계 프로세스 바 */
+.step-bar{
+  margin-top:6cqw;
+  display:grid;
   gap:2.5cqw;
 }
-.schedule-row{
-  display:grid;
-  grid-template-columns:20cqw 1fr;
+.step-pill{
+  background:#1C1328;
+  border:1px solid #3E2954;
+  padding:4.2cqw 4cqw;
+  border-radius:3cqw;
+  text-align:left;
+  display:flex;
   align-items:center;
   gap:3cqw;
 }
-.schedule-badge{
-  background:#000;
-  color:#FFF;
-  font-size:3.8cqw;
-  font-weight:800;
-  padding:1.8cqw 0;
-  text-align:center;
-  border-radius:1.5cqw;
-}
-.schedule-info{
-  font-size:4.4cqw;
-  font-weight:700;
-  color:#2B2138;
-}
-.schedule-info strong{
-  color:var(--neon-pink);
+.step-num{
+  font-size:4cqw;
   font-weight:900;
-}
-
-/* Mini Calendar Graphic */
-.cal-container{
-  background:#140C20;
-  border:1px solid #3B2356;
-  border-radius:4cqw;
-  padding:6cqw 4cqw;
-  margin-bottom:6cqw;
-}
-.cal-title{
-  font-size:5.5cqw;
-  font-weight:900;
-  color:#FFF;
-  margin-bottom:4cqw;
-}
-.cal-grid{
-  display:grid;
-  grid-template-columns:repeat(7,1fr);
-  gap:1.5cqw;
-  text-align:center;
-}
-.cal-head{
-  font-size:3.6cqw;
-  font-weight:800;
-  color:#8D7C9F;
-  padding-bottom:2cqw;
-}
-.cal-head.sun{color:#FF6B6B}
-.cal-head.sat{color:#6BA6FF}
-.cal-day{
-  aspect-ratio:1;
+  color:var(--lav);
+  background:#2D1C42;
+  width:8cqw;
+  height:8cqw;
+  border-radius:50%;
   display:grid;
   place-items:center;
-  font-size:4.2cqw;
-  font-weight:700;
-  color:#D6CDE2;
-  border-radius:50%;
+  flex-shrink:0;
 }
-.cal-day.sun{color:#FF8E8E}
-.cal-day.sat{color:#90BAFF}
-.cal-day.active{
-  background:var(--neon-pink);
+.step-text b{
+  display:block;
+  font-size:4.3cqw;
   color:#FFF;
-  font-weight:900;
-  box-shadow:0 0 15px var(--neon-pink);
+  letter-spacing:-.02em;
 }
-.cal-divider{
-  height:1px;
-  background:#2D1942;
-  margin:5cqw 0;
+.step-text small{
+  font-size:3.4cqw;
+  color:#BEB0CD;
 }
 
-/* Curriculum Cards */
+/* 커리큘럼 모듈 카드 (11일 정본 라이트) */
 #curriculum{background:#F6F2FB}
 .module-card{
   position:relative;
   background:#FFF;
   border:1px solid #E2D8ED;
   border-radius:4.5cqw;
-  padding:6cqw 5.5cqw;
-  margin-top:6.5cqw;
+  padding:6cqw;
+  margin-top:6cqw;
   text-align:left;
-  box-shadow:0 3cqw 7cqw rgba(56,33,79,0.08);
+  box-shadow:0 3cqw 7cqw rgba(56,33,79,0.06);
   color:#2A193B;
 }
 .module-meta{
@@ -1151,482 +574,300 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   align-items:center;
   font-size:3.8cqw;
   color:#88749B;
+  margin-bottom:3cqw;
 }
-.module-meta b{font-size:4.2cqw;letter-spacing:.05em;color:#79539D;font-weight:800}
-.module-meta span{border:1px solid #E6DAF1;padding:1.2cqw 2.5cqw;border-radius:100px;font-weight:600}
-.module-lead{
-  display:grid;
-  grid-template-columns:1fr 24cqw;
-  align-items:center;
-  margin:3cqw 0 4cqw;
-  gap:2cqw;
+.module-meta b{
+  font-size:4.2cqw;
+  letter-spacing:.05em;
+  color:#79539D;
 }
-.module-lead h3{font-size:5.8cqw;line-height:1.35;letter-spacing:-.04em}
-.module-icon{width:100%;height:auto;display:block}
-.module-details{border-top:1px solid #E9E1F0;padding-top:3.5cqw}
-.module-details h4{font-size:3.4cqw;letter-spacing:.08em;color:#8F72A4;margin:0 0 2.5cqw}
-.module-details ul{padding:0;margin:0;list-style:none}
+.module-meta span{
+  border:1px solid #E6DAF1;
+  padding:1.2cqw 2.6cqw;
+  border-radius:100px;
+  white-space:nowrap;
+  font-size:3.4cqw;
+}
+.module-card h3{
+  font-size:5.8cqw;
+  line-height:1.4;
+  letter-spacing:-.045em;
+  color:#201130;
+  margin-bottom:4cqw;
+}
+.module-details{
+  border-top:1px solid #EFE8F5;
+  padding-top:4cqw;
+}
+.module-details ul{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
 .module-details li{
   position:relative;
-  padding:1.6cqw 0 1.6cqw 3.5cqw;
+  padding:1.5cqw 0 1.5cqw 3.5cqw;
   font-size:4.1cqw;
-  line-height:1.6;
+  line-height:1.65;
   color:#5D4C6C;
+  letter-spacing:-.03em;
 }
-.module-details li:before{content:'•';position:absolute;left:0;color:#AB83D9;font-weight:900}
-.module-details li b{color:#342043;font-weight:800}
+.module-details li:before{
+  content:'•';
+  position:absolute;
+  left:0;
+  color:#AB83D9;
+  font-size:5cqw;
+  line-height:1;
+}
+.module-details li b{color:#342043}
 .module-result{
   margin-top:4.5cqw;
-  background:#F1EAF9;
-  padding:3.5cqw 4cqw;
+  background:#F3ECFA;
+  padding:3.8cqw 4cqw;
   border-radius:2.5cqw;
   font-size:4cqw;
-  line-height:1.55;
+  line-height:1.6;
   color:#664184;
 }
-.module-result small{font-size:3.1cqw;display:block;color:#9678AF;margin-bottom:.8cqw;letter-spacing:.05em;font-weight:700}
-.module-result b{font-weight:800;font-size:4.2cqw}
-
-/* AI Steps Section */
-.art-visual{width:100%;margin:7cqw auto 5cqw}
-.art-visual img{display:block;width:100%;height:auto;border-radius:3cqw}
-.ai-editor{
-  background:#F7F3FC;
-  border:1px solid #9D7FB7;
-  border-radius:3cqw;
-  text-align:left;
-  overflow:hidden;
-  margin:6cqw 0;
-  color:#2E1C40;
-}
-.editor-bar{
-  background:#E5D7F3;
-  padding:2.5cqw 4cqw;
-  font-size:3.4cqw;
-  color:#6C5381;
-  display:flex;
-  gap:2.5cqw;
+.module-result small{
+  font-size:3cqw;
+  display:block;
+  color:#9678AF;
+  margin-bottom:.8cqw;
+  letter-spacing:.08em;
   font-weight:700;
 }
-.editor-body{padding:4.5cqw}
-.editor-body small{font-size:3.4cqw;color:#7E4CAC;font-weight:700}
-.editor-body p{font-size:4.4cqw;line-height:1.65;margin-top:2cqw}
-.editor-result{
-  margin-top:4cqw;
-  border-top:1px solid #D8C5E8;
-  padding-top:3.5cqw;
-}
-.editor-result b{font-size:5cqw;color:#4B246F}
-.editor-result mark{background:#E1CDFF;color:#4B246F;padding:.1em .25em;border-radius:.2em}
 
-.ai-steps{margin-top:7cqw;display:grid;gap:4cqw}
-.ai-step{
-  background:#1A1027;
-  border:1px solid #4D2F73;
-  padding:5.5cqw 4.5cqw;
-  border-radius:3cqw;
-  text-align:left;
-}
-.ai-step b{display:block;font-size:4cqw;color:var(--lav);margin-bottom:2cqw}
-.ai-step strong{font-size:6.2cqw;font-weight:800;display:block}
-.ai-step p{font-size:4.4cqw;margin-top:2cqw;line-height:1.55;color:#D2C6E3}
-.ai-down{font-size:6.5cqw;color:var(--lav);line-height:1}
-
-/* Challenge Section */
+/* 챌린지 환급 (11일 정본) */
 .challenge-n{
-  font-size:20cqw!important;
-  line-height:1;
-  font-weight:900;
+  font-size:18cqw!important;
   letter-spacing:-.07em;
-  color:#6D3FE5;
-  margin-top:6cqw!important;
+  line-height:1.1;
+  margin:4cqw 0;
+  color:#7943D0;
+  font-weight:900;
 }
-.challenge-n small{font-size:8cqw}
-.challenge-n>span{display:block;font-size:6.5cqw;letter-spacing:-.04em;margin-top:2cqw;color:#2D1943}
+.challenge-n small{font-size:8cqw;color:#553181}
+.challenge-n span{
+  display:block;
+  font-size:6.2cqw;
+  letter-spacing:-.04em;
+  margin-top:1cqw;
+  color:#2A163F;
+}
 .refund-offer{
-  margin:7cqw 0 4cqw;
+  margin:8cqw 0 4cqw;
   padding:6.5cqw 4cqw;
   background:#FFF;
-  border:3px solid var(--neon-pink);
+  border:1.5px solid #C8ABE8;
   border-radius:4cqw;
-  box-shadow:0 12px 35px rgba(255,30,118,0.25);
+  box-shadow:0 12px 35px rgba(126,75,165,0.12);
 }
-.refund-offer p{font-size:4.8cqw;font-weight:800;color:#6B4588}
-.refund-offer strong{display:block;font-size:6.8cqw;line-height:1.45;margin-top:2cqw;color:#432554}
-.refund-offer em{font-size:11cqw;color:var(--neon-pink);font-style:normal;letter-spacing:-.05em;font-weight:900}
-.refund-offer small{display:block;margin-top:3.5cqw;font-size:2.8cqw;line-height:1.5;color:#8D749D}
+.refund-offer p{
+  font-size:4.8cqw;
+  font-weight:800;
+  color:#6B4588;
+}
+.refund-offer strong{
+  display:block;
+  font-size:7cqw;
+  line-height:1.45;
+  margin-top:2.5cqw;
+  color:#432554;
+}
+.refund-offer em{
+  font-size:11.5cqw;
+  color:#7943D0;
+  font-style:normal;
+  letter-spacing:-.055em;
+}
+.refund-offer small{
+  display:block;
+  margin-top:3.5cqw;
+  font-size:3.5cqw;
+  line-height:1.7;
+  color:#8D749D;
+}
 .strip{
-  font-size:5cqw;
-  line-height:1.65;
-  padding:4.5cqw 1cqw;
-  border-bottom:1px solid #C8B4E8;
-  text-align:center;
-}
-.strip strong{font-size:5.8cqw;color:#2E1546}
-
-/* Feedback Scene (Fix #6: Jihu Mentor Persona Design) */
-.feedback-box{
-  border:2px solid #7950B8;
-  background:#170E24;
-  border-radius:4cqw;
-  margin-top:7cqw;
-  padding:6cqw 5cqw;
-  text-align:left;
-  box-shadow:0 15px 40px rgba(0,0,0,0.5);
-}
-.feedback-student{
-  display:flex;
-  align-items:flex-start;
-  gap:3cqw;
-  padding-bottom:4cqw;
-  border-bottom:1px dashed #3F2959;
-}
-.student-avatar{
-  width:10cqw;
-  height:10cqw;
-  border-radius:50%;
-  background:#2E1A47;
-  display:grid;
-  place-items:center;
-  font-size:5cqw;
-  flex-shrink:0;
-}
-.student-bubble b{
-  font-size:3.4cqw;
-  color:#9E8EA8;
-  display:block;
-  margin-bottom:1cqw;
-}
-.student-bubble p{
-  font-size:4.6cqw;
-  color:#DCD1E8;
-  line-height:1.5;
-}
-
-.feedback-jihu{
-  display:flex;
-  align-items:flex-start;
-  gap:3cqw;
-  margin-top:5cqw;
-}
-.jihu-avatar{
-  width:12cqw;
-  height:12cqw;
-  border-radius:50%;
-  background:linear-gradient(135deg,#8B5CF6,#FF1E76);
-  padding:.6cqw;
-  flex-shrink:0;
-  box-shadow:0 0 15px rgba(255,30,118,0.4);
-}
-.jihu-avatar img{
-  width:100%;
-  height:100%;
-  border-radius:50%;
-  object-fit:cover;
-  display:block;
-}
-.jihu-bubble{
-  background:linear-gradient(145deg,#2D174C,#1C0C33);
-  border:1px solid #784DB0;
-  border-radius:3cqw;
-  padding:4cqw;
-  flex:1;
-}
-.jihu-badge-row{
-  display:flex;
-  align-items:center;
-  gap:2cqw;
-  margin-bottom:2cqw;
-}
-.jihu-name{
-  font-size:3.8cqw;
-  font-weight:900;
-  color:#FFF;
-}
-.jihu-role{
-  background:var(--brand);
-  color:#FFF;
-  font-size:2.8cqw;
-  font-weight:800;
-  padding:.6cqw 2cqw;
-  border-radius:100px;
-}
-.jihu-bubble p{
-  font-size:4.8cqw;
-  line-height:1.65;
-  font-weight:700;
-  color:var(--lav);
-}
-.jihu-bubble strong{
-  color:var(--neon-yellow);
-}
-
-/* Pricing / Plans (Fix #7: Strike price, Earlybird, Installment) */
-.resource-preview{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:1.5cqw;
-  margin:7cqw 0 4cqw;
-}
-.resource{
-  width:31%;
-  aspect-ratio:.74;
-  background:linear-gradient(140deg,#E8D9FF,#9D76D3);
-  color:#3A1C57;
-  border:1px solid #E7D9F8;
-  box-shadow:0 12px 28px rgba(0,0,0,0.4);
-  border-radius:2cqw;
-  padding:3.5cqw 2cqw;
-  text-align:left;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-}
-.resource:first-child{transform:rotate(-6deg)}
-.resource:nth-child(2){z-index:1;transform:translateY(-2cqw);background:#372348;color:#F0E3FF}
-.resource:last-child{transform:rotate(6deg)}
-.resource small{font-size:2.8cqw;letter-spacing:.05em;font-weight:700}
-.resource b{font-size:4.6cqw;line-height:1.3}
-.resource span{font-size:7cqw}
-.resource-caption{font-size:3.4cqw!important;color:#B6A0CD;margin-bottom:6cqw!important}
-
-.plan{
-  margin-top:7cqw;
-  padding:6.5cqw 5cqw;
-  border:1px solid #634B7D;
-  border-radius:4cqw;
-  text-align:left;
-  background:#140C1E;
-}
-.plan.featured{
-  border:2px solid var(--neon-pink);
-  background:linear-gradient(150deg,#2A123F,#130922);
-  box-shadow:0 15px 40px rgba(255,30,118,0.25);
-}
-.plan .duration{
-  font-size:4.2cqw;
-  color:var(--lav);
-  margin-bottom:2cqw;
-  font-weight:800;
-  display:inline-block;
-  background:#2C1943;
-  padding:1cqw 3cqw;
-  border-radius:100px;
-}
-.plan.featured .duration{
-  background:var(--neon-pink);
-  color:#FFF;
-}
-.plan h3{font-size:6.8cqw;margin-top:2cqw}
-
-/* Price Box */
-.price-container{
-  margin:4cqw 0 2cqw;
-}
-.price-strike-wrap{
-  display:flex;
-  align-items:center;
-  gap:2.5cqw;
-  margin-bottom:1cqw;
-}
-.price-original{
-  font-size:4.8cqw;
-  color:#827494;
-  text-decoration:line-through;
-  font-weight:600;
-}
-.discount-badge{
-  background:var(--neon-pink);
-  color:#FFF;
-  font-size:3.6cqw;
-  font-weight:900;
-  padding:.8cqw 2.2cqw;
-  border-radius:1cqw;
-}
-.price{
-  font-size:14cqw;
-  font-weight:900;
-  letter-spacing:-.06em;
-  line-height:1.2;
-  color:var(--lav);
-}
-.plan.featured .price{
-  color:#FFF;
-}
-.price small{font-size:5.5cqw}
-.price-installment{
-  font-size:4.5cqw;
-  font-weight:800;
-  color:var(--neon-yellow);
-  margin-top:1.5cqw;
-  background:rgba(255,240,34,0.1);
-  padding:1.5cqw 3cqw;
-  border-radius:1.5cqw;
-  display:inline-block;
-}
-
-.plan ul{
-  list-style:none;
-  padding:4.5cqw 0 0;
-  margin:3cqw 0 5cqw;
-  border-top:1px solid #3F2A56;
-}
-.plan li{
-  font-size:4.6cqw;
-  padding:2cqw 0;
-  line-height:1.5;
-  color:#DDD3E8;
-}
-.plan li:before{content:'✓ ';color:var(--lav);font-weight:900}
-
-.button{
-  display:block;
-  border:0;
-  background:linear-gradient(135deg,#FF1E76,#8B5CF6);
-  color:white;
-  text-align:center;
-  text-decoration:none;
-  padding:4.2cqw 2cqw;
-  width:100%;
-  font-size:5.2cqw;
-  font-weight:900;
+  background:#F2EBF9;
+  border:1px solid #E2D4EE;
+  padding:3.5cqw 4cqw;
   border-radius:2.5cqw;
-  min-height:50px;
-  box-shadow:0 8px 25px rgba(255,30,118,0.4);
-  transition:all .2s ease;
-  cursor:pointer;
+  margin-top:2cqw;
+  font-size:4cqw;
+  color:#4D3363;
+  line-height:1.6;
 }
-.button:active{transform:scale(.98)}
+.strip strong{color:#7642B5}
 
-/* Bank Transfer Box (Fix #10) */
-.bank-box{
-  background:#191124;
-  border:1px solid #4D3367;
+/* 피드백 박스 */
+.feedback-box{
+  margin:7cqw auto 5cqw;
+  max-width:90%;
+  background:#1B1226;
+  border:1px solid var(--card-border);
   border-radius:3.5cqw;
-  padding:5cqw;
+  padding:5cqw 4.5cqw;
+  text-align:left;
+}
+.feedback-box .q{
+  font-size:3.8cqw;
+  color:#A898B8;
+  margin-bottom:2cqw;
+}
+.feedback-box .a{
+  font-size:4.3cqw;
+  color:#FAF7FF;
+  line-height:1.65;
+  border-left:3px solid var(--lav);
+  padding-left:3cqw;
+  margin:0;
+}
+
+/* 수강 플랜 & 가격 (11일 정본) */
+.plan{
+  background:#181120;
+  border:1px solid #3E2954;
+  border-radius:4cqw;
+  padding:7cqw 5cqw;
   margin-top:6cqw;
   text-align:left;
+  position:relative;
 }
-.bank-title{
-  font-size:4.4cqw;
-  font-weight:900;
+.plan.featured{
+  background:#24153A;
+  border:2px solid var(--lav);
+  box-shadow:0 12px 35px rgba(139,92,246,0.3);
+}
+.plan .duration{
+  font-size:3.6cqw;
   color:var(--lav);
-  margin-bottom:2cqw;
-  display:flex;
-  align-items:center;
-  gap:2cqw;
+  font-weight:700;
+  letter-spacing:.05em;
+  margin-bottom:1.5cqw;
 }
-.bank-account{
-  background:#0E0816;
-  border:1px dashed #644485;
-  border-radius:2.5cqw;
-  padding:3.5cqw;
-  font-size:4.6cqw;
+.plan h3{
+  font-size:6.5cqw;
+  color:#FFF;
+  margin-bottom:4cqw;
+}
+.plan .price{
+  font-size:11.5cqw;
   font-weight:900;
   color:#FFF;
-  letter-spacing:.02em;
-  margin:2cqw 0 3cqw;
+  letter-spacing:-.05em;
+  line-height:1.1;
+  margin-bottom:5cqw;
+}
+.plan .price small{
+  font-size:4.5cqw;
+  font-weight:700;
+  color:var(--lav);
+  margin-left:1.5cqw;
+}
+.plan ul{
+  padding:0;
+  margin:0 0 6cqw;
+  list-style:none;
+}
+.plan li{
+  position:relative;
+  padding-left:4.5cqw;
+  font-size:4.1cqw;
+  line-height:1.7;
+  color:#DDD5E8;
+  margin-bottom:1.5cqw;
+}
+.plan li:before{
+  content:'✓';
+  position:absolute;
+  left:0;
+  color:var(--lav);
+  font-weight:900;
+}
+.button{
+  display:block;
+  width:100%;
+  background:var(--brand);
+  color:#FFF;
+  padding:4.2cqw;
+  border-radius:3cqw;
+  font-size:4.8cqw;
+  font-weight:800;
   text-align:center;
+  border:none;
+  box-shadow:0 8px 25px rgba(139,92,246,0.35);
+  transition:transform .15s ease;
 }
-.bank-tax{
-  font-size:3.8cqw;
-  line-height:1.6;
-  color:#C1B5CE;
-}
-.bank-tax strong{
-  color:var(--neon-yellow);
+.button:active{transform:scale(0.98)}
+.button.secondary{
+  background:transparent;
+  border:1px solid var(--lav);
+  color:var(--lav);
+  box-shadow:none;
 }
 
 /* FAQ */
-.faq{margin-top:7cqw;text-align:left}
-.faq details{border-bottom:1px solid #3B2852}
-.faq summary{
-  cursor:pointer;
-  padding:5cqw 0;
-  font-size:5.2cqw;
-  line-height:1.45;
-  font-weight:800;
-  color:#FAF4FF;
-}
-.faq details p{
-  font-size:4.4cqw;
-  line-height:1.7;
-  color:#C8BED3;
-  padding-bottom:5cqw;
-}
-
-/* Footer & Sticky (Fix #9) */
-.footer{
-  text-align:center;
-  font-size:3.5cqw;
-  line-height:1.8;
-  color:#9788A9;
-  padding:7cqw 5cqw 26cqw;
-  border-top:1px solid #2B1942;
-}
-.sticky{
-  position:fixed;
-  bottom:0;
-  left:50%;
-  transform:translateX(-50%);
-  max-width:720px;
-  width:100%;
-  background:rgba(15,9,22,0.96);
-  padding:12px 18px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:10px;
-  border-top:1px solid #783EA8;
-  z-index:99;
-  backdrop-filter:blur(10px);
-  box-shadow:0 -5px 25px rgba(0,0,0,0.6);
-}
-.sticky-left{
-  display:flex;
-  flex-direction:column;
+.faq{
+  margin-top:7cqw;
   text-align:left;
 }
-.sticky-tag{
-  font-size:11px;
-  font-weight:900;
-  color:var(--neon-pink);
-  letter-spacing:.02em;
+.faq details{
+  background:#1D1328;
+  border:1px solid #3E2954;
+  border-radius:3cqw;
+  padding:4.5cqw 5cqw;
+  margin-bottom:3cqw;
 }
-.sticky-main{
-  font-size:14px;
+.faq summary{
+  font-size:4.5cqw;
   font-weight:800;
   color:#FFF;
+  cursor:pointer;
+  list-style:none;
+  position:relative;
+  padding-right:6cqw;
 }
-.sticky a{
-  background:linear-gradient(135deg,#FF1E76,#8B5CF6);
-  color:white;
-  text-decoration:none;
-  font-weight:900;
-  font-size:15px;
-  border-radius:8px;
-  padding:12px 20px;
-  box-shadow:0 4px 15px rgba(255,30,118,0.5);
-  white-space:nowrap;
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:'+';
+  position:absolute;
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:5cqw;
+  color:var(--lav);
 }
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media print{
-  body{background:#FFF;color:#000}
-  .sticky{display:none}
-  .page{max-width:720px}
+.faq details[open] summary::after{content:'−'}
+.faq p{
+  margin:4cqw 0 0;
+  font-size:4cqw;
+  line-height:1.7;
+  color:#DDD5E8;
+  border-top:1px solid #332047;
+  padding-top:3.5cqw;
+}
+
+/* 엔딩 CTA */
+.scene.end{
+  padding:16cqw 6cqw;
+}
+.scene.end h2{
+  font-size:10.5cqw;
+  line-height:1.25;
+  margin-bottom:3cqw;
 }
 </style>
 </head>
 <body>
+<div class="page">
 
-<main class="page" id="top">
-
-  <!-- 1. HERO 도입부 -->
+  <!-- HERO SECTION -->
   <section class="scene hero">
-    <p class="start">9월 30일 시작 · 선착순 소수 정원</p>
+    <p class="start">9월 30일 시작 · 선착순 소수 정원 온라인 실전반</p>
     
-    <div class="hook-box">
+    <div class="hero-hook">
       <p class="hook-q">문의, 매출이 적어 고민이세요?</p>
       <p class="hook-q">콘텐츠 제작할 시간이 없나요?</p>
       <p class="hook-q">아직도 팔로워, 조회수에 목숨거나요?</p>
@@ -1637,13 +878,15 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
       돈 버는 계정은<br>
       <span class="lav">구조가 다릅니다.</span>
     </h1>
-    
-    <p class="course">보는 인스타에서, 실제로 버는 인스타로.<br>지후의 AI 인스타 수익화 실전반</p>
-    
-    <img class="hero-photo" src="assets/instagram-27.jpg" width="640" height="1136" alt="지후의 실제 콘텐츠 제작 모습">
-    
-    <div class="nameplate">릴스 단 6개로 1만 팔로워 돌파!*</div>
-    
+
+    <p class="course">
+      보는 인스타에서, 실제로 버는 인스타로.<br>
+      <strong>지후의 AI 인스타 수익화 실전반</strong>
+    </p>
+
+    <img class="hero-photo" src="assets/instagram-13.jpg" width="960" height="960" alt="강사 지후 프로필 사진">
+    <div class="nameplate">지후 @whopdwho · 단 41개로 2.5만 돌파</div>
+
     <div class="pill-row">
       <span>4주 본강의</span>
       <span>+ 4주 실행 챌린지</span>
@@ -1651,236 +894,137 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
     <p class="small">* Meta Graph API 공식 확인 지표 (@whopdwho)</p>
   </section>
 
-  <div class="divider"></div>
+  <!-- PARADIGM SHIFT SECTION (착각 vs 본질) -->
+  <section class="scene soft">
+    <p class="kicker">착각에서 시작하는 실패</p>
+    <h2>‘열심히 올리면 된다’는 착각,<br><span class="lav">통장 잔고는 0원입니다.</span></h2>
+    <p class="sub">수백 개를 올려도 돈이 안 되는 계정과,<br>단 몇 개만 올려도 매출이 터지는 계정의 차이.</p>
 
-  <!-- [추가 이미지 1 스타일] 고객 고민 후킹 & 구조 비교 -->
-  <section class="image1-style">
-    <div class="top-capsule-row">
-      <div class="top-capsule">💵 <span>건당 높은 단가</span></div>
-      <div class="top-capsule">💡 <span>명확한 매출 구조</span></div>
-    </div>
-
-    <h2>AI 인스타 수익화를<br><span class="lav">시작할 때!</span></h2>
-    
-    <div class="dots-divider">• • •</div>
-
-    <div class="alert-banner">
-      <span>하.지.만.</span>
-      이런 착각 하고 계시죠?
-    </div>
-
-    <div class="pain-box-list">
-      <div class="pain-box-item">“저는 <strong>영상·디자인 감각</strong>이 없는데요...”</div>
-      <div class="pain-box-item">“<strong>포토샵이나 복잡한 툴</strong>을 전혀 다룰 줄 몰라요”</div>
-      <div class="pain-box-item">“어떻게 <strong>기획해야 팔리는지</strong> 모르겠어요”</div>
-    </div>
-
-    <span class="finger-point">👉</span>
-
-    <div class="reassure-title">
-      ‘영상’ 못 만들어도 괜찮습니다!<br>
-      인스타에서 정말 중요한 건<br>
-      <em>‘잘 팔리는 구조’</em> 입니다!
-    </div>
-
-    <div class="vs-comparison">
-      <div class="vs-card">
-        <span class="vs-icon">🎨</span>
-        <div class="vs-label">예쁜 디자인·<br>화려한 영상</div>
+    <div class="paradigm-grid">
+      <div class="paradigm-card illusion">
+        <span class="p-tag">흔한 실패 패턴</span>
+        <h3>팔로워·조회수만 노리는 노가다</h3>
+        <p>유행하는 릴스를 밤새 따라 찍어도 내 서비스를 살 고객은 0명. 허수 조회수만 늘고 통장에는 단 1원도 꽂히지 않습니다.</p>
       </div>
-      <div class="vs-sign">&lt;</div>
-      <div class="vs-card winner">
-        <span class="vs-icon">💰</span>
-        <div class="vs-label">실제 통장에 꽂히는<br><strong>잘 팔리는 구조</strong></div>
+      <div class="paradigm-card reality">
+        <span class="p-tag">돈 버는 계정의 본질</span>
+        <h3>구매로 직결되는 수익화 동선</h3>
+        <p>조회수가 100회여도 상관없습니다. 내 서비스를 살 타깃만 핀포인트로 모으고, 프로필과 DM으로 바로 결제시키는 구조를 만듭니다.</p>
       </div>
     </div>
   </section>
 
-  <!-- [추가 이미지 2 스타일] 월계관 배지 & 슬롯 카운터 -->
-  <section class="image2-style">
-    <p class="kicker">검증된 압도적 성과</p>
-    <h2>시작하자마자<br><span class="lav">계정이 폭발한 비결</span></h2>
-
-    <div class="laurel-list">
-      <div class="laurel-item">
-        <span class="laurel-icon">🌿</span>
-        <div class="laurel-content">
-          <span class="laurel-tag">실적 검증</span>
-          <div class="laurel-text">릴스 <strong>단 6개만에 10,000 팔로워</strong> 돌파</div>
-        </div>
-        <span class="laurel-icon" style="transform:scaleX(-1)">🌿</span>
-      </div>
-
-      <div class="laurel-item">
-        <span class="laurel-icon">🌿</span>
-        <div class="laurel-content">
-          <span class="laurel-tag">Meta 공식 확인</span>
-          <div class="laurel-text">대표 릴스 1개 <strong>25만 회 이상</strong> 폭발</div>
-        </div>
-        <span class="laurel-icon" style="transform:scaleX(-1)">🌿</span>
-      </div>
-
-      <div class="laurel-item">
-        <span class="laurel-icon">🌿</span>
-        <div class="laurel-content">
-          <span class="laurel-tag">독보적 반응</span>
-          <div class="laurel-text">단일 카드뉴스 <strong>1.3만 회 저장</strong> 달성</div>
-        </div>
-        <span class="laurel-icon" style="transform:scaleX(-1)">🌿</span>
-      </div>
-    </div>
-
-    <!-- 슬롯머신 스타일 카운터 (2.6만 팔로워) -->
-    <div class="counter-section">
-      <div class="counter-digits">
-        <div class="digit-box">2</div>
-        <div class="digit-box">6</div>
-        <div class="digit-comma">,</div>
-        <div class="digit-box">0</div>
-        <div class="digit-box">0</div>
-        <div class="digit-box">0</div>
-      </div>
-      <div class="counter-label">실제 팔로워 돌파!</div>
-      <p class="small">* @whopdwho 계정 실측 데이터</p>
-    </div>
-  </section>
-
-  <!-- 2. 강사 실패 극복 스토리텔링 -->
-  <section class="scene story-scene">
+  <!-- STORY SECTION (강사 지후의 실패 극복 스토리) -->
+  <section class="scene">
     <p class="kicker">강사 지후의 솔직한 고백</p>
     <h2>“저도 처음엔<br><span class="lav">계정 몇 개를 말아먹고</span><br>완전히 실패했었습니다.”</h2>
     
-    <div class="story-card">
-      <p class="story-lead">
-        밤새워 만든 영상이<br>
-        <strong>조회수 80회</strong>에서 멈췄을 때의 그 막막함,<br>
+    <div class="story-box">
+      <p>
+        밤새워 만든 영상이 <strong>조회수 80회</strong>에서 멈췄을 때의 그 막막함,<br>
         누구보다 뼈저리게 겪어봤습니다.
       </p>
-      
-      <div class="story-divider"></div>
-      
-      <p class="story-body">
-        남들 다 하는 유행 릴스 따라 추고,<br>
-        유튜브 꿀팁 다 적용해 봐도<br>
-        <strong>문의는 0건, 통장 잔고도 0원</strong>이었습니다.<br><br>
-        ‘인스타는 나와 안 맞나 보다’ 포기하려던 순간,<br>
-        <strong>‘돈 버는 계정의 진짜 구조’</strong>를 깨달았습니다.
+      <p>
+        남들 다 하는 유행 릴스를 수십 개씩 올리며 밤을 새워도<br>
+        통장 잔고는 0원, 문의는 단 1건도 오지 않았습니다.
       </p>
-      
-      <div class="story-highlight">
-        <p>
-          그리고 그 구조를 적용하자마자,<br>
-          <strong>단 6개의 릴스만으로 1만 팔로워가 터지고</strong><br>
-          계정이 완전히 폭발했습니다.
-        </p>
-      </div>
-      
-      <p class="story-footer">
-        피눈물 흘리며 매일 100개씩 올리지 마세요.<br>
+      <p>
+        그런데 <strong>‘돈 버는 계정의 구조’</strong>를 깨닫고 나자,<br>
+        단 몇 개의 콘텐츠만으로 계정이 완전히 폭발했습니다.
+      </p>
+      <p>
+        피눈물 흘리며 매일 100개씩 올리는 노가다를 멈추세요.<br>
         제가 수년간 겪은 수백 번의 시행착오를 건너뛰고,<br>
         <strong>바로 터지는 그 구조</strong>를 전부 알려드립니다.
       </p>
     </div>
   </section>
 
-  <!-- 3. 실측 성과 증명 (개수 중심 & 천단위 반올림) -->
-  <section class="scene proof-scene" id="proof">
+  <!-- PROOF METRICS SECTION (Meta API 실측 데이터) -->
+  <section class="scene proof-scene">
     <p class="kicker">인스타 증명 데이터</p>
-    <h2>수백 개 올릴 필요 없습니다.<br>단 <span class="lav">6개</span>만으로 1만 돌파,<br>지금은 <span class="lav">2.6만 명</span>을 모았습니다.</h2>
-    
-    <div class="arrows" aria-hidden="true"><i></i><i></i><i></i></div>
-    
+    <h2>수백 개 올릴 필요 없습니다.<br>단 <span class="lav">41개</span> 콘텐츠로<br><span class="lav">25,820명</span>을 모았습니다.</h2>
+
     <div class="evidence">
-      <p class="label">초고속 성장 지표</p>
+      <p class="label">Meta Graph API 실측 지표</p>
       <div class="evidence-metrics">
-        <div class="m-box">
-          <span class="m-val">단 6개</span>
-          <span class="m-lab">1만 돌파 시점 릴스</span>
+        <div class="e-metric e-metric-full">
+          <div class="e-val">41<small>개</small></div>
+          <span class="e-lab">전체 누적 게시물 (피드+릴스)</span>
         </div>
-        <div class="m-div">→</div>
-        <div class="m-box highlight-box">
-          <span class="m-val">2.6만명</span>
-          <span class="m-lab">현재 실제 팔로워</span>
+        <div class="e-metric">
+          <div class="e-val">25,820<small>명</small></div>
+          <span class="e-lab">현재 실제 팔로워</span>
+        </div>
+        <div class="e-metric">
+          <div class="e-val">24.6<small>만</small></div>
+          <span class="e-lab">릴스 1개 최대 조회수</span>
         </div>
       </div>
-      <p class="source">@whopdwho · Meta Graph API 확인</p>
+
+      <div class="evidence-sub">
+        <div>
+          <strong>릴스 단 1개 성과</strong>
+          누적 조회 246,810회<br>
+          저장 7,730회 / 댓글 4,214개
+        </div>
+        <div>
+          <strong>카드뉴스 단 1개 성과</strong>
+          누적 저장 13,111회<br>
+          도달 197,371회 폭발
+        </div>
+      </div>
+      <p class="source">@whopdwho · Meta Graph API 공식 확인 데이터</p>
     </div>
     <p class="small">수백 개 올리는 노가다가 아니라, 1개의 '수익화 구조'가 결과를 만듭니다.</p>
   </section>
 
-  <!-- 릴스 1개 폭발 증거 (천단위 반올림) -->
-  <section class="scene">
-    <h2>릴스 <span class="lav">단 1개</span>가<br><span class="highlight">25만 회 이상</span><br>폭발했습니다.</h2>
-    <figure class="post">
-      <img src="assets/instagram-27.jpg" width="640" height="1136" alt="실제 릴스: 클로드 꿀팁 5가지">
-      <figcaption>
-        릴스 1개 누적 조회<strong>25만 회 돌파</strong>
-        저장 7,700회 · 댓글 4,200개
-        <a href="https://www.instagram.com/reel/DZSKUstye6y/" target="_blank" rel="noopener noreferrer">실제 게시물 확인 ↗</a>
-      </figcaption>
-    </figure>
-    <p class="small">2026.06 게시 · Meta Graph API 확인 (개별 게시물 실측 지표)</p>
-  </section>
-
-  <!-- 캐러셀 1개 저장 증거 (천단위 반올림) -->
+  <!-- AMOND STYLE COMPARISON SECTION (~에는 없습니다 vs ~에는 있습니다) -->
   <section class="scene soft">
-    <h2>다시 보고 싶어서,<br><span class="lav">1.3만 번</span><br>저장한 콘텐츠.</h2>
-    <figure class="post">
-      <img src="assets/instagram-13.jpg" width="1086" height="1448" alt="실제 캐러셀: 클로드 확장 기능 모음">
-      <figcaption>
-        캐러셀 1개 누적 저장<strong>1.3만 회 돌파</strong>
-        공유 3,400회 · 도달 20만 회
-        <a href="https://www.instagram.com/p/DaRq9EJEk4N/" target="_blank" rel="noopener noreferrer">실제 게시물 확인 ↗</a>
-      </figcaption>
-    </figure>
-    <p class="small">2026.07 게시 · Meta Graph API 확인 (수강생의 동일한 결과를 보장하지는 않습니다)</p>
-  </section>
+    <p class="kicker">시중 강의와의 결정적 차이</p>
+    <h2>흔한 인스타 강의와<br><span class="lav">출발점부터 다릅니다.</span></h2>
+    <p class="sub">이론만 늘어놓는 강의는 이제 그만.<br>결과를 만드는 실전만 담았습니다.</p>
 
-  <!-- 4. 아몬드 스타일 (~에는 없습니다 vs ~에는 있습니다) -->
-  <section class="scene amond-style">
-    <p class="kicker">강의 비교 분석</p>
-    <h2>시중의 흔한 강의와<br><span class="lav">출발점부터 다릅니다.</span></h2>
-    
-    <div class="compare-container">
-      <div class="compare-card without-card">
-        <div class="compare-badge no-badge">✕ 흔한 인스타 강의에는 없습니다</div>
+    <div class="compare-grid">
+      <div class="compare-card without">
+        <div class="compare-title">✕ 흔한 인스타 강의에는 없습니다</div>
         <ul class="compare-list">
           <li>
             <strong>뜬구름 잡는 마케팅 이론</strong>
-            <p>다 듣고 나도 뭘 올려야 할지 모르는 뻔한 설명은 없습니다.</p>
+            <p>다 듣고 나도 오늘 뭘 올려야 할지 모르는 뻔한 이론은 가르치지 않습니다.</p>
           </li>
           <li>
-            <strong>따라하다 지치는 복잡한 자동화</strong>
-            <p>코딩, 개발 툴 설치하다 포기하는 무의미한 기술 자랑은 없습니다.</p>
+            <strong>따라하다 지치는 복잡한 코딩/자동화</strong>
+            <p>개발자도 어려운 복잡한 툴 대신 스마트폰 하나로 끝내는 쉬운 방법을 씁니다.</p>
           </li>
           <li>
-            <strong>통장 잔고 0원인 조회수 노가다</strong>
-            <p>조회수는 터지는데 단 1원도 못 버는 빈껍데기 팁은 없습니다.</p>
+            <strong>조회수만 터지고 통장 잔고 0원인 팁</strong>
+            <p>수익으로 연결되지 않는 허수 조회수 트릭은 전부 배제합니다.</p>
           </li>
           <li>
-            <strong>질문해도 복붙 매크로 피드백</strong>
-            <p>내 계정 사정도 모른 채 '더 열심히 올리라'는 조언은 없습니다.</p>
+            <strong>며칠 뒤에 복붙으로 오는 매크로 피드백</strong>
+            <p>영혼 없는 칭찬이나 기계적인 매크로 답변은 일체 하지 않습니다.</p>
           </li>
         </ul>
       </div>
 
-      <div class="compare-card with-card">
-        <div class="compare-badge yes-badge">✓ 지후의 실전반에는 있습니다</div>
+      <div class="compare-card with">
+        <div class="compare-title">✓ 지후의 실전반에는 있습니다</div>
         <ul class="compare-list">
           <li>
-            <strong>내 업종에 맞춘 1:1 수익화 동선</strong>
-            <p>콘텐츠에서 프로필, DM, 실제 결제까지 직결되는 구조가 있습니다.</p>
+            <strong>내 업종에 맞춘 '콘텐츠 → DM → 결제' 직결 동선</strong>
+            <p>보고 지나치는 인스타가 아니라, 실제 문의와 입금이 발생하는 시스템을 구축합니다.</p>
           </li>
           <li>
-            <strong>3분 만에 초안 뽑는 AI 템플릿</strong>
-            <p>질문 3개만 넣으면 내 말투 대본이 완성되는 프롬프트가 있습니다.</p>
+            <strong>질문 3개만 넣으면 3분 만에 나오는 실전 AI 프롬프트</strong>
+            <p>기획 고민 끝. 내 계정의 말투와 전문성을 그대로 살려 대본을 뽑아냅니다.</p>
           </li>
           <li>
-            <strong>스마트폰 하나로 끝내는 실전 제작</strong>
-            <p>스마트폰으로 뚝딱 찍고 편집해서 바로 올리는 기술이 있습니다.</p>
+            <strong>초보자도 폰 하나로 바로 올리는 릴스·캐러셀 템플릿</strong>
+            <p>편집 기술 없이도 감각적인 비주얼로 완성해 바로 업로드합니다.</p>
           </li>
           <li>
-            <strong>매주 계정을 뜯어고쳐 주는 밀착 피드백</strong>
+            <strong>매주 계정을 뜯어고쳐 주는 100% 1:1 밀착 피드백</strong>
             <p>어디를 어떻게 바꿀지 다음 행동까지 정확히 짚어주는 첨삭이 있습니다.</p>
           </li>
         </ul>
@@ -1888,744 +1032,302 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
     </div>
   </section>
 
-  <!-- 5. 스튜디오 유니콘 스타일 (Before & After 고민 해결) -->
-  <section class="scene unicorn-style">
-    <p class="kicker">고객님의 진짜 고민</p>
-    <h2>답답했던 내 인스타,<br><span class="lav">이렇게 바뀝니다.</span></h2>
-
-    <div class="concern-container">
-      <div class="concern-card">
-        <div class="concern-before">
-          <span class="c-tag before-tag">고민 01</span>
-          <h3>“문의, 매출이 너무 적어요”</h3>
-          <p>크몽·숨고 같은 플랫폼에서 최저가 출혈 경쟁하느라 하루하루 불안합니다.</p>
-        </div>
-        <div class="concern-arrow">↓</div>
-        <div class="concern-after">
-          <span class="c-tag after-tag">지후의 해결책</span>
-          <h4>인스타로 <strong>고객이 먼저 찾는 구조</strong> 완성</h4>
-          <p>고객이 궁금해하는 핵심을 짚어주는 콘텐츠로 신뢰를 쌓고, 가격 흥정 없이 제값 받고 계약하는 구조를 만듭니다.</p>
-        </div>
-      </div>
-
-      <div class="concern-card">
-        <div class="concern-before">
-          <span class="c-tag before-tag">고민 02</span>
-          <h3>“콘텐츠 만들 시간이 없어요”</h3>
-          <p>본업도 바쁜데 릴스 하나 만들려고 주말 내내 머리 싸매다 결국 포기합니다.</p>
-        </div>
-        <div class="concern-arrow">↓</div>
-        <div class="concern-after">
-          <span class="c-tag after-tag">지후의 해결책</span>
-          <h4>AI로 <strong>10분 만에 대본·카드 완성</strong></h4>
-          <p>검증된 프롬프트에 내 경험 한 스푼만 넣으세요. 퇴근 후 15분이면 릴스 대본과 카드뉴스가 뚝딱 완성됩니다.</p>
-        </div>
-      </div>
-
-      <div class="concern-card">
-        <div class="concern-before">
-          <span class="c-tag before-tag">고민 03</span>
-          <h3>“팔로워는 늘었는데 돈이 안 돼요”</h3>
-          <p>릴스가 어쩌다 터져서 조회수 수십만 나와도, 막상 상담 문의나 결제는 0건입니다.</p>
-        </div>
-        <div class="concern-arrow">↓</div>
-        <div class="concern-after">
-          <span class="c-tag after-tag">지후의 해결책</span>
-          <h4>조회수 100회여도 <strong>매출 터지는 수익화 동선</strong></h4>
-          <p>허수 팔로워 대신 내 서비스를 살 찐고객만 모으고, 프로필과 DM 자동 동선으로 바로 매출을 만듭니다.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 내 계정 모의 화면 & 핵심 3가지 질문 -->
-  <section class="scene" id="my-account">
-    <div class="account-art">
-      <div class="phone-shell">
-        <div class="phone-screen">
-          <div class="phone-island"></div>
-          <div class="phone-head">
-            <span>내 브랜드⌄</span>
-            <span>⊞ ☰</span>
-          </div>
-          <div class="profile-intro">
-            <div class="profile-avatar instagram-avatar">
-              <svg viewBox="0 0 48 48" aria-hidden="true">
-                <rect width="48" height="48" rx="24" fill="#7350BB"/>
-                <path d="M15 13v23h19v-6H22V13z" fill="white"/>
-                <circle cx="33" cy="16" r="5" fill="#CDB8FF"/>
-              </svg>
-            </div>
-            <div class="profile-identity">
-              <b>나의 전문성으로<br>연결되는 계정</b>
-              <small>콘텐츠 · 브랜딩 · 비즈니스</small>
-            </div>
-          </div>
-          <div class="profile-bio">
-            <b>내 브랜드 | 일과 경험의 기록</b>
-            <p>고객이 궁금해하는 것을 쉽게.<br>현장에서 찾은 실전 팁을 나눕니다.</p>
-            <span>↗ 상담 및 협업 문의</span>
-          </div>
-          <div class="ig-buttons">
-            <span>프로필 편집</span>
-            <span>프로필 공유</span>
-          </div>
-          <div class="ig-highlights">
-            <span><i>✦</i>소개</span>
-            <span><i>▤</i>실전 팁</span>
-            <span><i>↗</i>함께해요</span>
-          </div>
-          <div class="ig-tabs">
-            <b>▦</b><span>▷</span><span>♙</span>
-          </div>
-          <div class="profile-grid">
-            <div><i>▶</i>고객 질문</div>
-            <div><i>▤</i>실전 팁</div>
-            <div><i>✦</i>내 경험</div>
-            <div><i>▤</i>사례</div>
-            <div><i>▶</i>해결 방법</div>
-            <div><i>＋</i>다음 이야기</div>
-          </div>
-          <div class="ig-nav">⌂ ⌕ ⊞ ▷ ◉</div>
-        </div>
-      </div>
-      <div class="account-note">
-        <small>새로운 DM 문의</small>
-        <b>“올리신 콘텐츠 보고<br>상담 예약하려 합니다.”</b>
-      </div>
-    </div>
-
-    <h2>이제,<br><span class="lav">내 계정 차례</span>입니다.</h2>
-    
-    <div class="question-list">
-      <p class="question"><span class="check" aria-hidden="true">✅</span>뭘 올려야 할지 매번 막막하다면</p>
-      <p class="question"><span class="check" aria-hidden="true">✅</span>AI가 써준 글이 내 말 같지 않고 어색하다면</p>
-      <p class="question"><span class="check" aria-hidden="true">✅</span>열심히 올려도 통장 입금으로 안 이어진다면</p>
-    </div>
-    
-    <p class="answer">이번엔 <span class="lav">순서대로,</span><br>하나씩 제대로 만듭니다.</p>
-  </section>
-
-  <!-- 수업 목표: 미니 플로우 -->
+  <!-- STUDIO UNICORN STYLE BEFORE & AFTER SECTION -->
   <section class="scene light">
-    <p class="kicker">이 수업의 목표</p>
-    <h2>계정 하나에<br><span class="lav">기획부터 수익화까지.</span></h2>
-    
-    <div class="mini-flow" aria-label="주제에서 콘텐츠를 만들고 문의로 연결하는 과정">
-      <div class="flow-tile"><span>✦</span><b>내 주제</b></div>
-      <span class="flow-arrow">→</span>
-      <div class="flow-tile"><span>▤</span><b>콘텐츠</b></div>
-      <span class="flow-arrow">→</span>
-      <div class="flow-tile"><span>✉</span><b>실제 문의</b></div>
+    <p class="kicker">수강생 현실 고민 해결</p>
+    <h2>답답했던 내 인스타,<br><span class="lav" style="color:#79539D">이렇게 바뀝니다.</span></h2>
+    <p class="sub">남 이야기가 아닙니다.<br>수강 후 마주하게 될 내 계정의 변화입니다.</p>
+
+    <div class="concern-list">
+      <div class="concern-card">
+        <span class="c-badge">고민 01</span>
+        <div class="concern-q">“문의, 매출이 너무 적어요”</div>
+        <div class="c-box c-before">
+          <span>BEFORE</span> 크몽·숨고 같은 플랫폼에서 최저가 출혈 경쟁하느라 하루하루 불안합니다.
+        </div>
+        <div class="c-box c-after">
+          <strong>AFTER : 제값 받는 독점 채널 완성</strong>
+          인스타 DM으로 고객이 먼저 찾아와 내 전문성을 인정하고 계약하는 구조가 완성됩니다.
+        </div>
+      </div>
+
+      <div class="concern-card">
+        <span class="c-badge">고민 02</span>
+        <div class="concern-q">“콘텐츠 제작할 시간이 없어요”</div>
+        <div class="c-box c-before">
+          <span>BEFORE</span> 본업도 바쁜데 주말 내내 릴스 기획하다 지쳐 결국 1개도 못 올립니다.
+        </div>
+        <div class="c-box c-after">
+          <strong>AFTER : AI로 10분 만에 초안 완성</strong>
+          검증된 AI 프롬프트 템플릿으로 터지는 대본과 카드뉴스를 순식간에 뽑아냅니다.
+        </div>
+      </div>
+
+      <div class="concern-card">
+        <span class="c-badge">고민 03</span>
+        <div class="concern-q">“팔로워는 늘었는데 돈이 안 돼요”</div>
+        <div class="c-box c-before">
+          <span>BEFORE</span> 조회수 10만 터져도 결제 문의는 0건, 허탈함만 남습니다.
+        </div>
+        <div class="c-box c-after">
+          <strong>AFTER : 조회수 100회여도 터지는 결제 동선</strong>
+          허수 팔로워 대신 내 서비스를 살 찐고객만 모으고, 프로필과 DM 링크로 즉시 결제를 만듭니다.
+        </div>
+      </div>
     </div>
-    
-    <p class="sub">내 주제를 찾고.<br>릴스·캐러셀을 만들고.<br>문의·결제로 연결합니다.</p>
-    <p class="answer">AI는 쉽게.<br>실행은 <span class="lav">내 계정에서.</span></p>
   </section>
 
-  <!-- 수익화 2가지 길 (크리에이터 / 사업자) -->
+  <!-- AI WORKBENCH 3D SECTION (11일 정본 복원) -->
   <section class="scene">
-    <h2>시작점이 달라도,<br><span class="lav">내 수익화 길</span>을 찾게.</h2>
-    
-    <article class="route-box">
-      <p class="tag">초보 크리에이터</p>
-      <h3>내 콘텐츠가<br>협업과 판매의 이유가 되도록.</h3>
-      <p>지속 가능한 내 주제를 잡고<br>협찬·제휴·내 상품 판매로 직결합니다.</p>
-      
-      <div class="mail-stack">
-        <div class="mail-card">
-          <div class="mail-icon">
-            <svg viewBox="0 0 48 48"><rect width="48" height="48" rx="24" fill="#7350BB"/><path d="M15 13v23h19v-6H22V13z" fill="white"/><circle cx="33" cy="16" r="5" fill="#CDB8FF"/></svg>
-          </div>
-          <div>
-            <small>브랜드 마케팅팀</small>
-            <b>제품 협찬 및 유료 광고 제안드립니다</b>
-            <p>올려주신 콘텐츠 결이 저희 제품과 잘 맞아 연락드립니다.</p>
-          </div>
-        </div>
-        <div class="mail-card">
-          <div class="mail-icon">
-            <svg viewBox="0 0 48 48"><rect width="48" height="48" rx="24" fill="#9350BB"/><path d="M15 13v23h19v-6H22V13z" fill="white"/><circle cx="33" cy="16" r="5" fill="#CDB8FF"/></svg>
-          </div>
-          <div>
-            <small>출판사 편집자</small>
-            <b>인스타 연재 글 도서 출간 제안</b>
-            <p>콘텐츠 반응이 매우 뜨거워 단행본 출간을 논의하고 싶습니다.</p>
-          </div>
-        </div>
-      </div>
-      <p class="route">주제 선정 → 릴스/카드 → 협찬·광고·지식상품</p>
-    </article>
-
-    <article class="route-box">
-      <p class="tag">사장님 · 전문직 · 대표님</p>
-      <h3>내 전문성이<br>직접 문의의 이유가 되도록.</h3>
-      <p>고객이 매일 묻는 질문을 콘텐츠로.<br>상담·예약·실제 매출로 연결합니다.</p>
-      
-      <!-- Instagram Direct (회색 말풍선 글자색 검정 #111111) -->
-      <div class="dm-window">
-        <div class="dm-head">
-          <span class="dm-back">‹</span>
-          <div class="dm-logo">
-            <svg viewBox="0 0 48 48"><rect width="48" height="48" rx="24" fill="#7350BB"/><path d="M15 13v23h19v-6H22V13z" fill="white"/><circle cx="33" cy="16" r="5" fill="#CDB8FF"/></svg>
-          </div>
-          <div>
-            <b>신규 고객 문의</b>
-            <small>Instagram Direct</small>
-          </div>
-          <span class="dm-actions">···</span>
-        </div>
-        
-        <p class="dm-date">오늘 오후 2:30</p>
-        
-        <p class="dm-bubble">피드에 올려주신 해결 영상 보고 연락드렸습니다.<br>저희 상황도 상담받을 수 있을까요?</p>
-        <p class="dm-bubble outgoing">네, 환영합니다! 현재 겪고 계신 가장 큰 문제를 편하게 남겨주시면 맞춤 안내 도와드릴게요.</p>
-        <p class="dm-bubble">이번 주 목요일 예약 바로 부탁드립니다!</p>
-        
-        <div class="booking">상담 일정 확정 → 결제 안내</div>
-      </div>
-      <p class="route">고객 고민 해결 → 압도적 신뢰 → 문의·매출</p>
-    </article>
-  </section>
-
-  <!-- [추가 이미지 3 스타일] 정규 강의 일정 & 캘린더 -->
-  <section class="schedule-section">
-    <p class="kicker">체계적인 수업 일정</p>
-    <h2>놓치지 않고 끝까지 완주하는<br><span class="lav">정규 강의 일정</span></h2>
-
-    <!-- 일정 리스트 카드 -->
-    <div class="schedule-box" style="margin-top:7cqw">
-      <h3>정규 강의 일정</h3>
-      <div class="schedule-rows">
-        <div class="schedule-row">
-          <div class="schedule-badge">1회차</div>
-          <div class="schedule-info"><strong>09월 30일(수)</strong> 저녁 8시 LIVE</div>
-        </div>
-        <div class="schedule-row">
-          <div class="schedule-badge">2회차</div>
-          <div class="schedule-info"><strong>10월 07일(수)</strong> 저녁 8시 LIVE</div>
-        </div>
-        <div class="schedule-row">
-          <div class="schedule-badge">3회차</div>
-          <div class="schedule-info"><strong>10월 14일(수)</strong> 저녁 8시 LIVE</div>
-        </div>
-        <div class="schedule-row">
-          <div class="schedule-badge">4회차</div>
-          <div class="schedule-info"><strong>10월 21일(수)</strong> 저녁 8시 LIVE</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 미니 캘린더 2026.09 -->
-    <div class="cal-container">
-      <div class="cal-title">2026.09</div>
-      <div class="cal-grid">
-        <div class="cal-head sun">일</div>
-        <div class="cal-head">월</div>
-        <div class="cal-head">화</div>
-        <div class="cal-head">수</div>
-        <div class="cal-head">목</div>
-        <div class="cal-head">금</div>
-        <div class="cal-head sat">토</div>
-
-        <div></div><div></div>
-        <div class="cal-day">1</div>
-        <div class="cal-day">2</div>
-        <div class="cal-day">3</div>
-        <div class="cal-day">4</div>
-        <div class="cal-day sat">5</div>
-
-        <div class="cal-day sun">6</div>
-        <div class="cal-day">7</div>
-        <div class="cal-day">8</div>
-        <div class="cal-day">9</div>
-        <div class="cal-day">10</div>
-        <div class="cal-day">11</div>
-        <div class="cal-day sat">12</div>
-
-        <div class="cal-day sun">13</div>
-        <div class="cal-day">14</div>
-        <div class="cal-day">15</div>
-        <div class="cal-day">16</div>
-        <div class="cal-day">17</div>
-        <div class="cal-day">18</div>
-        <div class="cal-day sat">19</div>
-
-        <div class="cal-day sun">20</div>
-        <div class="cal-day">21</div>
-        <div class="cal-day">22</div>
-        <div class="cal-day">23</div>
-        <div class="cal-day">24</div>
-        <div class="cal-day">25</div>
-        <div class="cal-day sat">26</div>
-
-        <div class="cal-day sun">27</div>
-        <div class="cal-day">28</div>
-        <div class="cal-day">29</div>
-        <div class="cal-day active">30</div>
-        <div></div><div></div><div></div>
-      </div>
-
-      <div class="cal-divider"></div>
-
-      <!-- 미니 캘린더 2026.10 -->
-      <div class="cal-title">2026.10</div>
-      <div class="cal-grid">
-        <div class="cal-head sun">일</div>
-        <div class="cal-head">월</div>
-        <div class="cal-head">화</div>
-        <div class="cal-head">수</div>
-        <div class="cal-head">목</div>
-        <div class="cal-head">금</div>
-        <div class="cal-head sat">토</div>
-
-        <div></div><div></div><div></div><div></div>
-        <div class="cal-day">1</div>
-        <div class="cal-day">2</div>
-        <div class="cal-day sat">3</div>
-
-        <div class="cal-day sun">4</div>
-        <div class="cal-day">5</div>
-        <div class="cal-day">6</div>
-        <div class="cal-day active">7</div>
-        <div class="cal-day">8</div>
-        <div class="cal-day">9</div>
-        <div class="cal-day sat">10</div>
-
-        <div class="cal-day sun">11</div>
-        <div class="cal-day">12</div>
-        <div class="cal-day">13</div>
-        <div class="cal-day active">14</div>
-        <div class="cal-day">15</div>
-        <div class="cal-day">16</div>
-        <div class="cal-day sat">17</div>
-
-        <div class="cal-day sun">18</div>
-        <div class="cal-day">19</div>
-        <div class="cal-day">20</div>
-        <div class="cal-day active">21</div>
-        <div class="cal-day">22</div>
-        <div class="cal-day">23</div>
-        <div class="cal-day sat">24</div>
-
-        <div class="cal-day sun">25</div>
-        <div class="cal-day">26</div>
-        <div class="cal-day">27</div>
-        <div class="cal-day">28</div>
-        <div class="cal-day">29</div>
-        <div class="cal-day">30</div>
-        <div class="cal-day sat">31</div>
-      </div>
-    </div>
-
-    <!-- 챌린지 클리닉 일정 카드 -->
-    <div class="schedule-box">
-      <h3>추가 챌린지 그룹 클리닉</h3>
-      <div class="schedule-rows">
-        <div class="schedule-row">
-          <div class="schedule-badge">1회차</div>
-          <div class="schedule-info"><strong>10월 28일(수)</strong> 저녁 8시 ZOOM LIVE</div>
-        </div>
-        <div class="schedule-row">
-          <div class="schedule-badge">2회차</div>
-          <div class="schedule-info"><strong>11월 04일(수)</strong> 저녁 8시 ZOOM LIVE</div>
-        </div>
-        <div class="schedule-row">
-          <div class="schedule-badge">3회차</div>
-          <div class="schedule-info"><strong>11월 11일(수)</strong> 저녁 8시 ZOOM LIVE</div>
-        </div>
-        <div class="schedule-row">
-          <div class="schedule-badge">4회차</div>
-          <div class="schedule-info"><strong>11월 18일(수)</strong> 저녁 8시 ZOOM LIVE</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4주 커리큘럼 -->
-  <section class="scene light" id="curriculum">
-    <p class="kicker">4주 본강의 상세 커리큘럼</p>
-    <h2>매주 하나씩.<br><span class="lav">내 계정에 실물로 남깁니다.</span></h2>
-
-    <article class="module-card">
-      <div class="module-meta">
-        <b>WEEK 01 / 04</b>
-        <span>9.30 수</span>
-      </div>
-      <div class="module-lead">
-        <h3>내 계정의<br>돈 버는 방향 잡기</h3>
-        <img class="module-icon" src="assets/week-01-target.png" width="1024" height="1024" loading="lazy" alt="01주차 입체 아이콘">
-      </div>
-      <div class="module-details">
-        <h4>WHAT YOU LEARN</h4>
-        <ul>
-          <li><b>타깃·강점 발굴</b>: 내 지갑을 열어줄 '진짜 고객'이 누구인지 정의</li>
-          <li><b>수익화 모델 1개 선택</b>: 협찬, 전자책, 강의, 상담, 예약 중 내게 맞는 길 확정</li>
-          <li><b>돈 버는 프로필 설계</b>: 3초 만에 팔로우 누르게 만드는 한 줄 소개와 링크</li>
-          <li><b>10개 황금 소재 추출</b>: 내 일과 경험에서 마르지 않는 콘텐츠 주제 뽑기</li>
-        </ul>
-      </div>
-      <div class="module-result">
-        <small>이번 주 완성물</small>
-        <b>계정 설계서 1장 + 평생 쓸 콘텐츠 소재 10개</b>
-      </div>
-    </article>
-
-    <article class="module-card">
-      <div class="module-meta">
-        <b>WEEK 02 / 04</b>
-        <span>10.07 수</span>
-      </div>
-      <div class="module-lead">
-        <h3>AI로 5분 만에<br>터지는 대본 뽑기</h3>
-        <img class="module-icon" src="assets/week-02-script.png" width="1024" height="1024" loading="lazy" alt="02주차 입체 아이콘">
-      </div>
-      <div class="module-details">
-        <h4>WHAT YOU LEARN</h4>
-        <ul>
-          <li><b>떡상 레퍼런스 공식</b>: 첫 3초 후킹과 끝까지 보게 만드는 반전 구조</li>
-          <li><b>지후 전용 AI 프롬프트</b>: 질문 3개 넣으면 내 말투 대본이 나오는 마법</li>
-          <li><b>인간미 더하기</b>: AI 티 싹 빼고 내 실제 사례와 경험 자연스럽게 녹이기</li>
-          <li><b>스마트폰 촬영 세팅</b>: 장비 욕심 없이 폰 하나로 선명하게 찍는 조명·구도</li>
-        </ul>
-      </div>
-      <div class="module-result">
-        <small>이번 주 완성물</small>
-        <b>릴스 촬영 대본 1편 + 카드뉴스 구성안 1편</b>
-      </div>
-    </article>
-
-    <article class="module-card">
-      <div class="module-meta">
-        <b>WEEK 03 / 04</b>
-        <span>10.14 수</span>
-      </div>
-      <div class="module-lead">
-        <h3>스마트폰으로 편집하고<br>직접 게시하기</h3>
-        <img class="module-icon" src="assets/week-03-content.png" width="1024" height="1024" loading="lazy" alt="03주차 입체 아이콘">
-      </div>
-      <div class="module-details">
-        <h4>WHAT YOU LEARN</h4>
-        <ul>
-          <li><b>캡컷 초고속 컷편집</b>: 불필요한 숨소리 쳐내고 자막·효과음 10분 컷</li>
-          <li><b>저장 부르는 카드뉴스</b>: 넘겨보게 만드는 템플릿과 마지막 행동 유도</li>
-          <li><b>클릭을 부르는 캡션</b>: 댓글 달면 자동으로 DM 날아가는 트리거 세팅</li>
-          <li><b>원소스 멀티유즈</b>: 소재 1개로 릴스와 카드뉴스 2개 동시에 뽑아내기</li>
-        </ul>
-      </div>
-      <div class="module-result">
-        <small>이번 주 완성물</small>
-        <b>실제 릴스 1개 + 캐러셀 1개 내 계정 업로드</b>
-      </div>
-    </article>
-
-    <article class="module-card">
-      <div class="module-meta">
-        <b>WEEK 04 / 04</b>
-        <span>10.21 수</span>
-      </div>
-      <div class="module-lead">
-        <h3>실제 문의와 제안으로<br>수익 파이프라인 완성</h3>
-        <img class="module-icon" src="assets/week-04-inquiry.png" width="1024" height="1024" loading="lazy" alt="04주차 입체 아이콘">
-      </div>
-      <div class="module-details">
-        <h4>WHAT YOU LEARN</h4>
-        <ul>
-          <li><b>지표 분석법</b>: 단순 조회수가 아닌 '저장'과 '프로필 방문'으로 돈 벌기</li>
-          <li><b>크리에이터 수익화</b>: 브랜드에 먼저 제안서(미디어킷) 보내는 실전 양식</li>
-          <li><b>사업자·전문직 수익화</b>: DM에서 자연스럽게 상담과 결제로 넘기는 화법</li>
-          <li><b>앞으로의 루틴</b>: 지치지 않고 주 2회 올리며 계정 키우는 월간 플랜</li>
-        </ul>
-      </div>
-      <div class="module-result">
-        <small>이번 주 완성물</small>
-        <b>내 계정 맞춤 수익화 동선 + 다음 4주 실행 계획</b>
-      </div>
-    </article>
-
-    <p class="small">주 1회 온라인 라이브 · 회당 120분 집중 진행 · 실습·1:1 과제 피드백·실시간 Q&A 포함</p>
-  </section>
-
-  <!-- AI 제작 3단계 설명 -->
-  <section class="scene">
-    <h2>AI가 어렵게 느껴지나요?<br><span class="lav">딱 이 순서만 따라오세요.</span></h2>
+    <p class="kicker">AI 실전 제작 도구</p>
+    <h2>AI가 어렵다면?<br><span class="lav">딱 3가지만 따라오세요.</span></h2>
     
     <figure class="art-visual">
-      <img src="assets/ai-workbench-v01.png" width="1536" height="1024" loading="lazy" alt="노트북에서 릴스와 카드 콘텐츠가 만들어지는 라벤더 입체 일러스트">
+      <img src="assets/ai-workbench-v01.png" width="1536" height="1024" loading="lazy" alt="라벤더 작업대와 노트북 3D 일러스트">
     </figure>
-    
-    <div class="ai-editor">
-      <div class="editor-bar"><span>● ● ●</span> 내 콘텐츠 작업실</div>
-      <div class="editor-body">
-        <small>나의 입력</small>
-        <p>“처음 문의하는 고객이 제일 자주 묻는 질문 3개로 릴스 대본 써줘.”</p>
-        
-        <div class="editor-result">
-          <small>AI 초안에 내 경험 얹기</small>
-          <p><b>“처음이라면,<br><mark>이것부터 꼭 확인하세요.</mark>”</b></p>
-          <p>첫 질문 후킹 → 실제 실패 사례 → 확실한 해결책<br>내가 겪은 찐 이야기로 완성.</p>
+
+    <div class="step-bar">
+      <div class="step-pill">
+        <span class="step-num">1</span>
+        <div class="step-text">
+          <b>내 계정 설계 프롬프트</b>
+          <small>누구에게 무엇을 팔지 5분 만에 프로필 완성</small>
+        </div>
+      </div>
+      <div class="step-pill">
+        <span class="step-num">2</span>
+        <div class="step-text">
+          <b>터지는 릴스 대본 생성</b>
+          <small>첫 3초 후킹과 시청 지속 시간을 잡는 AI 대본</small>
+        </div>
+      </div>
+      <div class="step-pill">
+        <span class="step-num">3</span>
+        <div class="step-text">
+          <b>캐러셀 카드뉴스 뚝딱 제작</b>
+          <small>저장과 공유를 부르는 핵심 정보 압축 포맷</small>
         </div>
       </div>
     </div>
-    
-    <div class="ai-steps">
-      <div class="ai-step">
-        <b>STEP 01 · 질문 입력</b>
-        <strong>고객의 궁금증을 넣습니다</strong>
-        <p>“처음 오는 손님이 매일 물어보는 질문은 이거예요.”</p>
-      </div>
-      <span class="ai-down" aria-hidden="true">↓</span>
-      <div class="ai-step">
-        <b>STEP 02 · AI 초안 생성</b>
-        <strong>검증된 대본을 바로 받습니다</strong>
-        <p>수업에서 드리는 특급 프롬프트로 10초 만에 대본 완성.</p>
-      </div>
-      <span class="ai-down" aria-hidden="true">↓</span>
-      <div class="ai-step">
-        <b>STEP 03 · 내 경험 완성</b>
-        <strong>내 말투와 사례를 더합니다</strong>
-        <p>어색한 AI 말투를 싹 지우고 내 진짜 콘텐츠로 완성합니다.</p>
-      </div>
-    </div>
-    <p class="small">복잡한 코딩이나 개발 지식 전혀 없이 마우스 클릭만으로 시작합니다.</p>
   </section>
 
-  <!-- 4주 실행 챌린지 (100% 환급!) -->
+  <!-- CURRICULUM SECTION (11일 정본 + 13일 쉬운 화법) -->
+  <section class="scene light" id="curriculum">
+    <p class="kicker">4주 정규 커리큘럼</p>
+    <h2>기초부터 첫 결제까지.<br><span class="lav" style="color:#79539D">4주 만에 끝내는 실전.</span></h2>
+    <p class="sub">어려운 전문 용어 없이,<br>매주 하나의 결과물을 완성해 나갑니다.</p>
+
+    <!-- 1주차 -->
+    <div class="module-card">
+      <div class="module-meta">
+        <b>WEEK 01</b>
+        <span>방향 설정</span>
+      </div>
+      <h3>내 방향 찾기: 타깃 끝내기</h3>
+      <div class="module-details">
+        <ul>
+          <li><b>내 고객 정의</b>: 내 상품과 서비스에 지갑을 열 진짜 고객 1명 찾기</li>
+          <li><b>팔리는 주제 선정</b>: 흔한 일상이 아닌, 전문성과 수익이 연결되는 메인 테마</li>
+          <li><b>소재 10개 발굴</b>: 1달 동안 고민 없이 뽑아 쓸 마르지 않는 콘텐츠 소재 리스트</li>
+        </ul>
+        <div class="module-result">
+          <small>1주차 완성 결과물</small>
+          <b>내 계정 프로필 소개글 + 10개 핵심 콘텐츠 기획서 완성</b>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2주차 -->
+    <div class="module-card">
+      <div class="module-meta">
+        <b>WEEK 02</b>
+        <span>AI 기획</span>
+      </div>
+      <h3>AI 대본: 내 말투 그대로</h3>
+      <div class="module-details">
+        <ul>
+          <li><b>지후의 실전 프롬프트</b>: 어색한 번역투 없이 내 말투로 5분 만에 대본 뽑기</li>
+          <li><b>릴스 3초 후킹 공식</b>: 넘기려던 엄지손가락을 멈추게 만드는 첫 문장 설계</li>
+          <li><b>캐러셀 카드뉴스 대본</b>: 슬라이드 7장으로 압축하는 저장 유발 카드 기획</li>
+        </ul>
+        <div class="module-result">
+          <small>2주차 완성 결과물</small>
+          <b>바로 촬영/제작 들어가는 완성형 릴스 대본 1개 + 캐러셀 1개</b>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3주차 -->
+    <div class="module-card">
+      <div class="module-meta">
+        <b>WEEK 03</b>
+        <span>실전 제작</span>
+      </div>
+      <h3>직접 게시: 폰 하나로 끝내기</h3>
+      <div class="module-details">
+        <ul>
+          <li><b>군더더기 없는 릴스 제작</b>: 복잡한 효과 없이 메시지만으로 끝내는 초간단 편집</li>
+          <li><b>스마트폰 캐러셀 완성</b>: 디자이너 없이 템플릿에 글만 얹어 바로 만드는 법</li>
+          <li><b>첫 업로드 실습</b>: 수강생 전원 수업 시간 내에 실제 인스타 업로드 완료</li>
+        </ul>
+        <div class="module-result">
+          <small>3주차 완성 결과물</small>
+          <b>내 인스타그램 피드에 릴스 1개 + 캐러셀 1개 실제 게시 완료</b>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4주차 -->
+    <div class="module-card">
+      <div class="module-meta">
+        <b>WEEK 04</b>
+        <span>수익화 동선</span>
+      </div>
+      <h3>수익화 연결: 돈 버는 동선</h3>
+      <div class="module-details">
+        <ul>
+          <li><b>프로필 링크의 마법</b>: 방문자가 문의와 구매로 넘어오는 전환 페이지 세팅</li>
+          <li><b>DM 유입 자동화</b>: 댓글 하나로 고객에게 자료와 상담 링크를 보내는 법</li>
+          <li><b>첫 매출 만들기</b>: 크리에이터의 협찬/전자책, 대표님의 상담/예약 연결</li>
+        </ul>
+        <div class="module-result">
+          <small>4주차 완성 결과물</small>
+          <b>방문자가 고객으로 전환되는 내 계정 첫 수익화 동선 세팅 완료</b>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-WEEK CHALLENGE & 100% REFUND (11일 정본 복원) -->
   <section class="scene light" id="challenge">
     <p class="kicker">선택 과정 · 추가 4주 실행 챌린지</p>
-    <h2>혼자 하면 백퍼센트 미룹니다.<br><span class="lav">한 달 더, 같이 뛰어요.</span></h2>
+    <h2>혼자면 미루니까.<br><span class="lav" style="color:#79539D">4주 더, 같이.</span></h2>
     
     <figure class="art-visual square">
-      <img src="assets/challenge-calendar-v01.png" width="1024" height="1024" loading="lazy" alt="여덟 개의 게시물 칸을 채워가는 달력과 스마트폰 입체 일러스트">
+      <img src="assets/challenge-calendar-v01.png" width="1024" height="1024" loading="lazy" alt="8개 게시물 칸을 채워가는 캘린더 3D 일러스트">
     </figure>
-    
-    <p class="challenge-n">
+
+    <div class="challenge-n">
       <small>주</small> 2<small>회</small>
-      <span>꾸준한 게시 달성</span>
+      <span>게시 목표</span>
+    </div>
+
+    <p class="sub">
+      매주 릴스 1개 + 캐러셀 1개<br>
+      게시 후 피드백 받고 다음 콘텐츠로.
     </p>
-    <p class="sub">매주 릴스 1개 + 캐러셀 1개 업로드<br>게시 → 정밀 피드백 → 다음 콘텐츠로 폭발</p>
-    
+
     <div class="refund-offer">
-      <p>모든 주간 미션 완료 시</p>
-      <strong>챌린지 비용<br><em>100% 전액 환급!</em></strong>
-      <small>본강의 비용 제외 · 미션 완료 시 챌린지 참가비 전액 환급</small>
+      <p>모든 미션 완료 시</p>
+      <strong>챌린지 비용<br><em>100% 환급</em></strong>
+      <small>본강의 비용 제외<br>미션 세부 내용과 완료 기준은 추후 안내</small>
     </div>
-    
+
     <div style="margin-top:6cqw">
-      <p class="strip">
-        <strong>매주 60분 온라인 그룹 클리닉</strong><br>
-        막히는 부분을 강사와 함께 실시간으로 해결
-      </p>
-      <p class="strip">
-        <strong>매주 대표 콘텐츠 정밀 피드백</strong><br>
-        조회수와 저장이 더 잘 터지도록 1:1로 뜯어고칩니다.
-      </p>
+      <div class="strip">
+        <strong>매주 60분 그룹 라이브 피드백</strong><br>
+        막힌 부분을 함께 풀고 방향을 잡습니다.
+      </div>
+      <div class="strip">
+        <strong>매주 대표 콘텐츠 1:1 첨삭</strong><br>
+        다음에 고칠 것을 명확히 정해드립니다.
+      </div>
     </div>
-    <p class="small">10.28–11.18 총 4주간 진행 · 그룹 클리닉 4회 · 정밀 피드백 4회</p>
   </section>
 
-  <!-- 피드백 소개 (지후 멘토 페르소나 UI 적용) -->
+  <!-- 1:1 FEEDBACK SECTION (11일 정본 복원) -->
   <section class="scene">
-    <p class="kicker">지후 멘토의 1:1 정밀 코칭</p>
-    <h2>“더 열심히 하세요”<br>그런 뜬구름 피드백은 <span class="lav">없습니다.</span></h2>
+    <p class="kicker">밀착 피드백 시스템</p>
+    <h2>“더 잘해보세요”<br>그 말로 <span class="lav">끝내지 않습니다.</span></h2>
     
     <figure class="art-visual">
-      <img src="assets/feedback-bubbles-v01.png" width="1536" height="1024" loading="lazy" alt="명확한 피드백을 표현한 말풍선과 체크 표시 입체 일러스트">
+      <img src="assets/feedback-bubbles-v01.png" width="1536" height="1024" loading="lazy" alt="명확한 피드백을 표현한 말풍선 3D 일러스트">
     </figure>
-    
+
     <div class="feedback-box">
-      <!-- 수강생 고민 -->
-      <div class="feedback-student">
-        <div class="student-avatar">🙋‍♂️</div>
-        <div class="student-bubble">
-          <b>수강생 Q</b>
-          <p>“선생님, 릴스 앞부분에서 다 이탈하는데 왜 이러는지 모르겠어요 ㅠㅠ”</p>
-        </div>
-      </div>
-
-      <!-- 지후 멘토 직접 코칭 -->
-      <div class="feedback-jihu">
-        <div class="jihu-avatar">
-          <img src="assets/instagram-27.jpg" alt="지후 멘토">
-        </div>
-        <div class="jihu-bubble">
-          <div class="jihu-badge-row">
-            <span class="jihu-name">지후 멘토</span>
-            <span class="jihu-role">1:1 맞춤 피드백</span>
-          </div>
-          <p>
-            “설명이 너무 길어졌어요!<br>
-            첫 문장을 <strong>고객이 당장 겪는 고통 질문</strong>으로 바로 바꾸고,<br>
-            <strong>2초 안에 결론부터</strong> 화면에 던져주세요. 이렇게 대본 수정해 드렸으니 재촬영해보세요!”
-          </p>
-        </div>
-      </div>
-    </div>
-    
-    <p class="sub">어디를, 어떻게 고쳐야 할지.<br><span class="lav">당장 취해야 할 다음 행동까지</span> 짚어드립니다.</p>
-  </section>
-
-  <!-- 수강 플랜 안내 (정가 취소선, 얼리버드 할인율, 12개월 할부) -->
-  <section class="scene" id="plans">
-    <p class="kicker">얼리버드 특별 혜택</p>
-    <h2>4주로 배우고.<br>8주로 <span class="lav">실제 수익까지.</span></h2>
-    
-    <div class="resource-preview" aria-label="실습 자료 구성">
-      <div class="resource">
-        <small>PROMPT</small>
-        <span>✦</span>
-        <b>AI<br>프롬프트</b>
-      </div>
-      <div class="resource">
-        <small>WORKBOOK</small>
-        <span>▤</span>
-        <b>내 계정<br>설계 노트</b>
-      </div>
-      <div class="resource">
-        <small>CHECKLIST</small>
-        <span>✓</span>
-        <b>콘텐츠<br>실행 체크</b>
-      </div>
-    </div>
-    <p class="resource-caption">수강생 전원 증정 실전 자료집</p>
-
-    <!-- 플랜 1: 본강의 -->
-    <article class="plan">
-      <span class="duration">4주 완성</span>
-      <h3>본강의</h3>
-      
-      <div class="price-container">
-        <div class="price-strike-wrap">
-          <span class="price-original">2,200,000원</span>
-          <span class="discount-badge">32% OFF</span>
-        </div>
-        <div class="price">149<small>만 원</small></div>
-        <div class="price-installment">💳 12개월 할부 시 <strong>월 12만 4천원</strong></div>
-      </div>
-
-      <ul>
-        <li>온라인 라이브 본강의 4회 (회당 120분)</li>
-        <li>지후 전용 AI 프롬프트 & 실습 템플릿 제공</li>
-        <li>주차별 대표 과제 피드백 4회</li>
-        <li>계정 방향 설계부터 수익화 동선 세팅까지</li>
-      </ul>
-      <a class="button" href="#bank-info">본강의 얼리버드 신청하기</a>
-    </article>
-
-    <!-- 플랜 2: 본강의 + 챌린지 -->
-    <article class="plan featured">
-      <span class="duration">총 8주 (본강의 + 실행 챌린지)</span>
-      <h3>본강의 + 챌린지 패키지</h3>
-      
-      <div class="price-container">
-        <div class="price-strike-wrap">
-          <span class="price-original">3,500,000원</span>
-          <span class="discount-badge">29% OFF</span>
-        </div>
-        <div class="price">249<small>만 원</small></div>
-        <div class="price-installment">💳 12개월 할부 시 <strong>월 20만 7천원</strong></div>
-      </div>
-
-      <ul>
-        <li>본강의 전체 혜택 100% 포함</li>
-        <li>추가 4주 실행 챌린지 프로그램 참여</li>
-        <li>주 1회 60분 그룹 클리닉 (총 4회)</li>
-        <li>업로드 콘텐츠 1:1 상세 피드백 (총 4회)</li>
-        <li>주 2회 꾸준한 업로드 습관 강제 형성</li>
-        <li><strong>모든 주간 미션 완료 시 챌린지 비용 100% 전액 환급!</strong></li>
-      </ul>
-      <a class="button" href="#bank-info" style="background:linear-gradient(135deg,#FF1E76,#FF5900)">
-        본강의 + 챌린지 신청하기 (환급 도전)
-      </a>
-    </article>
-
-    <!-- 계좌이체 & 세금계산서 안내 (Fix #10) -->
-    <div class="bank-box" id="bank-info">
-      <div class="bank-title">🏛 계좌이체 및 증빙 안내</div>
-      <p style="font-size:4cqw;color:#DDD;margin-bottom:2cqw">
-        신용카드 무이자 할부는 물론, <strong>계좌이체 결제</strong>도 가능합니다.
+      <p class="q">수강생 : “첫 부분이 좀 약한 것 같아요...”</p>
+      <p class="a">
+        지후 피드백 : “설명이 길어졌어요.<br>
+        첫 문장을 <strong>고객의 질문</strong>으로 바꾸어<br>
+        이렇게 다시 시작해보세요.”
       </p>
-      <div class="bank-account">
-        우리은행 1005-704-024008<br>
-        예금주: (주)루프에잇
-      </div>
-      <div class="bank-tax">
-        ✓ <strong>현금영수증</strong> 및 <strong>사업자 지출증빙 전자계산서</strong> 100% 발행 가능<br>
-        ✓ 입금 후 입금자명을 카카오톡 또는 DM으로 알려주시면 즉시 수강 등록 및 영수증이 발급됩니다.
-      </div>
     </div>
+
+    <p class="sub">
+      어디를, 어떻게 고칠지.<br>
+      <span class="lav">다음 행동까지</span> 짚어드립니다.
+    </p>
   </section>
 
-  <!-- FAQ -->
+  <!-- PLANS & PRICING SECTION (11일 정본 복원) -->
+  <section class="scene" id="plans">
+    <p class="kicker">수강 구성 선택</p>
+    <h2>4주로 시작.<br>8주로 <span class="lav">실행까지.</span></h2>
+
+    <article class="plan">
+      <p class="duration">4주 과정</p>
+      <h3>본강의 4주</h3>
+      <div class="price">149<small>만 원</small></div>
+      <ul>
+        <li>온라인 실시간 본강의 4회 (매주 120분)</li>
+        <li>지후 실전 AI 프롬프트 & 실습 템플릿 일체 제공</li>
+        <li>매주 핵심 과제 1:1 집중 피드백</li>
+        <li>내 계정 타깃팅부터 첫 수익화 동선 완성</li>
+      </ul>
+      <a class="button secondary" href="https://tally.so" target="_blank" rel="noopener">본강의 신청하기</a>
+    </article>
+
+    <article class="plan featured">
+      <p class="duration">총 8주 (4주 본강의 + 4주 챌린지)</p>
+      <h3>본강의 + 실행 챌린지</h3>
+      <div class="price">249<small>만 원</small></div>
+      <ul>
+        <li>본강의 4주 전체 구성 포함</li>
+        <li>추가 4주 실행 챌린지 및 주 2회 업로드 완주</li>
+        <li>매주 60분 그룹 라이브 첨삭 세션 4회</li>
+        <li>추가 대표 콘텐츠 정밀 피드백 4회</li>
+        <li><strong>모든 미션 완료 시 챌린지 비용 100% 전액 환급</strong></li>
+      </ul>
+      <a class="button" href="https://tally.so" target="_blank" rel="noopener">본강의 + 챌린지 신청하기 (추천)</a>
+    </article>
+
+    <p class="small">* 소수 정원 한정으로 조기 마감될 수 있습니다.</p>
+  </section>
+
+  <!-- FAQ SECTION (11일 정본 복원) -->
   <section class="scene soft">
-    <p class="kicker">궁금증 해결</p>
-    <h2>시작 전,<br><span class="lav">가장 많이 묻는 질문들.</span></h2>
-    
+    <p class="kicker">자주 묻는 질문</p>
+    <h2>시작 전,<br><span class="lav">궁금한 것들.</span></h2>
+
     <div class="faq">
       <details>
-        <summary>인스타를 처음 해보는 완전 초보도 가능한가요?</summary>
-        <p>
-          네, 전혀 문제없습니다! 기획이나 영상 편집 경험이 전무한 분들을 기준으로 커리큘럼을 짰습니다. 소개하고 싶은 나의 일, 상품, 서비스, 또는 작은 관심사만 있다면 누구나 따라오실 수 있습니다.
-        </p>
+        <summary>완전 초보자도 따라갈 수 있나요?</summary>
+        <p>네, 기획과 제작 경험이 전혀 없는 분을 기준으로 설계되었습니다. 본인의 제품·서비스나 소개하고 싶은 전문 분야만 있으면 누구나 시작할 수 있습니다.</p>
       </details>
-
       <details>
-        <summary>얼굴을 꼭 드러내야 하나요?</summary>
-        <p>
-          꼭 얼굴을 공개할 필요는 없습니다. 목소리와 화면 녹화, 손 촬영, 제품 촬영, 카드뉴스 등 얼굴 노출 없이도 얼마든지 수익화가 가능합니다.<br><br>
-          단, 전문직이나 대표님처럼 개인 브랜딩과 신뢰도가 핵심인 경우에는 얼굴 공개를 권장하며, 본인이 편안하고 지속 가능한 방식을 함께 찾아드립니다.
-        </p>
+        <summary>얼굴을 꼭 공개해야 하나요?</summary>
+        <p>꼭 공개할 필요는 없습니다. 목소리와 화면 녹화, 제품 촬영, 카드뉴스 등 얼굴 노출 없이도 얼마든지 수익화가 가능합니다. 본인이 가장 편안하게 지속할 수 있는 방식을 함께 찾아드립니다.</p>
       </details>
-
       <details>
-        <summary>수익이 정말 보장되나요?</summary>
-        <p>
-          단순히 강의만 듣는다고 계좌에 돈이 꽂히는 마법은 아닙니다.<br><br>
-          하지만 지후의 실전반은 주 2회 직접 게시하고 피드백을 반영하며 '실제 돈이 들어오는 구조'를 직접 구축하도록 돕습니다. 망설이지 않고 끝까지 완주할 수 있도록 <b>미션 완료 시 챌린지 비용 100% 전액 환급! 제도</b>를 운영하고 있으니, 믿고 따라오시면 됩니다.
-        </p>
+        <summary>챌린지 100% 환급 조건이 어떻게 되나요?</summary>
+        <p>챌린지 기간(4주) 동안 주 2회 게시 미션을 모두 성실히 완주하시면 챌린지 비용 전액을 100% 현금 환급해 드립니다. 자세한 미션 기준은 강의 시작 시 안내해 드립니다.</p>
       </details>
-
       <details>
         <summary>수업 시간과 녹화본 제공은 어떻게 되나요?</summary>
-        <p>
-          9월 30일부터 매주 수요일 저녁 8시 온라인 라이브로 진행됩니다. 복습을 위해 전체 녹화본이 제공되므로 일정이 겹치더라도 안심하고 수강하실 수 있습니다.
-        </p>
-      </details>
-
-      <details>
-        <summary>나중에 콘텐츠 제작 대행을 맡길 수도 있나요?</summary>
-        <p>
-          직접 운영하는 기본 원리를 익힌 후, 본업이 너무 바빠 제작만 위탁하고 싶은 분들은 별도 상담을 통해 대행 서비스로 연계 가능합니다. (제작 대행은 선택 사항입니다.)
-        </p>
+        <p>9월 30일부터 매주 1회 저녁 온라인 LIVE(ZOOM)로 진행됩니다. 부득이하게 참석하지 못한 분들을 위해 복습용 녹화본이 제공됩니다.</p>
       </details>
     </div>
   </section>
 
-  <!-- 하단 마감 CTA -->
+  <!-- CLOSING END SECTION -->
   <section class="scene end light">
-    <p class="kicker">9월 30일 개강 · 선착순 마감</p>
-    <h2>이제 내 계정에서,<br><span class="lav">돈 버는 인스타를 시작하세요.</span></h2>
-    <p class="sub">지후 AI 인스타 수익화 실전반</p>
-    <a class="button" href="#plans">선착순 얼리버드 신청하기 ↑</a>
-    <p class="small">소수 정원 마감 시 사전 예고 없이 종료됩니다.</p>
+    <p class="kicker">9월 30일 개강</p>
+    <h2>이제 내 계정에서,<br><span class="lav" style="color:#79539D">직접 시작하세요.</span></h2>
+    <p class="sub">지후의 AI 인스타 수익화 실전반</p>
+    <a class="button" href="#plans" style="max-width:85%;margin:6cqw auto 0">수강 신청하러 가기 →</a>
+    <p class="small">선착순 마감 시 조기 종료됩니다.</p>
   </section>
 
-  <footer class="footer">
-    ZIHU · AI 인스타 수익화 실전반<br>
-    (주)루프에잇 | 사업자등록번호: 247-86-02758<br>
-    © 2026 LOOP EIGHT INC. All Rights Reserved.
-  </footer>
-
-</main>
-
-<!-- 플로팅 하단 CTA (Fix #9) -->
-<div class="sticky">
-  <div class="sticky-left">
-    <span class="sticky-tag">🔥 선착순 10명 마감 임박</span>
-    <span class="sticky-main">얼리버드 최대 32% 할인 중</span>
-  </div>
-  <a href="#plans">지금 수강 신청하기</a>
 </div>
-
 </body>
 </html>
