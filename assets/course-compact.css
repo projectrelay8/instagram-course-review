@@ -1,0 +1,144 @@
+/* Base is the exact index_260911_초기원본.html selected by the user. */
+@font-face{font-family:Pretendard;src:url('fonts/Pretendard-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Pretendard;src:url('fonts/Pretendard-SemiBold.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:Pretendard;src:url('fonts/Pretendard-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Pretendard;src:url('fonts/Pretendard-Black.woff2') format('woff2');font-weight:800 900;font-display:swap}
+/* Keep source images, module cards and social mockups at their original dimensions. */
+.scene .small,.scene .visual-caption{font-size:clamp(11px,2.6cqw,16px);line-height:1.7;color:#B3A5C1;margin-top:3cqw}
+.scene.light .small{color:#766181}
+.evidence .number small{font-size:4.5cqw;margin-left:2cqw}
+.post strong{font-size:9.1cqw;white-space:nowrap}
+#my-account .account-art{margin-bottom:5cqw}
+#my-account .account-note{right:0}
+.route-box>p:not(.tag):not(.route):not(.visual-caption){font-size:4.5cqw;line-height:1.6}
+.collaboration-route{padding-bottom:6cqw}
+.dm-window .dm-bubble:not(.outgoing){color:#111!important;background:#EFEFEF}
+.dm-window .dm-bubble.outgoing{color:#FFF}
+.coach{display:flex;align-items:center;gap:3cqw;padding-bottom:4cqw;margin-bottom:4cqw;border-bottom:1px solid #604578}
+.coach-avatar{display:grid;place-items:center;width:11cqw;height:11cqw;border-radius:50%;background:#B797FF;color:#2A183A;font-size:3.5cqw;font-weight:800}
+.coach b{font-size:5cqw;color:#E3CEF5}
+.feedback-box .q{font-size:4.4cqw;padding-bottom:4cqw}
+.feedback-box .a{font-size:5.5cqw;line-height:1.65;font-weight:600}
+.feedback-box .a strong{font-weight:900;color:#DBBCFF}
+.refund-offer em{font-size:9.1cqw;white-space:nowrap}
+.refund-offer small{font-size:clamp(12px,2.9cqw,19px);line-height:1.6;color:#76548B}
+/* Eight supports conveyed through four large illustrations. */
+#benefits{background:#F6F2FB;color:#2A193B}
+#benefits .lav,#benefits .kicker{color:#79539D}
+.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:4cqw;margin-top:8cqw;text-align:center}
+.support-card{position:relative;overflow:hidden;background:#FFF;border:1px solid #E2D8ED;border-radius:4cqw;padding:4cqw 2.8cqw 5cqw}
+.support-number{position:absolute;top:3cqw;left:3cqw;color:#A68BBB;font-size:3cqw;font-weight:600;z-index:1}
+.support-card>img{width:100%;height:29cqw;object-fit:contain;display:block;margin:0 auto 1cqw}
+.support-card h3{font-size:4.8cqw;line-height:1.35;letter-spacing:-.045em;color:#38214F}
+.support-items{display:flex;flex-direction:column;align-items:center;gap:1.5cqw;margin-top:4cqw}
+.support-items>span{display:block;border-bottom:1px solid #E0D2EC;padding-bottom:.8cqw;font-size:3.4cqw;color:#7B5B91;line-height:1.5}
+/* Price is one band: total on the left, monthly amount on the right. */
+.plan-heading{display:flex;align-items:center;justify-content:space-between;gap:3cqw}
+.plan-heading h3{font-size:6.2cqw;line-height:1.35}
+.plan-heading>span{font-size:3.4cqw;padding:1cqw 2.5cqw;border:1px solid #705185;border-radius:20px;white-space:nowrap;color:#CBB2DD}
+.offer-label{display:flex;align-items:center;gap:3cqw;margin-top:6cqw}
+.offer-label b{font-size:3.5cqw;color:#C9A7F0;letter-spacing:.02em}
+.offer-label del{font-size:3.7cqw;color:#9E89AF;text-decoration-thickness:1px}
+.price-band{display:flex;align-items:center;justify-content:space-between;gap:3cqw;margin-top:1cqw}
+.price-band .price{font-size:15cqw;line-height:1.25;color:#E6D5FF;white-space:nowrap;letter-spacing:-.065em}
+.price-band .price small{font-size:4.5cqw;font-weight:600;margin-left:1cqw;letter-spacing:-.02em}
+.installment{text-align:right;white-space:nowrap}
+.installment>b{display:block;font-size:4.1cqw;font-weight:800;line-height:1.6;color:#F5EEFC;letter-spacing:-.045em}
+.installment>span{display:block;font-size:3cqw;color:#B8A1CC;line-height:1.6}
+.plan ul{padding-top:4cqw;margin:5cqw 0}
+.plan li{font-size:4.35cqw;line-height:1.6;padding:1.5cqw 0}
+.plan .button{font-size:4.5cqw;padding:4cqw 2cqw}
+.faq summary{font-size:4.8cqw;padding:4.5cqw 0}
+.faq details p{font-size:4.15cqw;line-height:1.75;padding-bottom:4.5cqw}
+.payment-panel{background:#FFF;border:1px solid #CFB9E4;border-radius:4cqw;padding:6cqw 4cqw;margin-top:8cqw;color:#573770;text-align:center}
+.payment-chip{display:inline-block;color:#79539D;font-size:3.6cqw;border-bottom:1px solid #DAC8E7;padding-bottom:2cqw;margin-bottom:4cqw}
+.payment-panel>p{font-size:4cqw;color:#876998}
+.bank-number{display:block;font-size:6.8cqw;letter-spacing:-.03em;line-height:1.5;white-space:nowrap;margin-top:1cqw}
+.bank-owner{display:block;font-size:4.3cqw;margin-top:1cqw;font-weight:600}
+.payment-tags{display:flex;justify-content:center;gap:4cqw;margin-top:4cqw;font-size:3.4cqw;color:#887094}
+.terms-link{display:inline-block;margin-top:5cqw;font-size:3.7cqw;color:#76518D;text-underline-offset:.3em}
+.footer{padding:6cqw;font-size:3cqw}
+.legal-section{padding:4cqw 6cqw;background:#F8F5FB;color:#513761}
+.legal-disclosure>summary{font-size:3.8cqw;padding:3cqw 0;cursor:pointer}
+.calendar-label span{display:block;font-size:2.7cqw;letter-spacing:.11em;color:#8D739F;font-weight:600}
+.calendar-label>b{font-size:4cqw;font-weight:700;display:block;margin-top:1.6cqw;color:#4B315E}
+.calendar-pair{display:grid;grid-template-columns:1fr 1fr;gap:5cqw;margin-top:5cqw}
+.calendar-month h3{display:flex;align-items:baseline;gap:2cqw;margin-bottom:3cqw;color:#6D488B;font-family:Pretendard,sans-serif}
+.calendar-month h3 b{font-family:CourseDisplay,Pretendard,sans-serif;font-size:6cqw;letter-spacing:-.03em}
+.calendar-month h3 span{font-size:2.6cqw;font-weight:400;letter-spacing:0}
+.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:.6cqw;text-align:center}
+.calendar-grid>span{font-size:2.9cqw;line-height:4.3cqw;color:#766780}
+.calendar-grid>.weekday{font-size:2.4cqw;color:#9C88AB;padding-bottom:1cqw}
+.calendar-grid>.class-day{color:#FFF;background:#79539D;border-radius:50%;font-weight:700}
+.calendar-legend{display:flex;align-items:center;gap:1.4cqw;margin:4cqw 0;font-size:2.8cqw;color:#8A709A}
+.calendar-legend>span{width:1.7cqw;height:1.7cqw;background:#79539D;border-radius:50%}
+.calendar-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1cqw;padding-top:3cqw;border-top:1px solid #E6DAEF}
+.calendar-steps span{font-size:2.8cqw;color:#846692;text-align:center}
+.calendar-steps b{display:block;font-size:3.4cqw;color:#5B3674;margin-bottom:1cqw}
+.policy{background:#F8F6FA;text-align:left;padding:10cqw 7cqw}
+.policy h2{font-size:6.4cqw}
+.policy-lead{font-size:3.7cqw;color:#7E6D89;line-height:1.8;margin-top:3cqw!important}
+.policy details{border-top:1px solid #DDD3E7;padding:4cqw 0}
+.policy details:last-of-type{border-bottom:1px solid #DDD3E7}
+.policy summary{font-size:4.2cqw;font-weight:700;cursor:pointer;padding-right:2cqw}
+.policy h3{font-size:3.9cqw;margin:4cqw 0 2cqw}
+.policy p,.policy li{font-size:3.5cqw;color:#74617F;line-height:1.85}
+.policy p{margin-top:2.5cqw}
+.policy ul,.policy ol{padding-left:5cqw}
+.policy table{width:100%;border-collapse:collapse;font-size:3.4cqw;margin-top:3cqw}
+.policy th,.policy td{padding:3cqw 2cqw;border-bottom:1px solid #E1D8E8;text-align:left;vertical-align:top}
+.policy th{font-weight:700;color:#5A406E;background:#F0EAF5}
+.policy td{color:#776080}
+.policy strong{color:#4B345B}
+.policy a{text-decoration:underline}
+.policy small{font-size:3.1cqw;color:#8A7597}
+.policy-draft{display:inline-block;border:1px solid #D9CADF;color:#82628F;font-size:3cqw;padding:1cqw 2cqw;border-radius:1cqw;margin-bottom:3cqw}
+.policy p,.policy li{font-size:max(14px,3.5cqw)}
+.policy small{color:#735B81}
+#policies{--lav:#79539D;color:#302036;background:#F7F4FA;padding:10cqw 6cqw}
+#policies h2{font-family:CourseDisplay,Pretendard,sans-serif;font-size:5.6cqw;letter-spacing:-.035em}
+#policies .policy-lead{font-size:3.6cqw;line-height:1.75}
+#policies h3{font-size:3.6cqw}
+#policies p,#policies li{font-size:clamp(12px,3.1cqw,20px);line-height:1.9}
+#policies .small{font-size:clamp(11px,2.4cqw,15px)}
+#policies summary{font-size:4cqw;color:#4B345B}
+#policies .faq{margin-top:5cqw}
+.calendar-grid>.weekday{font-size:clamp(11px,2.4cqw,17px);color:#7B628A}
+.calendar-grid>.class-day{color:#FFF}
+.calendar-month h3 span{font-size:clamp(11px,2.6cqw,18px)}
+.calendar-legend{font-size:clamp(11px,2.8cqw,18px);color:#775D87}
+.calendar-steps span{font-size:clamp(11px,2.8cqw,19px)}
+.calendar-steps b{font-size:clamp(13px,3.4cqw,24px)}
+.calendar-pair{grid-template-columns:1fr;gap:6cqw}
+.calendar-month h3 b{font-size:9cqw}
+.calendar-grid>span{line-height:8cqw}
+.calendar-steps{grid-template-columns:repeat(2,1fr);gap:3cqw}
+#policies .faq summary{color:#4B345B;font-size:4cqw;line-height:1.6;padding-right:6cqw}
+#policies .faq h3{color:#4B345B;font-size:clamp(14px,3.6cqw,24px);line-height:1.6}
+#policies .faq p,#policies .faq li,#policies .faq td{font-size:clamp(13px,3.1cqw,21px);color:#67516F;line-height:1.85}
+#policies .faq strong{color:#3D294D}
+#policies .faq th{color:#574068;background:#F1EAF7;font-size:clamp(13px,3.2cqw,22px)}
+/* Details are reachable without exposing a page of legal copy by default. */
+#policies{padding:3cqw 0;background:transparent}
+#policies .faq{margin-top:2cqw}
+#policies .faq details{background:white;border:1px solid #DDD0E5;border-radius:2cqw;padding:4cqw;margin-bottom:3cqw}
+#policies .faq summary{padding:0 0 2cqw;cursor:pointer;font-size:4cqw;color:#4B345B}
+#policies .faq p,#policies .faq li,#policies .faq td{font-size:clamp(13px,3.1cqw,21px);line-height:1.8;color:#67516F}
+#policies .faq h3{font-size:clamp(15px,3.8cqw,26px);color:#4B345B}
+#policies .faq strong{color:#3D294D}
+#policies .faq th{background:#EEE6F5;color:#574068;font-size:clamp(13px,3.2cqw,22px)}
+#policies .small{font-size:clamp(11px,2.5cqw,15px);color:#887392}
+@container(max-width:350px){.calendar-pair{grid-template-columns:1fr;gap:6cqw}.calendar-month h3 b{font-size:9cqw}.calendar-grid>span{line-height:8cqw}.calendar-steps{grid-template-columns:repeat(2,1fr);gap:3cqw}}
+
+.inbox-proof{margin:6cqw -3cqw 0;overflow:hidden;border-radius:2cqw;background:#fff;border:1px solid #DACFE7;text-align:left}.inbox-proof-title{display:flex;align-items:center;justify-content:space-between;padding:3.5cqw 3cqw;border-bottom:1px solid #E5DCEC;color:#4A315C}.inbox-proof-title b{font-size:4.2cqw}.inbox-proof-title span{font-size:2.8cqw;color:#9077A0}.inbox-proof img{width:100%;height:auto;display:block}.inbox-proof figcaption{padding:2cqw 3cqw;font-size:clamp(10px,2.4cqw,15px);color:#8D7B98;text-align:right}
+
+/* Compact two-month calendar; original curriculum cards retain their source styles. */
+.course-calendar{background:#FFF;border:1px solid #DDD0E8;border-radius:3cqw;padding:5cqw;margin-top:7cqw;text-align:left}
+.calendar-label>b{display:none}
+.calendar-pair{grid-template-columns:1fr 1fr;gap:4cqw;margin-top:4cqw}
+.calendar-month h3 b{font-size:6.8cqw}
+.calendar-grid>span{line-height:4.9cqw}
+.calendar-steps{grid-template-columns:repeat(4,1fr);gap:1cqw}
+.calendar-month h3{gap:1.4cqw}
+.calendar-month h3 span{font-size:2.5cqw}
+@container(max-width:350px){.calendar-month h3{flex-direction:column;gap:.6cqw}.calendar-grid>.weekday{font-size:10px}.calendar-grid>span{font-size:10px;line-height:5.2cqw}.calendar-steps{grid-template-columns:repeat(2,1fr)}}

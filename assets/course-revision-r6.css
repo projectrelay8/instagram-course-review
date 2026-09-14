@@ -1,0 +1,15 @@
+/* A short first-person story bridges the hero and the existing proof. */
+.empathy-scene{padding:12cqw 7cqw 8cqw;background:#EEE5FA}
+.empathy-scene .empathy-kicker{font-size:4.5cqw;line-height:1.6;color:#9376A9;margin:0 0 4cqw;letter-spacing:-.035em}
+.empathy-scene h2{font-size:9.2cqw;line-height:1.32;color:#32203F}.empathy-scene h2 .lav{color:#8054AD}
+.empathy-letter{position:relative;margin:8cqw 0 0;background:#FCFAFF;border:1px solid #DBCBE8;border-radius:3cqw;padding:7cqw 4cqw 5cqw;overflow:hidden;text-align:center}
+.empathy-quote{position:absolute;left:4cqw;top:0;font-family:Georgia,serif;font-size:23cqw;line-height:1.2;color:#E7DAF2;user-select:none}
+.empathy-letter h3{position:relative;font-size:6.8cqw;font-weight:800;line-height:1.4;color:#59366F;letter-spacing:-.045em}
+.empathy-letter p{position:relative;font-size:4.5cqw;line-height:1.8;letter-spacing:-.04em;color:#8D789A;margin:3.5cqw 0 0}
+.empathy-sign{display:block;color:#AF98BF;font-size:3.2cqw;letter-spacing:.2em;margin-top:4cqw}
+.empathy-turn{display:flex;align-items:center;justify-content:center;gap:0;margin:6cqw -1cqw 0;text-align:left}
+.empathy-turn>div{flex:0 0 54%;padding-left:3cqw}.empathy-turn p{font-size:4cqw;color:#9F82B3;margin-bottom:1.2cqw}
+.empathy-turn h3{font-size:6.3cqw;line-height:1.5;letter-spacing:-.05em;color:#53336C}.empathy-turn h3 span{color:#8C60AF}
+.empathy-turn>img{display:block;width:44%;height:auto;object-fit:contain}
+.proof-scene .story-promise{font-size:4.2cqw;line-height:1.8;letter-spacing:-.04em;color:#AD9BBF;margin:7cqw 0 0}.story-promise strong{color:#D8C1EF;font-weight:700}
+@container(max-width:350px){.empathy-letter p{font-size:4.5cqw}.empathy-turn h3{font-size:6.2cqw}}
