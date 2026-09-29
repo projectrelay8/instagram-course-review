@@ -1,0 +1,48 @@
+/* Compact overview; each detail gets its own visual rhythm. */
+#benefits .support-grid{gap:2cqw}
+#benefits .support-card{padding:2.5cqw 1cqw 3cqw;border-radius:3cqw}
+#benefits .support-number{font-size:2.4cqw;margin:0 0 .5cqw 1cqw}
+#benefits .support-card>img{width:20cqw;height:20cqw;margin:0 auto 1cqw}
+#benefits .support-card h3{display:block;min-height:0;font-size:3.5cqw;line-height:1.35;margin:0}
+#benefits{padding-bottom:9cqw}
+#benefit-details{background:#F4ECF3;color:#35103E;overflow:hidden}
+.benefit-story{position:relative;padding:10cqw 7cqw 11cqw;text-align:center;isolation:isolate;overflow:hidden}
+.benefit-story .benefit-label{font:700 3cqw Pretendard,sans-serif;letter-spacing:.02em;margin:0 0 4cqw;color:#A947B8}
+.benefit-story h2{font:900 7.4cqw/1.22 CourseHeadline,Pretendard,sans-serif;letter-spacing:-.055em;margin:0;position:relative;z-index:2;color:inherit;word-break:keep-all}
+.benefit-story .benefit-art{display:block;width:53cqw;height:49cqw;object-fit:contain;margin:1cqw auto;position:relative;z-index:1}
+.benefit-story .benefit-description{font:500 3.8cqw/1.65 Pretendard,sans-serif;letter-spacing:-.035em;margin:5cqw 0 0;color:inherit;word-break:keep-all}
+.benefit-pills{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:1.8cqw}
+.benefit-pills>span{font:800 4.7cqw/1.25 Pretendard,sans-serif;letter-spacing:-.04em;display:block;padding:2.8cqw 5cqw;border-radius:50cqw;background:#EFC7F0;color:#4C1559}
+.benefit-story-1 .benefit-art{width:45cqw;height:39cqw;margin:3cqw 0 -3cqw auto}
+.benefit-story-1 .benefit-pills{align-items:flex-start;margin-top:-18cqw;width:68%}
+.benefit-story-1 .benefit-pills>span{font-size:3.7cqw;border-radius:5cqw 5cqw 5cqw .5cqw;text-align:left;background:#fff}
+.benefit-story-1 .benefit-pills>span:nth-child(2){background:#50225F;color:#fff;margin-left:7cqw}
+.benefit-story-1 .benefit-pills>span:nth-child(3){margin-left:3cqw}
+.benefit-story-2{background:#2A0834;color:#FFF3FD;border-radius:50% 50% 0 0 / 5cqw 5cqw 0 0;padding-top:13cqw}
+.benefit-story-2 .benefit-label{color:#DC9AE4}.benefit-story-2 h2{color:#F3BDF7}
+.benefit-story-2 .benefit-art{width:55cqw;height:49cqw;margin:2cqw auto}
+.benefit-story-2 .benefit-pills{flex-direction:row;gap:1cqw;justify-content:center}
+.benefit-story-2 .benefit-pills>span{font-size:3cqw;padding:2.5cqw 2cqw;background:#543260;color:#fff;border-radius:2cqw}
+.benefit-story-2 .benefit-pills>span+span:before{content:'→';margin-right:1cqw;color:#EDACF0}
+.benefit-story-3{background:#EFCDF0;padding-top:13cqw}
+.benefit-story-3:before{content:'';position:absolute;top:-1px;left:0;right:0;height:4cqw;background:#2A0834;clip-path:polygon(0 0,100% 0,100% 35%,93% 70%,85% 25%,76% 90%,69% 45%,58% 100%,49% 55%,39% 85%,28% 30%,19% 75%,10% 40%,0 100%)}
+.benefit-ninety{font:900 35cqw/.95 CourseHeadline,sans-serif;letter-spacing:-.08em;text-align:left;color:#AE25B8;margin:7cqw 0 0 5cqw}
+.benefit-story-3 .benefit-art{width:45cqw;height:43cqw;position:absolute;right:1cqw;top:33cqw;transform:rotate(10deg)}
+.benefit-story-3 .benefit-pills{margin-top:3cqw}.benefit-story-3 .benefit-pills>span{background:#35103E;color:#fff;font-size:4cqw;transform:rotate(-3deg)}
+.benefit-story-4{background:#F9F1F7}
+.benefit-story-4 .benefit-art{width:59cqw;height:52cqw;margin:1cqw auto -3cqw}
+.benefit-story-4 .benefit-pills>span{width:71cqw;box-sizing:border-box;font-size:5cqw;transform:rotate(-4deg);background:#321039;color:#fff}
+.benefit-story-4 .benefit-pills>span+span{transform:rotate(4deg);background:#E5B8E9;color:#35103E}
+.benefit-story-5{background:#35103E;color:#FFF4FD;border-radius:50% 50% 0 0 / 5cqw 5cqw 0 0;padding-top:13cqw}
+.benefit-story-5 .benefit-label{color:#D59BDD}.benefit-story-5 h2{color:#F2C6F6}
+.benefit-story-5 .benefit-art{width:56cqw;height:50cqw}
+.benefit-story-5 .benefit-pills{flex-direction:row;justify-content:center;gap:2cqw}.benefit-story-5 .benefit-pills>span{font-size:3.7cqw;background:#FAE7FB;padding:3cqw}
+.benefit-story-6{background:#F4ECF3;padding-top:12cqw}
+.benefit-story-6 .benefit-art{width:42cqw;height:38cqw;margin:3cqw 1cqw 0 auto}
+.benefit-story-6 .benefit-pills{align-items:flex-start;margin-top:-32cqw;margin-left:2cqw;gap:1cqw}
+.benefit-story-6 .benefit-pills>span{padding:0;background:none;border-radius:0}
+.benefit-story-6 .benefit-pills>span:first-child{font-size:4cqw;color:#946C9D;text-decoration:line-through;text-decoration-thickness:1px}
+.benefit-story-6 .benefit-pills>span:nth-child(2){font-size:3.4cqw;background:#552060;color:#fff;padding:1.4cqw 2.8cqw;border-radius:20cqw;margin-top:1cqw}
+.benefit-story-6 .benefit-pills>span:last-child{font:900 15cqw/1.2 CourseHeadline,sans-serif;color:#B329BA;letter-spacing:-.06em}
+.benefit-story-6 .benefit-description{margin-top:7cqw}
+.footer .course-change-notice{font:400 clamp(9px,1.8cqw,13px)/1.6 Pretendard,sans-serif;color:#A68CAA;margin:2cqw 0 0;letter-spacing:-.035em;word-break:keep-all}
