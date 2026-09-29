@@ -1,26 +1,26 @@
 /* Six concrete benefits, using the established 3D art and shadow-free cards. */
 #benefits .support-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.4cqw;align-items:stretch}
-#benefits .support-card{display:flex;flex-direction:column;align-items:center;position:relative;padding:4cqw 1.4cqw 4cqw;border:1px solid #DFC8E6;border-radius:4cqw;background:#FFF9FE;box-shadow:none!important;min-width:0;overflow:hidden}
-#benefits .support-card:nth-child(even){background:#F6EAF9}
-#benefits .support-number{align-self:flex-start;font:700 2.8cqw Pretendard,sans-serif;color:#B085BC!important;margin:0 0 1cqw 1cqw}
+#benefits .support-card{display:flex;flex-direction:column;align-items:center;position:relative;padding:4cqw 1.4cqw 4cqw;border:1px solid #CCC8E6;border-radius:4cqw;background:#FAF9FF;box-shadow:none!important;min-width:0;overflow:hidden}
+#benefits .support-card:nth-child(even){background:#ECEAF9}
+#benefits .support-number{align-self:flex-start;font:700 2.8cqw Pretendard,sans-serif;color:#8C85BC!important;margin:0 0 1cqw 1cqw}
 #benefits .support-card>img{display:block;width:24cqw;height:24cqw;object-fit:contain;mix-blend-mode:normal;margin:0 auto 2.5cqw}
-#benefits .support-card h3{font-family:Pretendard,sans-serif;font-size:4cqw;line-height:1.45;font-weight:800;letter-spacing:-.055em;color:#582262;min-height:12cqw;margin:0;display:flex;flex-direction:column;justify-content:center}
-#benefits .support-card h3 .benefit-eyebrow{display:block;font-size:3cqw;font-weight:600;letter-spacing:-.05em;color:#A64BB6;margin-bottom:1.2cqw;white-space:nowrap}
-#benefits .support-card h3 .benefit-key{color:#AA35BC}
-#benefits .benefit-caption{font-size:3cqw;line-height:1.5;color:#A479AF;margin-top:2.2cqw;letter-spacing:-.03em}
-#benefits .benefit-term{font-size:3.3cqw;font-weight:800;color:#A735B9;border:1px solid #DEBCE7;border-radius:5cqw;padding:1cqw 2cqw;margin-top:2cqw;white-space:nowrap}
-#benefits .benefit-basic-term{font-size:2.8cqw;font-weight:400;color:#A889B0;display:block;margin-top:1.2cqw}
+#benefits .support-card h3{font-family:Pretendard,sans-serif;font-size:4cqw;line-height:1.45;font-weight:800;letter-spacing:-.055em;color:#2B2262;min-height:12cqw;margin:0;display:flex;flex-direction:column;justify-content:center}
+#benefits .support-card h3 .benefit-eyebrow{display:block;font-size:3cqw;font-weight:600;letter-spacing:-.05em;color:#594BB6;margin-bottom:1.2cqw;white-space:nowrap}
+#benefits .support-card h3 .benefit-key{color:#4835BC}
+#benefits .benefit-caption{font-size:3cqw;line-height:1.5;color:#8079AF;margin-top:2.2cqw;letter-spacing:-.03em}
+#benefits .benefit-term{font-size:3.3cqw;font-weight:800;color:#4735B9;border:1px solid #C2BCE7;border-radius:5cqw;padding:1cqw 2cqw;margin-top:2cqw;white-space:nowrap}
+#benefits .benefit-basic-term{font-size:2.8cqw;font-weight:400;color:#8E89B0;display:block;margin-top:1.2cqw}
 /* The same six records loop; duplication is purely presentational. */
 .income-ledger .income-ledger-head{gap:2cqw}.income-ledger-head>span{font-size:2.6cqw;white-space:nowrap}
 .income-rolling-controls{display:flex;justify-content:space-between;align-items:center;padding:0 5cqw 3cqw;gap:2cqw}
 .income-rolling-controls .income-reconstruction{padding:0;font-size:clamp(10px,2.6cqw,18px)!important}
-.income-roll-toggle{border:1px solid #E1CFE7;background:#FAF5FC;color:#9668A5;font-family:inherit;font-size:clamp(10px,2.6cqw,18px);line-height:1.2;padding:1.8cqw 2cqw;border-radius:5cqw;cursor:pointer;white-space:nowrap;min-height:30px}
-.income-roll-toggle[hidden]{display:none}.income-scroll-viewport{position:relative;overflow:hidden;height:100cqw;border-top:1px solid #EEEAF2}
+.income-roll-toggle{border:1px solid #D2CFE7;background:#F6F5FC;color:#7068A5;font-family:inherit;font-size:clamp(10px,2.6cqw,18px);line-height:1.2;padding:1.8cqw 2cqw;border-radius:5cqw;cursor:pointer;white-space:nowrap;min-height:30px}
+.income-roll-toggle[hidden]{display:none}.income-scroll-viewport{position:relative;overflow:hidden;height:100cqw;border-top:1px solid #EBEAF2}
 .income-scroll-track{display:block;transform:translateY(0)}.income-scroll-track ol{padding:0 5cqw;margin:0;list-style:none}.income-scroll-track li{height:23cqw;min-height:23cqw;box-sizing:border-box;padding:4cqw 0;align-items:center}.income-scroll-track li:first-child{border-top:0}
 .income-ledger[data-roll-ready] .income-scroll-track{animation:income-roll 1.2s linear infinite;animation-play-state:paused;will-change:transform}
 .income-ledger[data-roll-ready].is-running:not(.is-paused) .income-scroll-track{animation-play-state:running}
 .income-ledger[data-roll-ready] .income-scroll-viewport:hover .income-scroll-track,.income-ledger[data-roll-ready] .income-scroll-viewport:focus .income-scroll-track{animation-play-state:paused!important}
-.income-scroll-viewport:focus-visible,.income-roll-toggle:focus-visible{outline:2px solid #9D54B3;outline-offset:-3px}
+.income-scroll-viewport:focus-visible,.income-roll-toggle:focus-visible{outline:2px solid #6054B3;outline-offset:-3px}
 @keyframes income-roll{to{transform:translateY(-50%)}}
 .income-ledger:not([data-roll-ready]) .income-scroll-viewport{height:auto;overflow:visible}.income-ledger:not([data-roll-ready]) .income-scroll-copy{display:none}
 @media(prefers-reduced-motion:reduce){.income-scroll-viewport{height:auto!important;overflow:visible!important}.income-scroll-track{animation:none!important;transform:none!important;will-change:auto!important}.income-scroll-copy,.income-roll-toggle{display:none!important}}
