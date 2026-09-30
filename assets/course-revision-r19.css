@@ -1,0 +1,31 @@
+/* Display type is isolated to the six benefit names. */
+.benefit-story .benefit-label{position:relative;margin-bottom:8cqw;padding-top:1cqw}
+.benefit-label-number{display:inline-block;font-size:3.6cqw;letter-spacing:.14em;padding:1.4cqw 3.5cqw;border:1px solid #B888C1;border-radius:20cqw;margin-bottom:4cqw;color:#8C389E}
+.benefit-story .benefit-label-title{font-family:CourseHeadline,Pretendard,sans-serif;font-size:11.2cqw;line-height:1.19;letter-spacing:-.055em;padding:0;color:#FFF5FF;-webkit-text-stroke:0;text-shadow:none;position:relative;z-index:2}
+.benefit-title-line{display:block;width:fit-content;max-width:100%;margin:0 auto;padding:.6cqw 1.6cqw;white-space:nowrap;color:#FFF4FE;-webkit-text-stroke:.35cqw #642272;paint-order:stroke fill;text-shadow:none;filter:drop-shadow(0 .55cqw 0 #A644B5) drop-shadow(0 .45cqw 0 #642272);transform-origin:50% 75%;background-image:linear-gradient(110deg,#FAD7FF 12%,#FFFFFF 34%,#EFA9FA 53%,#FFFFFF 70%,#FAD7FF 90%);background-size:240% 100%;background-position:100% 0}
+@supports(background-clip:text){.benefit-title-line{background-clip:text;-webkit-background-clip:text;color:transparent}}
+.benefit-story-2 .benefit-label-number,.benefit-story-5 .benefit-label-number{color:#F3C0FC;border-color:#A66CBA}
+.benefit-story-2 .benefit-title-line,.benefit-story-5 .benefit-title-line{-webkit-text-stroke-color:#F2C7FF;text-shadow:none;filter:drop-shadow(0 .6cqw 0 #AC50C3) drop-shadow(0 .5cqw 0 #693077);background-image:linear-gradient(110deg,#E98DF6 10%,#FFFFFF 37%,#EBABF6 55%,#FFFFFF 70%,#E98DF6 90%)}
+.benefit-story-1 .benefit-title-line:first-child{font-size:14cqw;letter-spacing:-.07em}
+.benefit-story-3 .benefit-title-line{font-size:11.8cqw}
+.benefit-story-4 .benefit-title-line:first-child{font-size:9.6cqw}
+.benefit-story-5 .benefit-title-line:last-child{font-size:9.7cqw}
+.benefit-story-6 .benefit-title-line:last-child{font-size:13cqw}
+.benefit-story-3 .benefit-art{top:76cqw}
+.benefit-label:after{content:'✦';position:absolute;right:0;top:8cqw;font:400 5.4cqw/1 Pretendard,sans-serif;color:#C96CD8;transform:rotate(12deg);pointer-events:none}
+.benefit-story-2 .benefit-label:after,.benefit-story-5 .benefit-label:after{color:#F2B3FB;left:0;right:auto;top:15cqw}
+.benefit-story.title-entered .benefit-title-line{animation:benefit-rise .8s cubic-bezier(.16,1,.3,1) both;animation-delay:calc(var(--line)*130ms)}
+.benefit-story-2.title-entered .benefit-title-line{animation-name:benefit-unfold}
+.benefit-story-3.title-entered .benefit-title-line{animation-name:benefit-pop}
+.benefit-story-4.title-entered .benefit-title-line{animation-name:benefit-slide}
+.benefit-story-5.title-entered .benefit-title-line{animation-name:benefit-wipe}
+.benefit-story-6.title-entered .benefit-title-line{animation-name:benefit-turn}
+.benefit-story.title-settled.title-in-view .benefit-title-line{animation:benefit-sheen 4.8s ease-in-out infinite;animation-delay:calc(var(--line)*180ms)}
+@keyframes benefit-rise{from{opacity:0;transform:translateY(4cqw) rotate(-5deg)}to{opacity:1;transform:none}}
+@keyframes benefit-unfold{from{opacity:0;transform:perspective(400px) rotateX(-65deg) translateY(2cqw)}to{opacity:1;transform:none}}
+@keyframes benefit-pop{0%{opacity:0;transform:scale(.76)}65%{opacity:1;transform:scale(1.05)}100%{opacity:1;transform:none}}
+@keyframes benefit-slide{from{opacity:0;transform:translateX(-7cqw) skewX(-7deg)}to{opacity:1;transform:none}}
+@keyframes benefit-wipe{from{clip-path:inset(0 100% 0 0);transform:translateX(-2cqw)}to{clip-path:inset(0);transform:none}}
+@keyframes benefit-turn{from{opacity:0;transform:translateY(3cqw) rotate(6deg) scale(.93)}to{opacity:1;transform:none}}
+@keyframes benefit-sheen{0%,35%{background-position:100% 0}70%,100%{background-position:0% 0}}
+@media(prefers-reduced-motion:reduce){.benefit-story .benefit-title-line{animation:none!important;transform:none!important;opacity:1!important;clip-path:none!important}}
