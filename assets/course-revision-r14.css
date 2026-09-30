@@ -1,10 +1,10 @@
 /* Blue-violet palette; native collapsed policies and persistent bank information. */
 .legal-section details:not([open])>:not(summary){display:none!important}
 .legal-section details>summary{cursor:pointer}
-.bank-transfer-static h3{font:500 3.4cqw/1.5 Pretendard,sans-serif;color:#827AAF;margin:0}
-.bank-transfer-static{border-top:1px solid #D6D1EC;padding-top:3cqw;margin-top:3cqw}
+.bank-transfer-static h3{font:500 3.4cqw/1.5 Pretendard,sans-serif;color:#A57AAE;margin:0}
+.bank-transfer-static{border-top:1px solid #DCC4E3;padding-top:3cqw;margin-top:3cqw}
 .bank-transfer-static:before,.bank-transfer-static:after,.bank-transfer-static h3:after{content:none!important}
 .challenge-prizes strong{font-size:8cqw;line-height:1.45}
-.challenge-prizes strong>span{font-size:6cqw;color:#A99BED}
+.challenge-prizes strong>span{font-size:6cqw;color:#DB9BED}
 .challenge-prizes>p{font-size:3.6cqw}
 .challenge-prizes small{display:block;margin-top:3cqw}
