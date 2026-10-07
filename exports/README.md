@@ -7,6 +7,17 @@
 - 원본 기준 커밋: `5886b9ce8a2c75329f9244f4dc402b0353fbdcea` (10월 14일 개강 반영)
 - 수정 가능한 웹 원본: 저장소 루트 `index.html` 및 현재 연결된 `assets/`
 
+## 저장 위치
+
+- GitHub 원본: https://github.com/projectrelay8/instagram-course-review (Private)
+- GitHub 최종 ZIP·메모: https://github.com/projectrelay8/instagram-course-review/tree/main/exports
+- 로컬 저장소: `%USERPROFILE%\Works\instagram-course-review`
+- 로컬 웹 원본: `%USERPROFILE%\Works\instagram-course-review\index.html`
+- 로컬 최종 ZIP: `%USERPROFILE%\Works\instagram-course-review\exports\스마트스토어_상세페이지_최종.zip`
+- 로컬 산출물 메모: `%USERPROFILE%\Works\instagram-course-review\exports\README.md`
+
+`%USERPROFILE%`은 현재 Windows 사용자 폴더를 뜻합니다. 탐색기 주소창에 위 경로를 그대로 붙여 넣으면 열 수 있습니다. 실제 사용자 폴더명은 문서에 기록하지 않습니다.
+
 ## 구성과 업로드
 
 PNG 33개 + GIF 20개, 총 53개. 모두 가로 860px이며 파일별 20MB 미만입니다.
