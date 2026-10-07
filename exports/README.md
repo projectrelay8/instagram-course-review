@@ -44,3 +44,14 @@ Git 과거 커밋 이력은 재작성하지 않습니다.
 - https://help.sell.smartstore.naver.com/faq/content.help?faqId=4159
 
 권장 가로 860px, 이미지 장당 최대 20MB. 5MB는 상세설명 글자 입력 용량 제한입니다.
+
+## 구버전 정리 완료 — 2026-10-07
+
+사용자가 삭제 범위를 재확인하고 승인한 뒤 구버전·임시파일 3856 개(총 1003486582 bytes)를 제거했습니다.
+
+- 이전 내보내기 작업대 전체: 프레임·시험 GIF·구버전 ZIP·해제본·검수 이미지·임시 스크립트
+- 공유 강의 폴더: ZIP 사본 3개, qa 폴더, 구버전 백업 HTML, 미사용 옛 자산 및 수정·검수 메모
+- 이 저장소: 백업 HTML 2개, 미사용 course-motion-r12.js / hero-privacy-reel.png / inbox-scroll-r5.gif
+- 현재 index.html과 남겨둔 assets는 삭제 전후 SHA-256 일치 확인
+- 최종 ZIP은 이 저장소 exports 폴더에만 유지. 이전 개별 미리보기 경로는 삭제됐으며, ZIP 안 전체_미리보기.html을 사용합니다.
+- 최초 기획·성과 근거·제작 원자료·프로젝트 설정과 Git 이력은 유지했습니다.
