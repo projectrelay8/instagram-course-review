@@ -1,7 +1,7 @@
 # 스마트스토어 상세페이지 최종 산출물
 
 - 확정일: 2026-10-07
-- 최종본: [스마트스토어_상세페이지_최종.zip](스마트스토어_상세페이지_최종.zip)
+- 최종본: 스마트스토어_상세페이지_최종.zip — 2026-10-12부터 업무 보관 드라이브의 상세페이지 폴더에만 원본 1개로 보관합니다. 이 저장소에서는 제외했습니다.
 - 파일 크기: 62,867,152 bytes (약 62.9 MB)
 - SHA-256: eabf0e2aac985ba870011d9ec4ee7d1bad731ef16383fd78795ac12766433b90
 - 원본 기준 커밋: `5886b9ce8a2c75329f9244f4dc402b0353fbdcea` (10월 14일 개강 반영)
@@ -9,11 +9,11 @@
 
 ## 저장 위치
 
-- GitHub 원본: https://github.com/projectrelay8/instagram-course-review (Private)
-- GitHub 최종 ZIP·메모: https://github.com/projectrelay8/instagram-course-review/tree/main/exports
+- GitHub 원본: https://github.com/projectrelay8/instagram-course-review (Public)
+- 최종 ZIP 원본: 업무 보관 드라이브의 상세페이지 폴더 (이 저장소에는 없음)
+- 실제 스토어 업로드본: 같은 드라이브 폴더의 `261007-스마트스토어_업로드` (용량 줄인 GIF·JPG 53장 + 대표이미지)
 - 로컬 저장소: `%USERPROFILE%\Works\instagram-course-review`
 - 로컬 웹 원본: `%USERPROFILE%\Works\instagram-course-review\index.html`
-- 로컬 최종 ZIP: `%USERPROFILE%\Works\instagram-course-review\exports\스마트스토어_상세페이지_최종.zip`
 - 로컬 산출물 메모: `%USERPROFILE%\Works\instagram-course-review\exports\README.md`
 
 `%USERPROFILE%`은 현재 Windows 사용자 폴더를 뜻합니다. 탐색기 주소창에 위 경로를 그대로 붙여 넣으면 열 수 있습니다. 실제 사용자 폴더명은 문서에 기록하지 않습니다.
@@ -43,7 +43,7 @@ ZIP 안의 `전체_미리보기.html`을 열면 실제 PNG·GIF를 연결한 전
 
 ## 버전 관리
 
-사용자 요청에 따라 이 저장소의 위 ZIP을 최종 ZIP으로 관리합니다.
+2026-10-12 사용자 요청에 따라 최종 ZIP 원본은 업무 보관 드라이브에 1개만 두고, 이 저장소에서는 삭제했습니다(과거 커밋에는 남아 있음).
 ZIP을 바꾸면 이 문서의 날짜·해시·구성·검증 결과도 갱신합니다.
 현재 원본에서 실제 사용하는 revision CSS/JS는 파일 이름이 과거 버전이어도 유지합니다.
 Git 과거 커밋 이력은 재작성하지 않습니다.
@@ -66,3 +66,10 @@ Git 과거 커밋 이력은 재작성하지 않습니다.
 - 현재 index.html과 남겨둔 assets는 삭제 전후 SHA-256 일치 확인
 - 최종 ZIP은 이 저장소 exports 폴더에만 유지. 이전 개별 미리보기 경로는 삭제됐으며, ZIP 안 전체_미리보기.html을 사용합니다.
 - 최초 기획·성과 근거·제작 원자료·프로젝트 설정과 Git 이력은 유지했습니다.
+
+## 스마트스토어 등록본 — 2026-10-12
+
+- 상세설명은 ZIP 원본에서 용량을 줄인 53장으로 등록했습니다(전체 약 62.9MB → 23.6MB).
+- GIF 002는 8fps·가로 640, 003은 1.4배속·8fps·원본 색 유지(프레임별 팔레트), 나머지 GIF는 약한 손실 압축, PNG 33장은 JPG(품질 90)로 변환했습니다.
+- 가로가 860보다 작은 002는 에디터에서 '문서 너비'로 맞췄습니다.
+- 등록본 폴더는 업무 보관 드라이브의 `261007-스마트스토어_업로드`입니다.
